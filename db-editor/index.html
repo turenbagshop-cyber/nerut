@@ -1,0 +1,1539 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1b1f26">
+<title>nerutlabs DB Editor</title><link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{box-sizing:border-box;--bg:#14171c;--bg2:#1b1f26;--bg3:#232833;--bg4:#2c3340;--line:#323a48;--fg:#e6e9ef;--fg2:#9aa4b5;--fg3:#6b7587;--acc:#3d9bff;--acc2:#1f6fd1;--ok:#35c07a;--warn:#f0b23a;--err:#ee5a5a;--sel:#ffb02e;--r:6px;--top:46px;--font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root[data-theme="light"]{--bg:#eef0f4;--bg2:#ffffff;--bg3:#f3f5f9;--bg4:#e3e8f0;--line:#ccd3de;--fg:#1c2230;--fg2:#566074;--fg3:#8a93a5;--acc:#1768d6;--acc2:#0f52ad}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}[hidden]{display:none!important}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font:13px/1.35 var(--font);overflow:hidden}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:var(--bg4);border:1px solid var(--line);border-radius:var(--r);padding:5px 10px;cursor:pointer;white-space:nowrap}
+button:hover{border-color:var(--acc)}button:active{background:var(--bg3)}button:disabled{opacity:.45;cursor:default}
+button.p,button.on{background:var(--acc2);border-color:var(--acc);color:#fff}button.ghost{background:transparent;border-color:transparent}button.ghost:hover{background:var(--bg4)}button.danger{color:var(--err)}
+input[type=text],input[type=number],select,input:not([type]){background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:4px 6px;min-width:0}
+input:focus,select:focus{outline:1px solid var(--acc);border-color:var(--acc)}input[type=checkbox]{accent-color:var(--acc)}
+input[type=text]{flex:1;min-width:130px}input[type=number]{width:74px}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:5px}::-webkit-scrollbar-track{background:transparent}
+#app{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--top) minmax(0,1fr);height:100%;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.top{display:flex;align-items:center;gap:6px;padding:0 8px;background:var(--bg2);border-bottom:1px solid var(--line);overflow-x:auto;overflow-y:hidden;scrollbar-width:none}.top::-webkit-scrollbar{display:none}
+.brand{font-weight:800;letter-spacing:.15px;margin-right:8px;display:flex;align-items:center;gap:8px;color:var(--fg);white-space:nowrap}
+.brand i{display:inline-block;width:30px;height:30px;flex:0 0 30px;background:url("data:image/png;base64,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") center/contain no-repeat;filter:brightness(0) invert(1)}
+:root[data-theme="light"] .brand i{filter:brightness(0)}
+.sep{width:1px;height:24px;background:var(--line);margin:0 4px;flex:none}
+.tabs{display:flex;gap:2px;background:var(--bg);padding:2px;border-radius:8px;border:1px solid var(--line)}.tabs button{border:0;background:transparent;border-radius:6px;padding:5px 11px}.tabs button.on{background:var(--acc2);color:#fff}
+.grow{flex:1}.chip{color:var(--fg2);max-width:34vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.chip.dirty{color:var(--warn)}
+#body{display:flex;min-height:0;min-width:0;position:relative}.tool{flex:1;min-width:0;min-height:0;display:flex;flex-direction:column}
+.ctool{display:flex;gap:6px;align-items:center;padding:6px 8px;background:var(--bg2);border-bottom:1px solid var(--line);overflow-x:auto;flex:none;scrollbar-width:none}.ctool::-webkit-scrollbar{display:none}
+.ctool label{display:flex;gap:4px;align-items:center;color:var(--fg2);white-space:nowrap}.ctool select{max-width:150px}.ctool input[type=text]{max-width:220px}
+.note{flex:none;margin:0;padding:4px 10px;background:var(--bg2);border-bottom:1px solid var(--line);color:var(--fg3);font-size:12px}
+.app{flex:1;min-height:0;display:flex}.view{flex:1;min-width:0;display:flex;overflow:hidden;background:var(--bg)}.vc{flex:1;min-width:0;overflow:auto;padding:8px}
+.drawer{background:var(--bg2);display:flex;flex-direction:column;overflow-y:auto;width:330px;flex:none;border-left:1px solid var(--line)}
+.app.left{flex-direction:row-reverse}.app.left .drawer{border-left:0;border-right:1px solid var(--line)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;font-weight:700;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg2);z-index:1}
+.dempty{display:none;padding:20px 14px;color:var(--fg2);text-align:center}.drawer:not(.open)>*{display:none}.drawer:not(.open)>.dempty{display:block}
+#dbody{padding-bottom:20px}#dbody>.r{padding:8px 10px}.scrim{display:none!important}
+.sec{border-bottom:1px solid var(--line)}.sec>.sh{display:flex;align-items:center;gap:6px;padding:7px 10px;cursor:pointer;font-weight:600;color:var(--fg2);user-select:none}.sec>.sh:hover{color:var(--fg)}
+.sec>.sh::before{content:"▾";display:inline-block;transition:transform .15s}.sec.closed>.sh::before{transform:rotate(-90deg)}.sec>.sb{padding:4px 10px 10px}.sec.closed>.sb{display:none}
+.r{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:4px 0}.r label{font-size:12px;color:var(--fg2)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}.fi{display:flex;flex-direction:column;gap:2px;margin:3px 0;min-width:0}.fi label{font-size:11px;color:var(--fg2)}.fi input,.fi select{width:100%}.hint{color:var(--acc)}
+label.ck{display:flex;gap:6px;align-items:flex-start;margin:5px 0;color:var(--fg);font-size:12.5px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px}.card h3{margin:0 0 6px;font-size:14px}
+.mut,small{color:var(--fg2);font-size:12px}.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 14px}.kv span{color:var(--fg2)}
+table.t{width:100%;border-collapse:collapse;font-size:12.5px}table.t th,table.t td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+table.t th{position:sticky;top:-8px;background:var(--bg3);color:var(--fg2);font-weight:600;cursor:pointer}table.t tbody tr{cursor:pointer}table.t tbody tr:hover{background:var(--bg3)}table.t tr.sel{outline:1.5px solid var(--sel);outline-offset:-1px;background:var(--bg3)}
+table.t.sm td{padding:3px 6px}table.t tr.xi td{background:rgba(61,155,255,.08)}.ovr{display:inline-block;min-width:30px;text-align:center;background:var(--acc2);color:#fff;border-radius:5px;padding:1px 4px;font-weight:700}
+.pager{display:flex;gap:10px;align-items:center;justify-content:center;padding:8px}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--bg);padding:8px;border-radius:6px;margin:6px 0}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60;display:flex;align-items:center;justify-content:center;padding:12px}
+.md{background:var(--bg2);border:1px solid var(--line);border-radius:10px;width:100%;max-width:420px;max-height:86vh;overflow:auto;padding:14px}.mh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.pl>div{padding:8px 6px;border-bottom:1px solid var(--line);cursor:pointer}.pl>div:hover{background:var(--bg3)}.bar{height:16px;background:var(--bg4);border-radius:8px;overflow:hidden;margin:12px 0 6px}.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .12s}.split{display:flex;justify-content:space-between}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;max-width:min(92vw,560px);z-index:80;background:var(--bg4);color:var(--fg);border:1px solid var(--line);padding:9px 14px;border-radius:8px;display:none;box-shadow:0 6px 24px #0008}#toast.err{background:var(--err);color:#fff}
+@media (max-width:900px){:root{--top:44px}.brand span{display:none}.chip{max-width:24vw}
+ .drawer{position:fixed;top:calc(var(--top) + env(safe-area-inset-top,0px));bottom:0;right:0;z-index:30;width:min(90vw,360px);transition:transform .2s;box-shadow:0 0 30px #000a;transform:translateX(105%)}
+ .drawer:not(.open)>*{display:revert}.drawer:not(.open)>.dempty{display:none}.app.left .drawer{right:auto;left:0;border-right:1px solid var(--line);transform:translateX(-105%)}.drawer.open,.app.left .drawer.open{transform:none}
+ .scrim{display:block!important;position:fixed;inset:calc(var(--top) + env(safe-area-inset-top,0px)) 0 0 0;z-index:29;background:rgba(0,0,0,.35)}.scrim[hidden]{display:none!important}.vc{padding:6px}}
+</style></head><body>
+<div id="app">
+<div class="top"><div class="brand"><i></i><span>nerutlabs DB Editor</span></div><span class="sep"></span><div class="tabs" id="tabs"></div><span class="grow"></span><span class="chip" id="chip">Belum ada file</span>
+<button id="bSide" class="ghost" title="Pindahkan panel kiri/kanan">Panel ⇄</button><button id="bTheme" class="ghost" title="Tema">◐</button><button id="saveBtn" class="p" disabled>Simpan</button></div>
+<div id="body"><div class="tool"><div class="ctool" id="ctool"></div><p class="note" id="note"></p>
+<div class="app" id="appc"><div class="view" id="view"></div>
+<aside class="drawer" id="panel"><div class="dempty" id="dempty"></div><div class="dh"><span><button id="dback" class="sm" hidden>←</button> <span id="dtitle"></span></span><button id="dclose">Tutup</button></div><div id="dbody"></div></aside></div></div></div>
+<div class="scrim" id="scrim" hidden></div></div>
+<input type="file" id="fdb" multiple accept=".db,.xml" hidden>
+<div id="toast"></div>
+<script>
+/* nerutlabs DB Editor (HTML) - inti: format DB biner EA FIFA, CSV, ZIP */
+'use strict';
+const TL = {};
+
+// ------------------------------------------------------------- util byte
+const UTF8E = new TextEncoder(), UTF8D = new TextDecoder('utf-8');
+const u32 = (d, o) => ((d[o] | (d[o + 1] << 8) | (d[o + 2] << 16) | (d[o + 3] << 24)) >>> 0);
+const u16 = (d, o) => d[o] | (d[o + 1] << 8);
+function concat(parts) {
+  let n = 0; for (const p of parts) n += p.length;
+  const o = new Uint8Array(n); let k = 0;
+  for (const p of parts) { o.set(p, k); k += p.length; }
+  return o;
+}
+function w32(v) { const b = new Uint8Array(4); b[0] = v; b[1] = v >>> 8; b[2] = v >>> 16; b[3] = v >>> 24; return b; }
+class DbError extends Error {}
+TL.DbError = DbError;
+
+// ------------------------------------------------------------- progress (async, tidak membekukan UI)
+const PR = { cb: null, last: 0 };
+const nowMs = () => (typeof performance !== 'undefined' ? performance.now() : Date.now());
+const due = () => nowMs() - PR.last > 40;
+async function tick(pct, msg) { if (PR.cb) PR.cb(Math.max(0, Math.min(100, Math.round(pct))), msg || ''); PR.last = nowMs(); await new Promise(r => setTimeout(r, 0)); }
+
+// ------------------------------------------------------------- CRC-32/MPEG-2
+const CRC_T = new Uint32Array(256);
+for (let i = 0; i < 256; i++) { let c = (i << 24) >>> 0; for (let k = 0; k < 8; k++) c = (c & 0x80000000) ? (((c << 1) ^ 0x04C11DB7) >>> 0) : ((c << 1) >>> 0); CRC_T[i] = c; }
+function crcMpeg(d, from, to) {
+  let c = 0xFFFFFFFF;
+  for (let i = from; i < to; i++) c = (((c << 8) >>> 0) ^ CRC_T[((c >>> 24) ^ d[i]) & 255]) >>> 0;
+  return c >>> 0;
+}
+// CRC-32 standar (untuk ZIP)
+const CRC_Z = new Uint32Array(256);
+for (let i = 0; i < 256; i++) { let c = i; for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); CRC_Z[i] = c >>> 0; }
+function crcZip(d) { let c = 0xFFFFFFFF; for (let i = 0; i < d.length; i++) c = CRC_Z[(c ^ d[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+// ------------------------------------------------------------- tanggal (hari sejak 1582-10-14)
+function daysFromCivil(y, m, d) {
+  y -= m <= 2 ? 1 : 0;
+  const era = Math.floor((y >= 0 ? y : y - 399) / 400), yoe = y - era * 400;
+  const doy = Math.floor((153 * (m + (m > 2 ? -3 : 9)) + 2) / 5) + d - 1;
+  const doe = yoe * 365 + Math.floor(yoe / 4) - Math.floor(yoe / 100) + doy;
+  return era * 146097 + doe - 719468;
+}
+const EPOCH = daysFromCivil(1582, 10, 14);
+const dateToDays = (y, m, d) => daysFromCivil(y, m, d) - EPOCH;
+function daysToDate(n) {
+  const z = n + EPOCH + 719468, era = Math.floor((z >= 0 ? z : z - 146096) / 146097), doe = z - era * 146097;
+  const yoe = Math.floor((doe - Math.floor(doe / 1460) + Math.floor(doe / 36524) - Math.floor(doe / 146096)) / 365);
+  const y = yoe + era * 400, doy = doe - (365 * yoe + Math.floor(yoe / 4) - Math.floor(yoe / 100));
+  const mp = Math.floor((5 * doy + 2) / 153), dd = doy - Math.floor((153 * mp + 2) / 5) + 1, mm = mp < 10 ? mp + 3 : mp - 9;
+  const yy = y + (mm <= 2 ? 1 : 0), p = (x, l) => String(x).padStart(l, '0');
+  return p(yy, 4) + '-' + p(mm, 2) + '-' + p(dd, 2);
+}
+function parseDate(s) {
+  s = s.trim();
+  if (/^-?\d+$/.test(s)) return parseInt(s, 10);
+  const p = s.split(/[-/.]/).map(Number);
+  if (p.length < 3 || p.some(isNaN)) throw new DbError('Format tanggal salah: ' + s);
+  return dateToDays(p[0], p[1], p[2]);
+}
+const todayDays = () => { const d = new Date(); return dateToDays(d.getFullYear(), d.getMonth() + 1, d.getDate()); };
+
+// ------------------------------------------------------------- bit
+function getBits(r, off, len) {
+  const b0 = off >> 3, sh = off & 7, nb = (sh + len + 7) >> 3;
+  let v = 0;
+  for (let i = nb - 1; i >= 0; i--) v = v * 256 + r[b0 + i];
+  v = Math.floor(v / Math.pow(2, sh));
+  return len < 53 ? v % Math.pow(2, len) : v;
+}
+function setBits(r, off, len, val) {
+  const lo = val % 4294967296;   // len <= 32
+  for (let i = 0; i < len; i++) {
+    const bit = off + i;
+    if ((lo >>> i) & 1) r[bit >> 3] |= (1 << (bit & 7)); else r[bit >> 3] &= ~(1 << (bit & 7));
+  }
+}
+
+// ------------------------------------------------------------- Huffman
+class Huffman {
+  constructor(nodes) { this.nodes = nodes; this.codes = new Array(256).fill(null); this.build(); }
+  static parse(buf, start, end) {
+    const cnt = Math.floor((end - start) / 4), u = new Array(cnt * 2);
+    for (let i = 0; i < u.length; i++) u[i] = u16(buf, start + i * 2);
+    let max = 0; const st = [0], seen = new Set();
+    while (st.length) {
+      const n = st.pop();
+      if (seen.has(n)) continue; seen.add(n);
+      if (n * 2 + 1 >= u.length) throw new DbError('pohon Huffman tidak valid');
+      max = Math.max(max, n);
+      for (let k = 0; k < 2; k++) { const v = u[2 * n + k]; if (v & 0xFF) st.push(v); }
+    }
+    const nodes = [];
+    for (let i = 0; i <= max; i++) nodes.push([u[2 * i], u[2 * i + 1]]);
+    return new Huffman(nodes);
+  }
+  build() {
+    this.codes.fill(null);
+    const st = [[0, '']];
+    while (st.length) {
+      const [n, pre] = st.pop();
+      for (let b = 0; b < 2; b++) { const v = this.nodes[n][b]; if (v & 0xFF) st.push([v, pre + b]); else this.codes[v >> 8] = pre + b; }
+    }
+  }
+  serialize() { const o = new Uint8Array(this.nodes.length * 4); let k = 0; for (const n of this.nodes) { o[k++] = n[0]; o[k++] = n[0] >> 8; o[k++] = n[1]; o[k++] = n[1] >> 8; } return o; }
+  decode(buf, ptr) {
+    const len = buf[ptr]; let bit = (ptr + 1) * 8, node = 0; const out = new Uint8Array(len); let k = 0;
+    while (k < len) {
+      const x = (buf[bit >> 3] >> (7 - (bit & 7))) & 1; bit++;
+      const v = this.nodes[node][x];
+      if (v & 0xFF) node = v; else { out[k++] = v >> 8; node = 0; }
+    }
+    return UTF8D.decode(out);
+  }
+  canEncode(s) { const b = UTF8E.encode(s); for (let i = 0; i < b.length && i < 255; i++) if (this.codes[b[i]] === null) return false; return true; }
+  encode(s) {
+    const b = UTF8E.encode(s), len = Math.min(b.length, 255); let bits = '';
+    for (let i = 0; i < len; i++) { const c = this.codes[b[i]]; if (c === null) throw new DbError('karakter tidak ada di pohon Huffman: ' + s); bits += c; }
+    const nb = bits.length, pad = (8 - nb % 8) % 8; bits += '0'.repeat(pad);
+    const out = [len];
+    for (let i = 0; i < bits.length; i += 8) out.push(parseInt(bits.substr(i, 8), 2));
+    if (pad === 0) out.push(0);
+    return Uint8Array.from(out);
+  }
+}
+
+// ------------------------------------------------------------- Field / Table
+class Field {
+  constructor() { this.name = ''; this.sn = ''; this.mtype = ''; this.ftype = 0; this.offset = 0; this.depth = 0; this.low = 0; this.high = 0; this.raw = null; }
+  kind() { return (this.ftype === 0 || this.ftype === 13) ? 'str' : this.ftype === 4 ? 'real' : this.mtype === 'DATE' ? 'date' : 'int'; }
+  max() { return this.depth >= 53 ? Infinity : this.low + Math.pow(2, this.depth) - 1; }
+}
+const LATIN1 = new TextDecoder('latin1');
+
+class Table {
+  constructor(sn, name, raw, meta) {
+    this.sn = sn; this.name = name; this.raw = raw; this.dirty = false; this.loaded = false; this.readonly = false; this.partial = false; this.error = null;
+    this.w0 = u32(raw, 0); this.recsz = u32(raw, 4); this.bits1 = u32(raw, 8); this.w3 = u32(raw, 12);
+    this.count = u32(raw, 16) & 0xFFFF; this.w5 = u32(raw, 20); const nf = u32(raw, 24); this.w7 = u32(raw, 28);
+    this.fields = []; this.fmap = new Map(); this.hasCstr = false; this.cs = new Map(); this.recs = null; this.huff = null;
+    for (let i = 0; i < nf; i++) {
+      const o = 36 + i * 16, f = new Field();
+      f.ftype = u32(raw, o); f.offset = u32(raw, o + 4); f.sn = LATIN1.decode(raw.subarray(o + 8, o + 12)); f.depth = u32(raw, o + 12);
+      f.raw = raw.slice(o, o + 16);
+      const m = meta ? meta.get(f.sn) : null;
+      if (m) { f.name = m[0]; f.mtype = m[1]; f.low = parseInt(m[3], 10) || 0; f.high = parseInt(m[4], 10) || 0; } else f.name = f.sn;
+      this.fields.push(f); this.fmap.set(f.name, f);
+      if (f.ftype === 13) this.hasCstr = true;
+    }
+    this.recOff = 36 + nf * 16;
+    this.plain = (this.w0 & 0x20) !== 0 && (this.w0 & 0x40) === 0;   // 0x20 string polos, 0x40 Huffman
+  }
+  n() { return this.loaded ? this.recs.length : this.count; }
+  f(name) { const f = this.fmap.get(name); if (!f) throw new DbError("Field '" + name + "' tidak ada di tabel " + this.name); return f; }
+
+  load() {
+    if (this.loaded) return;
+    if (this.error) throw new DbError(this.error);
+    try { this._load(); } catch (e) {
+      this.error = 'Tabel memakai format string yang belum didukung (read-only): ' + e.message; this.loaded = false;
+      throw new DbError(this.error);
+    }
+  }
+  _load() {
+    const n = this.count, raw = this.raw;
+    this.recs = new Array(n);
+    for (let i = 0; i < n; i++) { const s = this.recOff + i * this.recsz; this.recs[i] = raw.slice(s, s + this.recsz); }
+    this.huff = null; this.cs = new Map();
+    if (this.hasCstr) {
+      const exS = this.recOff + n * this.recsz, exE = raw.length - 4, ex = raw.subarray(exS, exE);
+      if (!this.plain) this.huff = Huffman.parse(raw, exS, exE);
+      for (const f of this.fields) {
+        if (f.ftype !== 13) continue;
+        const col = new Array(n);
+        for (let i = 0; i < n; i++) {
+          const ptr = getBits(this.recs[i], f.offset, 32);
+          if (ptr === 0xFFFFFFFF) col[i] = '';
+          else if (this.plain) {
+            const len = ex[ptr]; if (ptr + 1 + len > ex.length) throw new DbError('pointer string di luar batas');
+            col[i] = UTF8D.decode(ex.subarray(ptr + 1, ptr + 1 + len));
+          } else col[i] = this.huff.decode(ex, ptr);
+        }
+        this.cs.set(f.name, col);
+      }
+    }
+    this.loaded = true;
+    if (this.hasCstr) {   // aman ditulis hanya bila serialisasi ulang identik
+      this.dirty = true;
+      try { const s = this.serialize(); this.readonly = !(s.length === raw.length && s.every((v, i) => v === raw[i])); } catch (e) { this.readonly = true; }
+      this.dirty = false;
+    }
+  }
+  loadPartial() {
+    this.recs = []; for (let i = 0; i < this.count; i++) { const s = this.recOff + i * this.recsz; this.recs.push(this.raw.slice(s, s + this.recsz)); }
+    this.cs = new Map();
+    for (const f of this.fields) if (f.ftype === 13) this.cs.set(f.name, new Array(this.count).fill(''));
+    this.loaded = true; this.partial = true; this.readonly = true; this.dirty = false;
+  }
+  chk() { if (this.readonly) throw new DbError('Tabel "' + this.name + '" read-only (format string kompleks).'); }
+
+  getInt(i, f) { if (typeof f === 'string') f = this.f(f); return getBits(this.recs[i], f.offset, f.depth) + f.low; }
+  getReal(i, f) { const r = this.recs[i], b = new DataView(new ArrayBuffer(4)); for (let k = 0; k < 4; k++) b.setUint8(k, r[(f.offset >> 3) + k]); return b.getFloat32(0, true); }
+  getStr(i, f) {
+    if (typeof f === 'string') f = this.f(f);
+    if (f.ftype === 13) return this.cs.get(f.name)[i];
+    const r = this.recs[i], s = f.offset >> 3, len = f.depth >> 3; let e = s;
+    while (e < s + len && r[e] !== 0) e++;
+    return UTF8D.decode(r.subarray(s, e));
+  }
+  getText(i, f) {
+    switch (f.kind()) { case 'str': return this.getStr(i, f); case 'real': return String(this.getReal(i, f)); case 'date': return daysToDate(this.getInt(i, f)); default: return String(this.getInt(i, f)); }
+  }
+  getRaw(i, f) { switch (f.kind()) { case 'str': return this.getStr(i, f); case 'real': return String(this.getReal(i, f)); default: return String(this.getInt(i, f)); } }
+  setInt(i, f, v) {
+    if (typeof f === 'string') f = this.f(f);
+    if (v < f.low || v > f.max()) throw new DbError(f.name + ': nilai ' + v + ' di luar rentang (' + f.low + '..' + f.max() + ')');
+    setBits(this.recs[i], f.offset, f.depth, v - f.low); this.dirty = true;
+  }
+  setStr(i, f, s) {
+    if (typeof f === 'string') f = this.f(f);
+    if (f.ftype === 13) { this.cs.get(f.name)[i] = s; this.dirty = true; return; }
+    const b = UTF8E.encode(s), len = f.depth >> 3, st = f.offset >> 3, r = this.recs[i];
+    r.fill(0, st, st + len); r.set(b.subarray(0, Math.min(b.length, len)), st); this.dirty = true;
+  }
+  setText(i, f, s) {
+    if (f.kind() === 'str') { this.setStr(i, f, s); return; }
+    s = String(s).trim();
+    switch (f.kind()) {
+      case 'real': { const b = new DataView(new ArrayBuffer(4)); b.setFloat32(0, parseFloat(s), true); setBits(this.recs[i], f.offset, 32, b.getUint32(0, true)); this.dirty = true; break; }
+      case 'date': this.setInt(i, f, parseDate(s)); break;
+      default: { const v = s.indexOf('.') >= 0 ? Math.trunc(parseFloat(s)) : parseInt(s, 10); if (isNaN(v)) throw new DbError(f.name + ': bukan angka: ' + s); this.setInt(i, f, v); }
+    }
+  }
+  addRow() {
+    this.load(); this.chk();
+    if (this.recs.length >= 65535) throw new DbError('tabel penuh (maks 65535 baris)');
+    this.recs.push(new Uint8Array(this.recsz)); for (const c of this.cs.values()) c.push('');
+    this.dirty = true; return this.recs.length - 1;
+  }
+  copyRow(src) { const i = this.addRow(); this.recs[i] = this.recs[src].slice(); for (const c of this.cs.values()) c[i] = c[src]; return i; }
+  deleteRows(idx) {
+    this.load(); this.chk();
+    const gone = new Set(idx); if (!gone.size) return;
+    this.recs = this.recs.filter((_, i) => !gone.has(i));
+    for (const [k, c] of this.cs) this.cs.set(k, c.filter((_, i) => !gone.has(i)));
+    this.dirty = true;
+  }
+  keyField() { for (const f of this.fields) if (f.kind() === 'int') return f; return this.fields[0]; }
+
+  serialize() {
+    if (!this.dirty) return this.raw;
+    this.load();
+    const n = this.recs.length; let extra = new Uint8Array(0), w3n = 0; const out = this.recs.slice();
+    if (this.hasCstr) {
+      if (!this.plain) for (const col of this.cs.values()) for (const s of col) if (!this.huff.canEncode(s)) throw new DbError('Karakter di luar pohon Huffman: ' + s);
+      const blob = []; let size = 0;
+      const push = (a) => { blob.push(a); size += a.length; };
+      if (!this.plain) push(this.huff.serialize());
+      for (const f of this.fields) {
+        if (f.ftype !== 13) continue;
+        const col = this.cs.get(f.name);
+        for (let i = 0; i < n; i++) {
+          const s = col[i]; let ptr;
+          if (s === '') ptr = 0xFFFFFFFF;
+          else {
+            ptr = size;
+            if (this.plain) { const b = UTF8E.encode(s), l = Math.min(b.length, 255), e = new Uint8Array(l + 1); e[0] = l; e.set(b.subarray(0, l), 1); push(e); }
+            else push(this.huff.encode(s));
+          }
+          const r = out[i].slice(); setBits(r, f.offset, 32, ptr); out[i] = r;
+        }
+      }
+      w3n = size; const pad = (8 - w3n % 8) % 8; if (pad) push(new Uint8Array(pad));
+      extra = concat(blob);
+    }
+    const descs = concat(this.fields.map(f => f.raw)), body = concat(out), pl = concat([descs, body, extra]);
+    const hb = concat([w32(this.w0), w32(this.recsz), w32(this.bits1), w32(w3n), w32((n | (n << 16)) >>> 0), w32(this.w5), w32(this.fields.length), w32(this.w7)]);
+    return concat([hb, w32(crcMpeg(hb, 0, 32)), pl, w32(crcMpeg(pl, 0, pl.length))]);
+  }
+}
+
+// ------------------------------------------------------------- Database
+function parseMeta(xml) {
+  const res = new Map(), names = new Map();
+  if (!xml) return { res, names };
+  const tre = /<table name="([^"]+)" shortname="([^"]+)"[^>]*>([\s\S]*?)<\/table>/g; let m;
+  while ((m = tre.exec(xml))) {
+    names.set(m[2], m[1]); const fl = new Map(), fre = /<field ([^>]*?)\/?>/g; let fm;
+    while ((fm = fre.exec(m[3]))) {
+      const at = {}, are = /(\w+)="([^"]*)"/g; let am;
+      while ((am = are.exec(fm[1]))) at[am[1]] = am[2];
+      if (!at.shortname) continue;
+      fl.set(at.shortname, [at.name, at.type ? at.type.replace('DBOFIELDTYPE_', '') : '', at.depth, at.rangelow || '0', at.rangehigh || '0']);
+    }
+    res.set(m[2], fl);
+  }
+  return { res, names };
+}
+class FifaDb {
+  constructor(d, metaXml) {
+    if (d.length < 30 || d[0] !== 68 || d[1] !== 66 || d[2] !== 0 || d[3] !== 8) throw new DbError('Bukan file database FIFA (header DB\\0\\x08 tidak ditemukan).');
+    this.head = d.slice(0, 20);
+    const n = u32(d, 16), sns = [], offs = [];
+    for (let i = 0; i < n; i++) { sns.push(LATIN1.decode(d.subarray(24 + i * 8, 28 + i * 8))); offs.push(u32(d, 28 + i * 8)); }
+    this.dirOrder = sns.slice();
+    const base = 24 + n * 8 + 4, idx = sns.map((_, i) => i).sort((a, b) => offs[a] - offs[b]);
+    const { res, names } = parseMeta(metaXml);
+    this.metaLoaded = res.size > 0; this.order = []; this.tables = new Map();
+    for (let k = 0; k < n; k++) {
+      const i = idx[k], end = k + 1 < n ? base + offs[idx[k + 1]] : d.length;
+      const raw = d.slice(base + offs[i], end), nm = names.get(sns[i]) || sns[i];
+      const t = new Table(sns[i], nm, raw, res.get(sns[i]));
+      this.order.push(t); this.tables.set(nm, t);
+    }
+  }
+  has(n) { return this.tables.has(n); }
+  t(n) { const t = this.tables.get(n); if (!t) throw new DbError("Tabel '" + n + "' tidak ada di database ini."); t.load(); return t; }
+  _assemble(parts, offs, pos) {
+    const n = this.dirOrder.length, total = 24 + n * 8 + 4 + pos, h = this.head.slice();
+    h[8] = total; h[9] = total >>> 8; h[10] = total >>> 16; h[11] = total >>> 24;
+    const dir = concat(this.dirOrder.map(sn => concat([UTF8E.encode(sn), w32(offs.get(sn))])));
+    return concat([h, w32(crcMpeg(h, 0, 20)), dir, w32(crcMpeg(dir, 0, dir.length)), ...parts]);
+  }
+  serialize() {
+    const parts = [], offs = new Map(); let pos = 0;
+    for (const t of this.order) { const b = t.serialize(); offs.set(t.sn, pos); parts.push(b); pos += b.length; }
+    return this._assemble(parts, offs, pos);
+  }
+  async serializeAsync(p0, p1) {
+    const parts = [], offs = new Map(); let pos = 0, i = 0; const n = this.order.length;
+    for (const t of this.order) {
+      const b = t.serialize(); offs.set(t.sn, pos); parts.push(b); pos += b.length; i++;
+      if (due()) await tick(p0 + (p1 - p0) * i / n, 'Menyusun tabel ' + i + '/' + n + ' (' + t.name + ')');
+    }
+    return this._assemble(parts, offs, pos);
+  }
+  static verify(d) {
+    const bad = [];
+    if (d.length < 30 || d[0] !== 68 || d[1] !== 66) return ['header salah'];
+    const n = u32(d, 16);
+    if (crcMpeg(d, 0, 20) !== u32(d, 20)) bad.push('CRC header');
+    if (u32(d, 8) !== d.length) bad.push('ukuran file di header tidak cocok');
+    const dend = 24 + n * 8;
+    if (crcMpeg(d, 24, dend) !== u32(d, dend)) bad.push('CRC direktori');
+    const base = dend + 4, offs = []; for (let i = 0; i < n; i++) offs.push(u32(d, 28 + i * 8)); offs.sort((a, b) => a - b);
+    for (let i = 0; i < n; i++) {
+      const a = base + offs[i], b = i + 1 < n ? base + offs[i + 1] : d.length;
+      if (crcMpeg(d, a + 36, b - 4) !== u32(d, b - 4)) bad.push('CRC tabel #' + i);
+      if (crcMpeg(d, a, a + 32) !== u32(d, a + 32)) bad.push('CRC header tabel #' + i);
+    }
+    return bad;
+  }
+}
+
+// ------------------------------------------------------------- CSV
+function csvDecode(d) {
+  let off = (d.length >= 3 && d[0] === 0xEF && d[1] === 0xBB && d[2] === 0xBF) ? 3 : 0;
+  try { return new TextDecoder('utf-8', { fatal: true }).decode(d.subarray(off)); } catch (e) { return new TextDecoder('windows-1252').decode(d.subarray(off)); }
+}
+class Csv {
+  constructor() { this.cols = []; this.rows = []; this.idx = new Map(); }
+  col(name) { const i = this.idx.get(name.toLowerCase()); return i === undefined ? -1 : i; }
+  get(r, name) { const i = this.col(name); return (i < 0 || i >= r.length) ? '' : r[i]; }
+  static parse(bytes) {
+    const s = csvDecode(bytes), nl = s.indexOf('\n'), first = nl < 0 ? s : s.substring(0, nl);
+    let commas = 0, semis = 0; for (const ch of first) { if (ch === ',') commas++; else if (ch === ';') semis++; }
+    const delim = semis > commas ? ';' : ',', c = new Csv(); let cur = [], f = '', q = false, any = false;
+    const add = (r) => { if (!c.cols.length) { r.forEach((h, i) => { h = h.trim(); c.cols.push(h); c.idx.set(h.toLowerCase(), i); }); } else c.rows.push(r); };
+    const n = s.length;
+    for (let i = 0; i < n; i++) {
+      const ch = s[i];
+      if (q) { if (ch === '"') { if (s[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += ch; }
+      else if (ch === '"') { q = true; any = true; }
+      else if (ch === delim) { cur.push(f); f = ''; any = true; }
+      else if (ch === '\n' || ch === '\r') {
+        if (ch === '\r' && s[i + 1] === '\n') i++;
+        if (any || f.length || cur.length) { cur.push(f); add(cur); }
+        cur = []; f = ''; any = false;
+      } else { f += ch; any = true; }
+    }
+    if (any || f.length || cur.length) { cur.push(f); add(cur); }
+    return c;
+  }
+}
+class CsvWriter {
+  constructor() { this.parts = ['\uFEFF']; }
+  row(v) {
+    this.parts.push(v.map(x => { x = x == null ? '' : String(x); return /[",\r\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; }).join(',') + '\n');
+  }
+  bytes() { return UTF8E.encode(this.parts.join('')); }
+}
+
+// ------------------------------------------------------------- ZIP (tanpa kompresi)
+function makeZip(files) {
+  const locals = [], cents = []; let off = 0;
+  const d = new Date(), dt = ((d.getHours() << 11) | (d.getMinutes() << 5) | (d.getSeconds() >> 1)) & 0xFFFF,
+    dd = (((d.getFullYear() - 1980) << 9) | ((d.getMonth() + 1) << 5) | d.getDate()) & 0xFFFF;
+  const h16 = (v) => Uint8Array.of(v & 255, (v >> 8) & 255);
+  for (const f of files) {
+    const nm = UTF8E.encode(f.name), crc = crcZip(f.data);
+    const lh = concat([w32(0x04034b50), h16(20), h16(0x0800), h16(0), h16(dt), h16(dd), w32(crc), w32(f.data.length), w32(f.data.length), h16(nm.length), h16(0), nm]);
+    locals.push(lh, f.data);
+    cents.push(concat([w32(0x02014b50), h16(20), h16(20), h16(0x0800), h16(0), h16(dt), h16(dd), w32(crc), w32(f.data.length), w32(f.data.length), h16(nm.length), h16(0), h16(0), h16(0), h16(0), w32(0), w32(off), nm]));
+    off += lh.length + f.data.length;
+  }
+  const cd = concat(cents);
+  return concat([...locals, cd, w32(0x06054b50), h16(0), h16(0), h16(files.length), h16(files.length), w32(cd.length), w32(off), h16(0)]);
+}
+Object.assign(TL, { PR, due, tick, DbError, FifaDb, Table, Field, Huffman, Csv, CsvWriter, makeZip, crcMpeg, daysToDate, parseDate, dateToDays, todayDays, concat });
+
+/* nerutlabs DB Editor (HTML) - logika: pemain, tim, transfer, lineup, validasi */
+const MAX_SQUAD = 34, NAME_MAX = 28999;
+const POS_REV = ['GK', 'SW', 'RWB', 'RB', 'RCB', 'CB', 'LCB', 'LB', 'LWB', 'RDM', 'CDM', 'LDM', 'RM', 'RCM', 'CM', 'LCM', 'LM', 'RAM', 'CAM', 'LAM', 'RF', 'CF', 'LF', 'RW', 'RS', 'ST', 'LS', 'LW'];
+const POS = new Map(POS_REV.map((p, i) => [p, i]));
+const posName = (p) => (p >= 0 && p < POS_REV.length) ? POS_REV[p] : String(p);
+const ROLES = ['captainid', 'penaltytakerid', 'freekicktakerid', 'longkicktakerid', 'leftcornerkicktakerid', 'rightcornerkicktakerid'];
+const NAME_FIELDS = ['firstnameid', 'lastnameid', 'commonnameid', 'playerjerseynameid'];
+
+const CP1252 = { 0x20AC: 0x80, 0x201A: 0x82, 0x0192: 0x83, 0x201E: 0x84, 0x2026: 0x85, 0x2020: 0x86, 0x2021: 0x87, 0x02C6: 0x88, 0x2030: 0x89, 0x0160: 0x8A, 0x2039: 0x8B, 0x0152: 0x8C, 0x017D: 0x8E, 0x2018: 0x91, 0x2019: 0x92, 0x201C: 0x93, 0x201D: 0x94, 0x2022: 0x95, 0x2013: 0x96, 0x2014: 0x97, 0x02DC: 0x98, 0x2122: 0x99, 0x0161: 0x9A, 0x203A: 0x9B, 0x0153: 0x9C, 0x017E: 0x9E, 0x0178: 0x9F };
+function fixText(s) {   // perbaiki mojibake UTF-8 yang terbaca sebagai cp1252 (mis. 'MbappÃ©')
+  if (!s || !/[ÃÂÅ]/.test(s)) return s;
+  const b = [];
+  for (const ch of s) { const c = ch.codePointAt(0); if (c < 256) b.push(c); else if (CP1252[c] !== undefined) b.push(CP1252[c]); else return s; }
+  try { return new TextDecoder('utf-8', { fatal: true }).decode(Uint8Array.from(b)); } catch (e) { return s; }
+}
+function norm(s) {
+  if (!s) return '';
+  return fixText(s).normalize('NFKD').replace(/[^\x00-\x7F]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').trim().replace(/\s+/g, ' ');
+}
+const CLUB_STOP = new Set('fc cf ac as sc ssc afc club de the cd sd ud rc fk sk bk if sv vfl vfb tsg us ca ss rcd ec'.split(' '));
+const ALIASES = new Map([['man utd', 'manchester united'], ['man city', 'manchester city'], ['paris sg', 'paris saint germain'], ['newcastle utd', 'newcastle united'], ['spurs', 'tottenham hotspur'], ['inter', 'internazionale'], ['atletico madrid', 'atletico de madrid'], ['bayern munchen', 'bayern munich'], ['fc bayern munchen', 'bayern munich'], ['borussia monchengladbach', 'borussia mgladbach'], ['wolves', 'wolverhampton wanderers'], ['athletic club', 'athletic bilbao'], ['brighton', 'brighton hove albion'], ['west ham', 'west ham united'], ['leeds', 'leeds united'], ['psv', 'psv eindhoven']]);
+function normClub(s) {
+  let n = norm(s); if (ALIASES.has(n)) n = ALIASES.get(n);
+  const t = n.split(' ').filter(x => x && !CLUB_STOP.has(x)).join(' ');
+  return t || n;
+}
+function matchBlocks(a, al, ah, b, bl, bh) {
+  let best = 0, bi = 0, bj = 0;
+  for (let i = al; i < ah; i++) for (let j = bl; j < bh; j++) { let k = 0; while (i + k < ah && j + k < bh && a[i + k] === b[j + k]) k++; if (k > best) { best = k; bi = i; bj = j; } }
+  if (!best) return 0;
+  return best + matchBlocks(a, al, bi, b, bl, bj) + matchBlocks(a, bi + best, ah, b, bj + best, bh);
+}
+const ratio = (a, b) => (!a.length && !b.length) ? 1 : 2 * matchBlocks(a, 0, a.length, b, 0, b.length) / (a.length + b.length);
+function matchName(map, key, cutoff) {
+  if (map.has(key)) return map.get(key);
+  let best = cutoff - 1e-9, bv;
+  for (const [k, v] of map) {
+    if (Math.abs(k.length - key.length) > Math.max(k.length, key.length) * 0.4) continue;
+    const r = ratio(key, k); if (r > best) { best = r; bv = v; }
+  }
+  return bv;
+}
+const group = (s) => s === 0 ? 0 : s <= 8 ? 1 : s <= 19 ? 2 : 3;
+function fit(slot, prefs) {
+  const p1 = prefs[0]; if (slot === p1) return 5;
+  for (const p of prefs) if (p === slot) return 4;
+  if (group(slot) === group(p1)) return 3;
+  return (p1 === 0 || slot === 0) ? 0 : 1;
+}
+
+
+// ------------------------------------------------------------- penampilan pemain baru (unik)
+function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const G_FACE = ['headtypecode', 'headclasscode', 'skintypecode', 'skintonecode'], G_HAIR = ['hairtypecode', 'haircolorcode'], G_FACIAL = ['facialhairtypecode', 'facialhaircolorcode', 'sideburnscode'], G_BROW = ['eyebrowcode', 'eyecolorcode'], G_BODY = ['bodytypecode'];
+const G_ACC = ['accessorycode1', 'accessorycode2', 'accessorycode3', 'accessorycode4', 'accessorycolourcode1', 'accessorycolourcode2', 'accessorycolourcode3', 'accessorycolourcode4'];
+const G_KIT = ['shoetypecode', 'shoedesigncode', 'shoecolorcode1', 'shoecolorcode2', 'jerseystylecode', 'jerseysleevelengthcode', 'jerseyfit', 'shortstyle', 'socklengthcode', 'hasseasonaljersey'];
+const G_STYLE = ['runningcode1', 'runningcode2', 'finishingcode1', 'finishingcode2', 'animfreekickstartposcode', 'animpenaltieskickstylecode', 'animpenaltiesmotionstylecode', 'animpenaltiesstartposcode', 'trait1', 'trait2', 'attackingworkrate', 'defensiveworkrate', 'perfconsistencytype', 'internationalrep'];
+const G_GK = ['gksavetype', 'gkglovetypecode', 'gkkickstyle'], G_POSER = ['faceposercode'];
+const SIG = ['headtypecode', 'hairtypecode', 'haircolorcode', 'facialhairtypecode', 'facialhaircolorcode', 'skintonecode'];   // bagian wajah yang paling terlihat
+function calcPotential(ovr, age) {   // CSV tidak punya potensi: turunkan dari umur
+  const g = age <= 17 ? 12 : age <= 18 ? 10 : age <= 19 ? 8 : age <= 20 ? 6 : age <= 21 ? 5 : age <= 22 ? 4 : age <= 23 ? 3 : age <= 24 ? 2 : age <= 25 ? 1 : 0;
+  return Math.max(1, Math.min(99, ovr + g));
+}
+/** Merakit penampilan unik: tiap kelompok (wajah, rambut, jenggot, alis/mata, badan) diambil dari pemain asli sebangsa
+ *  secara acak-tetap (seed = playerid); kombinasi dijamin belum dipakai pemain lain. */
+class Look {
+  constructor(L) {
+    this.L = L; this.P = L.t('players'); this.created = new Map();
+    const P = L.t('players'), n = P.n(), names = [].concat(G_FACE, G_HAIR, G_FACIAL, G_BROW, G_BODY, G_POSER, G_ACC, G_KIT, G_STYLE, G_GK).filter(k => P.fmap.has(k));
+    this.names = new Set(names); this.f = {}; for (const k of names) this.f[k] = new Array(n);
+    this.nat = new Array(n); this.hei = new Array(n); this.wei = new Array(n); this.ovr = new Array(n); this.pg = new Array(n); this.hq = new Array(n);
+    const fo = names.map(k => P.f(k));
+    for (let i = 0; i < n; i++) {
+      for (let k = 0; k < names.length; k++) this.f[names[k]][i] = P.getInt(i, fo[k]);
+      this.nat[i] = P.getInt(i, 'nationality'); this.hei[i] = P.getInt(i, 'height'); this.wei[i] = P.getInt(i, 'weight'); this.ovr[i] = P.getInt(i, 'overallrating');
+      this.pg[i] = group(P.getInt(i, 'preferredposition1')); this.hq[i] = P.fmap.has('hashighqualityhead') ? P.getInt(i, 'hashighqualityhead') : 0;
+    }
+    this.all = []; this.gen = []; this.byNat = new Map(); this.genByNat = new Map(); this.byConf = new Map(); this.genByConf = new Map(); this.byPg = [[], [], [], []];
+    const NA = L.t('nations'); this.conf = new Map(); for (let i = 0; i < NA.n(); i++) this.conf.set(NA.getInt(i, 'nationid'), NA.fmap.has('confederation') ? NA.getInt(i, 'confederation') : 0);
+    const add = (m, k, i) => { if (!m.has(k)) m.set(k, []); m.get(k).push(i); };
+    for (let i = 0; i < n; i++) {
+      this.all.push(i); this.byPg[this.pg[i]].push(i); const c = this.conf.get(this.nat[i]); add(this.byNat, this.nat[i], i); add(this.byConf, c, i);
+      if (!this.hq[i]) { this.gen.push(i); add(this.genByNat, this.nat[i], i); add(this.genByConf, c, i); }
+    }
+    this.used = new Set(); for (let i = 0; i < n; i++) this.used.add(this.sigAt(i));
+    this.bodyCache = new Map(); this.styleCache = new Map(); this.made = 0; this.dups = 0;
+  }
+  sigAt(i) { return SIG.map(k => this.f[k] ? this.f[k][i] : 0).join(','); }
+  pool(byNat, byConf, all, nat) {
+    let p = byNat.get(nat); if (p && p.length >= 8) return p;
+    p = byConf.get(this.conf.get(nat)); if (p && p.length >= 8) return p; return all;
+  }
+  bodyPool(any, nat, h, w) {
+    const key = nat + '|' + Math.round(h / 4) + '|' + Math.round(w / 6); let r = this.bodyCache.get(key); if (r) return r;
+    for (const [dh, dw] of [[4, 7], [8, 12], [99, 99]]) { r = any.filter(i => Math.abs(this.hei[i] - h) <= dh && Math.abs(this.wei[i] - w) <= dw); if (r.length >= 5) break; }
+    this.bodyCache.set(key, r); return r;
+  }
+  stylePool(pg, ovr) {
+    const key = pg + '|' + Math.floor(ovr / 6); let r = this.styleCache.get(key); if (r) return r;
+    for (const d of [6, 12, 99]) { r = this.byPg[pg].filter(i => Math.abs(this.ovr[i] - ovr) <= d); if (r.length >= 8) break; }
+    this.styleCache.set(key, r); return r;
+  }
+  /** Hindari model kepala & gaya rambut yang sudah dipakai rekan setim. */
+  avoidFor(team) {
+    const L = this.L, P = this.P, TPL = L.t('teamplayerlinks'), heads = new Set(), hairs = new Set();
+    for (const j of (L.trows.get(team) || [])) { const r = L.pindex().get(TPL.getInt(j, 'playerid')); if (r === undefined) continue; heads.add(P.getInt(r, 'headtypecode')); hairs.add(P.getInt(r, 'hairtypecode') + '|' + P.getInt(r, 'haircolorcode')); }
+    return { heads, hairs };
+  }
+  generate(pid, nat, h, w, ovr, pos1, avoid) {
+    const rnd = mulberry32(((pid * 2654435761) >>> 0) ^ 0x9E3779B9), pick = (a) => a[Math.floor(rnd() * a.length)];
+    const stages = [
+      [this.pool(this.genByNat, this.genByConf, this.gen, nat), this.pool(this.byNat, this.byConf, this.all, nat)],
+      [this.genByConf.get(this.conf.get(nat)) || this.gen, this.byConf.get(this.conf.get(nat)) || this.all],
+      [this.gen, this.all]];
+    const body = this.bodyPool(stages[0][1], nat, h, w), out = {}; let sig = '', ok = false;
+    const copy = (grp, i) => { for (const k of grp) if (this.names.has(k)) out[k] = this.f[k][i]; };
+    const tryOnce = (st, useAvoid) => {
+      copy(G_FACE, pick(stages[st][0])); copy(G_HAIR, pick(stages[st][1])); copy(G_FACIAL, pick(stages[st][1])); copy(G_BROW, pick(stages[st][1])); copy(G_BODY, pick(body));
+      sig = SIG.map(k => out[k] === undefined ? 0 : out[k]).join(',');
+      if (this.used.has(sig)) return false;
+      if (useAvoid && avoid && (avoid.heads.has(out.headtypecode) || avoid.hairs.has(out.hairtypecode + '|' + out.haircolorcode))) return false;
+      return true;
+    };
+    for (let t = 0; t < 220 && !ok; t++) { const st = t < 70 ? 0 : t < 120 ? 1 : t < 160 ? 2 : (t % 2); ok = tryOnce(st, t < 160); }
+    if (!ok) this.dups++;
+    this.used.add(sig); this.made++;
+    if (this.names.has('hashighqualityhead')) out.hashighqualityhead = 0;
+    const pg = group(pos1), sty = pick(this.stylePool(pg, ovr));
+    copy(G_POSER, pick(this.all)); copy(G_ACC, pick(this.all)); copy(G_KIT, pick(stages[0][1])); copy(G_STYLE, sty);
+    copy(G_GK, pg === 0 ? pick(this.stylePool(0, ovr)) : sty);
+    return out;
+  }
+}
+
+class Ctx {
+  constructor(db) {
+    this.db = db; this.look = null; this.log = []; this.bulk = false; this.nameOverflow = 0; this.delRows = null; this.built = false; this.pidx = null; this.normCache = new Map(); this.formIdx = null;
+    this.ensure(); this.baseBadRoles = this.badRoles();
+    this.origNat = new Map(); for (const t of this.national) this.origNat.set(t, (this.trows.get(t) || []).length);
+  }
+  t(n) { return this.db.t(n); }
+  getLook() { if (!this.look) this.look = new Look(this); return this.look; }
+  static async create(db) {
+    const steps = ['playernames', 'players', 'teams', 'leagues', 'nations', 'leagueteamlinks', 'teamplayerlinks', 'formations', 'playerloans'];
+    for (let i = 0; i < steps.length; i++) { if (db.has(steps[i])) { try { db.t(steps[i]); } catch (e) { /* tabel tak terbaca */ } } await tick(25 + 60 * (i + 1) / steps.length, 'Memuat tabel ' + steps[i] + ' (' + (i + 1) + '/' + steps.length + ')'); }
+    await tick(88, 'Membangun indeks nama, tim, dan pemain…'); const L = new Ctx(db); await tick(100, 'Selesai'); return L;
+  }
+  invalidate() { this.built = false; this.pidx = null; this.normCache = new Map(); }
+  ensure() {
+    if (this.built) return;
+    const N = this.t('playernames'); this.nameMap = new Map(); this.nameRev = new Map(); this.nameMaxUsed = 0;
+    for (let i = 0; i < N.n(); i++) { const id = N.getInt(i, 'nameid'), s = N.getStr(i, 'name'); this.nameMap.set(id, s); if (!this.nameRev.has(s)) this.nameRev.set(s, id); this.nameMaxUsed = Math.max(this.nameMaxUsed, id); }
+    if (this.db.has('dcplayernames')) { const D = this.t('dcplayernames'); for (let i = 0; i < D.n(); i++) { const id = D.getInt(i, 'nameid'), s = D.getStr(i, 'name'); this.nameMap.set(id, s); if (!this.nameRev.has(s)) this.nameRev.set(s, id); } }
+    this.nameUsed = new Uint8Array(NAME_MAX + 2); for (const id of this.nameMap.keys()) if (id <= NAME_MAX) this.nameUsed[id] = 1;
+    this.nameFreeCount = 0; for (let i = 1; i <= NAME_MAX; i++) if (!this.nameUsed[i]) this.nameFreeCount++;
+    const T = this.t('teams'); this.teamName = new Map(); this.teamNorm = new Map();
+    for (let i = 0; i < T.n(); i++) { const id = T.getInt(i, 'teamid'), s = T.getStr(i, 'teamname'); this.teamName.set(id, s); const k = normClub(s); if (!this.teamNorm.has(k)) this.teamNorm.set(k, id); }
+    const L = this.t('leagues'); this.leagueName = new Map(); this.leagueNorm = new Map();
+    for (let i = 0; i < L.n(); i++) { const id = L.getInt(i, 'leagueid'), s = L.getStr(i, 'leaguename'); this.leagueName.set(id, s); this.leagueNorm.set(norm(s), id); }
+    const NA = this.t('nations'); this.nationName = new Map(); this.nationNorm = new Map(); this.national = new Set(); this.natTeam = new Map();
+    for (let i = 0; i < NA.n(); i++) { const id = NA.getInt(i, 'nationid'), s = NA.getStr(i, 'nationname'); this.nationName.set(id, s); this.nationNorm.set(norm(s), id); const tid = NA.getInt(i, 'teamid'); if (tid > 0) { this.national.add(tid); this.natTeam.set(id, tid); } }
+    const LT = this.t('leagueteamlinks'); this.teamLeague = new Map(); for (let i = 0; i < LT.n(); i++) this.teamLeague.set(LT.getInt(i, 'teamid'), LT.getInt(i, 'leagueid'));
+    const TPL = this.t('teamplayerlinks'); this.links = new Map(); this.trows = new Map(); this.club = new Map(); this.maxKey = 0;
+    const fp = TPL.f('playerid'), ft = TPL.f('teamid'), fk = TPL.f('artificialkey');
+    for (let j = 0; j < TPL.n(); j++) {
+      const p = TPL.getInt(j, fp), tm = TPL.getInt(j, ft); this.maxKey = Math.max(this.maxKey, TPL.getInt(j, fk));
+      if (!this.links.has(p)) this.links.set(p, []); this.links.get(p).push(j);
+      if (!this.trows.has(tm)) this.trows.set(tm, []); this.trows.get(tm).push(j);
+      if (!this.national.has(tm) && !this.club.has(p)) this.club.set(p, tm);
+    }
+    this.pidx = null; this.built = true;
+  }
+  pindex() { if (!this.pidx) { const P = this.t('players'), f = P.f('playerid'); this.pidx = new Map(); for (let i = 0; i < P.n(); i++) this.pidx.set(P.getInt(i, f), i); } return this.pidx; }
+  playerRow(pid) { const i = this.pindex().get(pid); if (i === undefined) throw new DbError('Pemain ' + pid + ' tidak ditemukan'); return i; }
+  clubOf(pid) { this.ensure(); const c = this.club.get(pid); return c === undefined ? -1 : c; }
+  squadSize(t) { this.ensure(); const l = this.trows.get(t); return l ? l.length : 0; }
+  nameCapacity() { this.ensure(); return this.nameFreeCount; }
+
+  // ---- nama
+  sanitizeName(s) {
+    s = s.trim(); const h = this.t('playernames').huff;
+    if (h.canEncode(s)) return s.slice(0, 70);
+    let r = '';
+    for (const ch of s) {
+      if (h.canEncode(ch)) { r += ch; continue; }
+      const a = ch.normalize('NFKD').replace(/[^\x00-\x7F]/g, ''); if (a && h.canEncode(a)) r += a;
+    }
+    return r.trim().slice(0, 70);
+  }
+  nameId(text) {
+    this.ensure(); if (text == null) return 0; text = this.sanitizeName(text); if (!text) return 0;
+    if (this.nameRev.has(text)) return this.nameRev.get(text);
+    if (this.nameFreeCount <= 0) { this.nameOverflow++; return 0; }
+    let nid = this.nameMaxUsed + 1;
+    if (nid > NAME_MAX || this.nameUsed[nid]) { nid = 1; while (this.nameUsed[nid]) nid++; }
+    this.nameUsed[nid] = 1; this.nameFreeCount--; this.nameMaxUsed = Math.max(this.nameMaxUsed, nid);
+    const N = this.t('playernames'), i = N.addRow(); N.setInt(i, 'nameid', nid); N.setStr(i, 'name', text);
+    this.nameMap.set(nid, text); this.nameRev.set(text, nid); return nid;
+  }
+  nameKnown(text) { this.ensure(); return this.nameRev.has(this.sanitizeName(text)); }
+  nameOf(id) { this.ensure(); return this.nameMap.get(id) || ''; }
+  playerNames(row) { const P = this.t('players'); return NAME_FIELDS.map(f => this.nameOf(P.getInt(row, f))); }
+  display(n) { return n[2] ? n[2] : (n[0] + ' ' + n[1]).trim(); }
+  nn(id) { if (!id) return ''; let v = this.normCache.get(id); if (v === undefined) { v = norm(this.nameMap.get(id)); this.normCache.set(id, v); } return v; }
+
+  // ---- daftar pemain
+  listPlayers(o) {
+    this.ensure(); const P = this.t('players');
+    const fid = P.f('playerid'), fo = P.f('overallrating'), fp = P.f('potential'), fn = P.f('nationality'), fpos = P.f('preferredposition1'), ff = P.f('firstnameid'), fl = P.f('lastnameid'), fc = P.f('commonnameid');
+    const q = (o.q || '').trim(), ql = norm(q), isId = /^\d+$/.test(q), qid = isId ? parseInt(q, 10) : -1;
+    const out = [];
+    for (let i = 0; i < P.n(); i++) {
+      const id = P.getInt(i, fid); if (isId && id !== qid) continue;
+      const cl = this.club.has(id) ? this.club.get(id) : -1;
+      if (o.team >= 0 && cl !== o.team) continue;
+      if (o.free && cl >= 0) continue;
+      const ov = P.getInt(i, fo); if (o.omin > 0 && ov < o.omin) continue;
+      if (ql && !isId) { const full = this.nn(P.getInt(i, fc)) + ' ' + this.nn(P.getInt(i, ff)) + ' ' + this.nn(P.getInt(i, fl)); if (!full.includes(ql)) continue; }
+      out.push([i, id, ov, P.getInt(i, fp), P.getInt(i, fn), P.getInt(i, fpos), cl]);
+    }
+    const sortK = o.sort || 'overall', desc = o.desc !== false;
+    let disp = null; if (sortK === 'name') { disp = new Map(); for (const r of out) disp.set(r[1], this.display(this.playerNames(r[0])).toLowerCase()); }
+    const sk = sortK === 'id' ? 1 : sortK === 'potential' ? 3 : 2;
+    out.sort((a, b) => { const c = sortK === 'name' ? (disp.get(a[1]) < disp.get(b[1]) ? -1 : disp.get(a[1]) > disp.get(b[1]) ? 1 : 0) : a[sk] - b[sk]; return desc ? -c : c; });
+    const rows = out.slice(o.offset || 0, (o.offset || 0) + (o.limit || 40)).map(r => ({ id: r[1], name: this.display(this.playerNames(r[0])), ovr: r[2], pot: r[3], nation: this.nationName.get(r[4]) || String(r[4]), pos: posName(r[5]), clubId: r[6], club: r[6] >= 0 ? this.teamName.get(r[6]) : '(free agent)' }));
+    return { total: out.length, rows };
+  }
+  playerFields(pid) { const P = this.t('players'), i = this.playerRow(pid), m = new Map(); for (const f of P.fields) m.set(f.name, P.getText(i, f)); return m; }
+  savePlayer(pid, values, names) {
+    const P = this.t('players'), row = this.playerRow(pid);
+    for (const [k, v] of Object.entries(values)) { if (k === 'playerid') continue; P.setText(row, P.f(k), v); }
+    if (names) { const keys = ['first', 'last', 'common', 'jersey']; keys.forEach((k, j) => { if (k in names) { const id = this.nameId(names[k]); if (!id && names[k].trim()) throw new DbError('Kapasitas ID nama habis (maks 28999 nama)'); P.setInt(row, NAME_FIELDS[j], id); } }); }
+  }
+  addPlayer(vals, first, last, common, jersey, team, template, pid) {
+    this.ensure(); const P = this.t('players'), ix = this.pindex();
+    if (!pid || pid <= 0) { let m = 0; for (const k of ix.keys()) if (k > m) m = k; pid = m + 1; }
+    if (ix.has(pid)) throw new DbError('playerid ' + pid + ' sudah ada');
+    if (pid > P.f('playerid').max()) throw new DbError('playerid terlalu besar');
+    const txt = [first, last, common, jersey], ids = txt.map(t => this.nameId(t));
+    txt.forEach((t, k) => { if (!ids[k] && t && t.trim()) throw new DbError('Kapasitas ID nama habis'); });
+    const look = template > 0 ? null : this.getLook();   // dibuat dari DB sebelum perubahan (donor penampilan)
+    const src = template > 0 ? this.playerRow(template) : 0, row = P.copyRow(src);
+    for (const nf of NAME_FIELDS) P.setInt(row, nf, 0);
+    P.setInt(row, 'playerid', pid);
+    if (!look) { /* salinan penuh dari pemain acuan */ } else { if (vals.height === undefined) P.setInt(row, 'height', 178); if (vals.weight === undefined) P.setInt(row, 'weight', 72); }
+    for (const [k, v] of Object.entries(vals)) P.setInt(row, k, v);
+    if (look) { const info = { nat: P.getInt(row, 'nationality'), h: P.getInt(row, 'height'), w: P.getInt(row, 'weight'), ovr: P.getInt(row, 'overallrating'), pos1: P.getInt(row, 'preferredposition1') }; const ap = look.generate(pid, info.nat, info.h, info.w, info.ovr, info.pos1, team > 0 ? look.avoidFor(team) : null); for (const [k, v] of Object.entries(ap)) P.setInt(row, k, v); look.created.set(pid, info); }
+    NAME_FIELDS.forEach((nf, k) => P.setInt(row, nf, ids[k]));
+    ix.set(pid, row);
+    if (team > 0) this.transfer(pid, team, -1, -1, true, true);
+    if (!this.bulk) this.rebuildDirty();
+    return pid;
+  }
+
+  // ---- lineup: pemain overall tertinggi jadi starter
+  formSlots(tid) {
+    if (!this.formIdx) {
+      this.formIdx = new Map(); const F = this.t('formations');
+      for (let i = 0; i < F.n(); i++) { const t = F.getInt(i, 'teamid'); if (t <= 0) continue; const s = []; for (let k = 0; k < 11; k++) s.push(F.getInt(i, 'position' + k)); if (!this.formIdx.has(t)) this.formIdx.set(t, []); this.formIdx.get(t).push(s); }
+    }
+    return this.formIdx.get(tid) || [];
+  }
+  /**
+   * Susun lineup per ZONA posisi: kiper hanya dari kiper, bek dari bek, gelandang dari gelandang, penyerang dari penyerang.
+   * Persaingan overall hanya di dalam zona yang sama (overall tertinggi di zona itu jadi starter).
+   * Zona kekurangan pemain -> baru diisi dari zona tetangga (kiper tidak pernah diisi non-kiper kecuali tim tanpa kiper sama sekali).
+   */
+  buildLineup(tid) {
+    this.ensure(); const rows = this.trows.get(tid); if (!rows || !rows.length) return false;
+    const forms = this.formSlots(tid); if (!forms.length) return false;
+    const TPL = this.t('teamplayerlinks'), P = this.t('players'), pl = [];
+    for (let k = 0; k < rows.length; k++) {
+      const j = rows[k], pid = TPL.getInt(j, 'playerid'), pr = this.pindex().get(pid), pos0 = TPL.getInt(j, 'position');
+      let ovr = 0, prefs = [99, 99, 99, 99];
+      if (pr !== undefined) { ovr = P.getInt(pr, 'overallrating'); prefs = [1, 2, 3, 4].map(q => P.getInt(pr, 'preferredposition' + q)); }
+      pl.push({ k, j, pid, ovr, prefs, pos0, zone: prefs[0] === 99 ? 2 : group(prefs[0]) });
+    }
+    const cmp = (a, b) => (b.ovr - a.ovr) || ((a.pos0 < 28 ? 0 : 1) - (b.pos0 < 28 ? 0 : 1)) || (a.pid - b.pid);
+    const sorted = pl.slice().sort(cmp);
+    const FALLBACK = [[], [2, 3], [1, 3, 0], [2, 1]];   // zona tetangga yang boleh menambal (urut prioritas); kiper tak pernah menambal
+    const dm = (p) => p.prefs[0] >= 9 && p.prefs[0] <= 11;
+    let best = null;
+    for (const slots of forms) {
+      const need = [0, 0, 0, 0]; for (const s of slots) need[group(s)]++;
+      const used = new Set(), chosen = [[], [], [], []]; let score = 0, fb = 0;
+      for (let z = 0; z < 4; z++) for (const p of sorted) { if (chosen[z].length >= need[z]) break; if (p.zone === z && !used.has(p.k)) { chosen[z].push(p); used.add(p.k); } }
+      for (let z = 0; z < 4; z++) {
+        while (chosen[z].length < need[z]) {
+          let pick = null;
+          for (const nz of FALLBACK[z]) { const c = sorted.filter(p => p.zone === nz && !used.has(p.k)); if (z === 1 && nz === 2) c.sort((a, b) => (dm(b) - dm(a)) || (b.ovr - a.ovr)); if (c.length) { pick = c[0]; break; } }
+          if (!pick && z === 0) pick = sorted.find(p => !used.has(p.k));   // tim tanpa kiper sama sekali
+          if (!pick) pick = sorted.find(p => !used.has(p.k) && p.zone !== 0);
+          if (!pick) break; chosen[z].push(pick); used.add(pick.k); fb++;
+        }
+      }
+      const asg = new Map();
+      for (let z = 0; z < 4; z++) {
+        const zs = slots.filter(s => group(s) === z), ps = chosen[z]; if (!ps.length) continue;
+        const n = Math.min(zs.length, ps.length), us = new Array(ps.length).fill(false), cur = []; let bsc = -1, bp = null;
+        (function rec(i, sc) {
+          if (i === n) { if (sc > bsc) { bsc = sc; bp = cur.slice(); } return; }
+          for (let j = 0; j < ps.length; j++) { if (us[j]) continue; us[j] = true; cur[i] = j; rec(i + 1, sc + fit(zs[i], ps[j].prefs)); us[j] = false; }
+        })(0, 0);
+        for (let i = 0; i < n; i++) { asg.set(ps[bp[i]].k, zs[i]); score += ps[bp[i]].ovr; }
+      }
+      score -= 30 * fb;
+      if (asg.size === 11 && (!best || score > best.score)) best = { score, asg };
+    }
+    if (!best) return false;
+    const np = new Map(); for (const p of pl) np.set(p.k, 29);
+    for (const [k, s] of best.asg) np.set(k, s);
+    const rest = sorted.filter(p => !best.asg.has(p.k)); let bench = 0;
+    const take = (p) => { if (np.get(p.k) !== 28) { np.set(p.k, 28); bench++; } };
+    const gkb = rest.find(p => p.zone === 0); if (gkb) take(gkb);                       // 1 kiper cadangan
+    for (const [z, n] of [[1, 2], [2, 2], [3, 1]]) { let c = 0; for (const p of rest) if (p.zone === z && c < n && bench < 12 && np.get(p.k) !== 28) { take(p); c++; } }   // sebaran cadangan per zona
+    for (const p of rest) { if (bench >= 12) break; if (p.zone === 0 && rest.some(q => q.zone === 0 && np.get(q.k) === 28)) continue; take(p); }
+    let ch = false; for (const p of pl) { const v = np.get(p.k); if (v !== p.pos0) { TPL.setInt(p.j, 'position', v); ch = true; } }
+    return ch;
+  }
+  async rebuildAllLineups(p0, p1) {
+    this.ensure(); const ids = [...this.teamName.keys()]; let c = 0; p0 = p0 || 0; p1 = p1 === undefined ? 100 : p1;
+    for (let i = 0; i < ids.length; i++) { if (this.buildLineup(ids[i])) c++; if (due()) await tick(p0 + (p1 - p0) * i / ids.length, 'Mengatur lineup tim ' + i + '/' + ids.length + ' (' + this.teamName.get(ids[i]) + ')'); }
+    return c;
+  }
+  rebuildDirty() { const l = [...this.dirtyTeams || []]; this.dirtyTeams = new Set(); let c = 0; for (const t of l) if (this.buildLineup(t)) c++; return c; }
+
+  // ---- transfer
+  unlinkClub(pid) {   // jadikan free agent: hapus link klub (link tim nasional dibiarkan)
+    this.ensure(); const TPL = this.t('teamplayerlinks'), ls = this.links.get(pid) || [], keep = [];
+    if (!this.delRows) this.delRows = new Set();
+    let n = 0, old = -1;
+    for (const j of ls) { const tm = TPL.getInt(j, 'teamid'); if (!this.national.has(tm)) { this.delRows.add(j); old = tm; n++; const tr = this.trows.get(tm); if (tr) { const x = tr.indexOf(j); if (x >= 0) tr.splice(x, 1); } } else keep.push(j); }
+    this.links.set(pid, keep); this.club.delete(pid); this.dropLoans(pid);
+    if (n) { if (!this.dirtyTeams) this.dirtyTeams = new Set(); this.dirtyTeams.add(old); }
+    if (!this.bulk) { this.flushDel(); this.rebuildDirty(); }
+    return n > 0;
+  }
+  flushDel() {
+    if (this.delRows && this.delRows.size) { this.t('teamplayerlinks').deleteRows([...this.delRows]); }
+    this.delRows = null; this.invalidate(); this.ensure();
+  }
+  dropLoans(pid) {
+    if (!this.db.has('playerloans')) return; const L = this.t('playerloans'), del = [];
+    for (let i = 0; i < L.n(); i++) if (L.getInt(i, 'playerid') === pid) del.push(i);
+    if (del.length) L.deleteRows(del);
+  }
+  transfer(pid, to, jersey, contract, force, defer) {
+    this.ensure(); if (!this.teamName.has(to)) throw new DbError('Tim tujuan ' + to + ' tidak ditemukan');
+    const P = this.t('players'), TPL = this.t('teamplayerlinks'), pi = this.playerRow(pid), nat = this.national.has(to);
+    let cand = -1; for (const j of (this.links.get(pid) || [])) if (this.national.has(TPL.getInt(j, 'teamid')) === nat && !(this.delRows && this.delRows.has(j))) { cand = j; break; }
+    const old = cand >= 0 ? TPL.getInt(cand, 'teamid') : -1;
+    if (old === to) throw new DbError('Pemain sudah berada di tim tersebut');
+    if (!force && this.squadSize(to) >= MAX_SQUAD) throw new DbError('Skuad tim tujuan sudah penuh (' + MAX_SQUAD + ' pemain, batas DB asli).');
+    if (!this.trows.has(to)) this.trows.set(to, []); const dest = this.trows.get(to), taken = new Set(dest.map(j => TPL.getInt(j, 'jerseynumber')));
+    if (jersey < 0 || taken.has(jersey)) { const keep = cand >= 0 ? TPL.getInt(cand, 'jerseynumber') : -1; if (keep > 0 && !taken.has(keep)) jersey = keep; else { jersey = 99; for (let k = 1; k < 100; k++) if (!taken.has(k)) { jersey = k; break; } } }
+    let j;
+    if (cand >= 0) { j = cand; TPL.setInt(j, 'teamid', to); TPL.setInt(j, 'jerseynumber', jersey); TPL.setInt(j, 'position', 29); const o = this.trows.get(old); if (o) { const x = o.indexOf(j); if (x >= 0) o.splice(x, 1); } }
+    else { j = TPL.addRow(); this.maxKey++; TPL.setInt(j, 'playerid', pid); TPL.setInt(j, 'teamid', to); TPL.setInt(j, 'jerseynumber', jersey); TPL.setInt(j, 'position', 29); TPL.setInt(j, 'artificialkey', this.maxKey); if (!this.links.has(pid)) this.links.set(pid, []); this.links.get(pid).push(j); }
+    dest.push(j);
+    if (!nat) { this.club.set(pid, to); P.setInt(pi, 'playerjointeamdate', TL.todayDays()); if (contract > 0) P.setInt(pi, 'contractvaliduntil', contract); this.dropLoans(pid); }
+    if (!this.dirtyTeams) this.dirtyTeams = new Set();
+    this.dirtyTeams.add(to); if (old >= 0) this.dirtyTeams.add(old);
+    if (!defer) { this.rebuildDirty(); this.repairRoles(); }
+    return { pid, jersey, to: this.teamName.get(to), from: old >= 0 ? this.teamName.get(old) : '-', name: this.display(this.playerNames(pi)) };
+  }
+
+  // ---- hapus massal
+  namesFreedBy(pids) {
+    const P = this.t('players'), del = new Set(), keep = new Set();
+    for (let i = 0; i < P.n(); i++) { const tg = pids.has(P.getInt(i, 'playerid')) ? del : keep; for (const nf of NAME_FIELDS) tg.add(P.getInt(i, nf)); }
+    for (const tn of ['trainingteamplayers', 'temp_players']) if (this.db.has(tn)) { let X; try { X = this.t(tn); } catch (e) { continue; } for (let i = 0; i < X.n(); i++) for (const nf of NAME_FIELDS) if (X.fmap.has(nf)) keep.add(X.getInt(i, nf)); }
+    del.delete(0); for (const k of keep) del.delete(k); return del;
+  }
+  deletePlayers(pids, purge) {
+    this.ensure(); const P = this.t('players'), ix = this.pindex(), affected = new Set(), TPL = this.t('teamplayerlinks');
+    for (const pid of pids) for (const j of (this.links.get(pid) || [])) affected.add(TPL.getInt(j, 'teamid'));
+    const freed = purge ? this.namesFreedBy(pids) : new Set(), rows = [];
+    for (const pid of pids) { const r = ix.get(pid); if (r !== undefined) rows.push(r); }
+    P.deleteRows(rows); const st = { players: rows.length, namesFreed: 0, cascade: {} };
+    for (const X of this.db.order) {
+      if (X.name === 'players' || X.name.startsWith('fcc_') || X.name.startsWith('trainingteam')) continue;
+      if (!X.fmap.has('playerid') || X.n() === 0) continue;
+      try { X.load(); } catch (e) { continue; } if (X.readonly) continue;
+      const f = X.f('playerid'), rem = []; for (let i = 0; i < X.n(); i++) if (pids.has(X.getInt(i, f))) rem.push(i);
+      if (rem.length) { X.deleteRows(rem); st.cascade[X.name] = rem.length; }
+    }
+    if (freed.size) {
+      const N = this.t('playernames'), rem = []; for (let i = 0; i < N.n(); i++) if (freed.has(N.getInt(i, 'nameid'))) rem.push(i);
+      N.deleteRows(rem); st.namesFreed = rem.length;
+      if (this.db.has('dcplayernames') && this.t('dcplayernames').n() > 0) { const D = this.t('dcplayernames'), r2 = []; for (let i = 0; i < D.n(); i++) if (freed.has(D.getInt(i, 'nameid'))) r2.push(i); D.deleteRows(r2); }
+    }
+    this.invalidate(); this.ensure();
+    if (!this.dirtyTeams) this.dirtyTeams = new Set(); for (const t of affected) this.dirtyTeams.add(t);
+    if (!this.bulk) { this.rebuildDirty(); this.repairRoles(); }
+    return st;
+  }
+
+  /** Rapikan penampilan kembar: pemain yang DIBUAT sesi ini tidak boleh punya model kepala / gaya rambut yang sama
+   *  dengan rekan setim di tim mana pun (klub maupun tim nasional). Pemain lama tidak diubah. */
+  dedupeLooks() {
+    const look = this.look; if (!look || !look.created.size) return { fixed: 0, left: 0 }; this.ensure();
+    const P = this.t('players'), TPL = this.t('teamplayerlinks'), ix = this.pindex(), ids = [...look.created.keys()].sort((a, b) => a - b); let fixed = 0;
+    const FIELDS = ['headtypecode', 'headclasscode', 'skintypecode', 'skintonecode', 'hairtypecode', 'haircolorcode', 'facialhairtypecode', 'facialhaircolorcode', 'sideburnscode', 'eyebrowcode', 'eyecolorcode'];
+    const mates = (pid) => { const heads = new Set(), hairs = new Set(); for (const j of (this.links.get(pid) || [])) for (const j2 of (this.trows.get(TPL.getInt(j, 'teamid')) || [])) { const p2 = TPL.getInt(j2, 'playerid'); if (p2 === pid) continue; const r2 = ix.get(p2); if (r2 === undefined) continue; heads.add(P.getInt(r2, 'headtypecode')); hairs.add(P.getInt(r2, 'hairtypecode') + '|' + P.getInt(r2, 'haircolorcode')); } return { heads, hairs }; };
+    const clash = (pid, row, av) => av.heads.has(P.getInt(row, 'headtypecode')) || av.hairs.has(P.getInt(row, 'hairtypecode') + '|' + P.getInt(row, 'haircolorcode'));
+    for (let pass = 0; pass < 3; pass++) {
+      let changed = 0;
+      for (const pid of ids) {
+        const row = ix.get(pid); if (row === undefined || !(this.links.get(pid) || []).length) continue;
+        const av = mates(pid); if (!clash(pid, row, av)) continue;
+        const info = look.created.get(pid), ap = look.generate(pid * 31 + 7 + pass * 101, info.nat, info.h, info.w, info.ovr, info.pos1, av);
+        for (const f of FIELDS) if (ap[f] !== undefined) P.setInt(row, f, ap[f]);
+        changed++; fixed++;
+      }
+      if (!changed) break;
+    }
+    let left = 0; for (const pid of ids) { const row = ix.get(pid); if (row !== undefined && (this.links.get(pid) || []).length && clash(pid, row, mates(pid))) left++; }
+    return { fixed, left };
+  }
+
+  // ---- peran tim (kapten/penendang): harus pemain di skuad tim itu
+  badRoles() { const T = this.t('teams'), ix = this.pindex(); let c = 0; for (let i = 0; i < T.n(); i++) for (const r of ROLES) if (T.fmap.has(r) && !ix.has(T.getInt(i, r))) c++; return c; }
+  repairRoles() {
+    this.ensure(); const T = this.t('teams'), TPL = this.t('teamplayerlinks'), P = this.t('players'); let c = 0;
+    for (let ti = 0; ti < T.n(); ti++) {
+      const tid = T.getInt(ti, 'teamid'), tr = this.trows.get(tid); if (!tr || !tr.length) continue;
+      const members = new Set(tr.map(j => TPL.getInt(j, 'playerid'))); let best = -2;
+      for (const r of ROLES) {
+        if (!T.fmap.has(r) || members.has(T.getInt(ti, r))) continue;
+        if (best === -2) { best = -1; let bo = -1; for (const pid of members) { const pi = this.pindex().get(pid); if (pi === undefined) continue; const o = P.getInt(pi, 'overallrating'); if (o > bo) { bo = o; best = pid; } } }
+        if (best > 0) { T.setInt(ti, r, best); c++; }
+      }
+    }
+    return c;
+  }
+
+  // ---- tim nasional: isi kekosongan dengan pemain senegara terbaik
+  refillNational() {
+    this.ensure(); const P = this.t('players'), TPL = this.t('teamplayerlinks'); let added = 0;
+    for (const [nid, tid] of this.natTeam) {
+      const need = (this.origNat.get(tid) || 0) - this.squadSize(tid); if (need <= 0) continue;
+      const have = new Set((this.trows.get(tid) || []).map(j => TPL.getInt(j, 'playerid'))), cands = [];
+      for (let i = 0; i < P.n(); i++) if (P.getInt(i, 'nationality') === nid) { const pid = P.getInt(i, 'playerid'); if (!have.has(pid)) cands.push([P.getInt(i, 'overallrating'), pid]); }
+      cands.sort((a, b) => b[0] - a[0] || a[1] - b[1]);
+      let gks = 0; for (const pid of have) { const pi = this.pindex().get(pid); if (pi !== undefined && P.getInt(pi, 'preferredposition1') === 0) gks++; }
+      const picks = []; const isGk = (pid) => { const pi = this.pindex().get(pid); return pi !== undefined && P.getInt(pi, 'preferredposition1') === 0; };
+      for (const c of cands) { if (picks.length >= need || gks >= 2) break; if (isGk(c[1])) { picks.push(c); gks++; } }   // pastikan ada kiper
+      for (const c of cands) { if (picks.length >= need) break; if (!picks.includes(c)) picks.push(c); }
+      for (const [, pid] of picks) { this.transfer(pid, tid, -1, -1, true, true); added++; }
+    }
+    return added;
+  }
+
+  // ---- zona posisi yang kekurangan pemain (sesuai formasi tim): rekrut free agent terbaik DI ZONA ITU
+  fillZones(maxSquad) {
+    this.ensure(); const P = this.t('players'), TPL = this.t('teamplayerlinks'), pool = [[], [], [], []];
+    for (let i = 0; i < P.n(); i++) { const pid = P.getInt(i, 'playerid'); if (this.club.has(pid)) continue; const p1 = P.getInt(i, 'preferredposition1'); pool[p1 >= 0 && p1 < 28 ? group(p1) : 2].push({ pid, ovr: P.getInt(i, 'overallrating') }); }
+    for (const z of pool) z.sort((a, b) => b.ovr - a.ovr || a.pid - b.pid);
+    let n = 0;
+    for (const tid of this.teamName.keys()) {
+      if (this.national.has(tid)) continue; const rows = this.trows.get(tid), forms = this.formSlots(tid); if (!rows || !rows.length || !forms.length) continue;
+      const need = [0, 0, 0, 0]; for (const sl of forms[0]) need[group(sl)]++;
+      const have = [0, 0, 0, 0]; for (const j of rows) { const pi = this.pindex().get(TPL.getInt(j, 'playerid')); if (pi !== undefined) have[group(P.getInt(pi, 'preferredposition1'))]++; }
+      for (let z = 0; z < 4; z++) {
+        let want = Math.max(need[z] + (z === 0 ? 1 : 0), 0) - have[z];     // kiper: minimal 2 (1 starter + 1 cadangan)
+        while (want > 0 && this.squadSize(tid) < maxSquad && pool[z].length) { const c = pool[z].shift(); this.transfer(c.pid, tid, -1, -1, true, true); want--; n++; }
+      }
+    }
+    return n;
+  }
+
+  // ---- tim klub yang kekurangan pemain: isi dengan free agent terbaik (bukan pemain di 'exclude')
+  topUpSmall(minSquad, exclude) {
+    this.ensure(); const P = this.t('players'), TPL = this.t('teamplayerlinks'), pool = [];
+    for (let i = 0; i < P.n(); i++) { const pid = P.getInt(i, 'playerid'); if (!this.club.has(pid) && !exclude.has(pid)) pool.push({ pid, ovr: P.getInt(i, 'overallrating'), gk: P.getInt(i, 'preferredposition1') === 0 }); }
+    pool.sort((a, b) => b.ovr - a.ovr || a.pid - b.pid); let n = 0;
+    for (const tid of this.teamName.keys()) {
+      if (this.national.has(tid)) continue; const size = this.squadSize(tid); if (size === 0 || size >= minSquad) continue;
+      let hasGk = false; for (const j of (this.trows.get(tid) || [])) { const pi = this.pindex().get(TPL.getInt(j, 'playerid')); if (pi !== undefined && P.getInt(pi, 'preferredposition1') === 0) { hasGk = true; break; } }
+      let gks = 0; for (const j of (this.trows.get(tid) || [])) { const pi = this.pindex().get(TPL.getInt(j, 'playerid')); if (pi !== undefined && P.getInt(pi, 'preferredposition1') === 0) gks++; }
+      for (let need = minSquad - size; need > 0 && pool.length; need--) {
+        let k = 0; if (gks < 2) { const g = pool.findIndex(p => p.gk); if (g >= 0) { k = g; gks++; } }
+        const p = pool.splice(k, 1)[0]; this.transfer(p.pid, tid, -1, -1, true, true); n++;
+      }
+    }
+    return n;
+  }
+
+  // ---- tim
+  listTeams(q, league) {
+    this.ensure(); const T = this.t('teams'), ql = norm(q || ''), out = [];
+    for (let i = 0; i < T.n(); i++) {
+      const id = T.getInt(i, 'teamid'), name = T.getStr(i, 'teamname'), lg = this.teamLeague.has(id) ? this.teamLeague.get(id) : -1;
+      if (league >= 0 && lg !== league) continue; if (ql && !norm(name).includes(ql) && String(id) !== (q || '').trim()) continue;
+      out.push({ id, name, leagueId: lg, league: lg >= 0 ? this.leagueName.get(lg) : '-', players: this.squadSize(id) });
+    }
+    return out.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
+  }
+  squad(tid) {
+    this.ensure(); const TPL = this.t('teamplayerlinks'), P = this.t('players'), out = [];
+    for (const j of (this.trows.get(tid) || [])) {
+      const pid = TPL.getInt(j, 'playerid'), pi = this.pindex().get(pid); if (pi === undefined) continue;
+      const p = TPL.getInt(j, 'position');
+      out.push({ pid, ovr: P.getInt(pi, 'overallrating'), jersey: TPL.getInt(j, 'jerseynumber'), name: this.display(this.playerNames(pi)), pos: p < 28 ? 'XI ' + posName(p) : p === 28 ? 'SUB' : 'RES', slot: p });
+    }
+    return out.sort((a, b) => ((a.slot < 28 ? 0 : 1) - (b.slot < 28 ? 0 : 1)) || b.ovr - a.ovr);
+  }
+
+  // ---- validasi
+  validate() {
+    this.ensure(); const iss = [], T = this.t('teams'), TPL = this.t('teamplayerlinks'), P = this.t('players'), ix = this.pindex();
+    let noXi = 0, big = 0, small = 0, dupJ = 0, notTop = 0;
+    for (let i = 0; i < T.n(); i++) {
+      const tid = T.getInt(i, 'teamid'), rows = this.trows.get(tid); if (!rows || !rows.length) continue;
+      const xi = []; const jer = new Set();
+      for (const j of rows) { const p = TPL.getInt(j, 'position'); if (p < 28) xi.push(p); const jn = TPL.getInt(j, 'jerseynumber'); if (jer.has(jn)) dupJ++; jer.add(jn); }
+      if (rows.length > MAX_SQUAD) big++; if (rows.length < 16) small++;
+      const forms = this.formSlots(tid); if (!forms.length) continue;
+      const okForm = forms.some(s => { const c = {}; s.forEach(v => c[v] = (c[v] || 0) + 1); return xi.length === 11 && xi.every(v => --c[v] >= 0); });
+      if (!okForm) { noXi++; if (iss.length < 25) iss.push("Tim '" + this.teamName.get(tid) + "': susunan inti tidak cocok formasi (" + xi.length + " starter)"); }
+    }
+    let mixed = 0; for (let i = 0; i < T.n(); i++) { const rows = this.trows.get(T.getInt(i, 'teamid')); if (!rows) continue; for (const j of rows) { const p = TPL.getInt(j, 'position'); if (p >= 28) continue; const pi = this.pindex().get(TPL.getInt(j, 'playerid')); if (pi === undefined) continue; if (group(p) !== group(P.getInt(pi, 'preferredposition1'))) mixed++; } }
+    if (mixed) iss.push('Info: starter yang bermain di luar zona posisinya (karena zona itu kekurangan pemain): ' + mixed);
+    if (noXi) iss.unshift('Tim dengan susunan inti rusak: ' + noXi);
+    if (big) iss.push('Tim dengan skuad > ' + MAX_SQUAD + ': ' + big);
+    if (small) iss.push('Tim dengan skuad < 16 pemain: ' + small);
+    if (dupJ) iss.push('Nomor punggung ganda: ' + dupJ);
+    let orphan = 0; for (let j = 0; j < TPL.n(); j++) if (!ix.has(TPL.getInt(j, 'playerid'))) orphan++;
+    if (orphan) iss.push('Link tim menunjuk pemain yang tidak ada: ' + orphan);
+    let bn = 0; for (let i = 0; i < P.n(); i++) for (const nf of NAME_FIELDS) { const id = P.getInt(i, nf); if (id && !this.nameMap.has(id)) bn++; }
+    if (bn) iss.push('Pemain dengan ID nama tidak ada di tabel nama: ' + bn);
+    const br = this.badRoles() - this.baseBadRoles; if (br > 0) iss.push('Peran tim menunjuk pemain yang tidak ada: ' + br);
+    if (this.db.has('dcplayernames') && this.t('dcplayernames').n() > 0) iss.push('Tabel dcplayernames terisi (ciri DB hasil import lama yang bisa membuat game crash)');
+    let hi = 0; for (const id of this.nameMap.keys()) if (id > NAME_MAX) hi++; if (hi) iss.push('ID nama > ' + NAME_MAX + ': ' + hi);
+    const seen = new Set(); let dup = 0; for (let i = 0; i < P.n(); i++) { const id = P.getInt(i, 'playerid'); if (seen.has(id)) dup++; seen.add(id); } if (dup) iss.push('playerid ganda: ' + dup);
+    return iss;
+  }
+}
+Object.assign(TL, { Look, calcPotential, Ctx, POS, POS_REV, posName, norm, normClub, fixText, matchName, ROLES, NAME_FIELDS, MAX_SQUAD, NAME_MAX });
+
+/* nerutlabs DB Editor (HTML) - import/export CSV */
+const ATTR = [['overall_rating', 'overallrating'], ['attacking_crossing', 'crossing'], ['attacking_finishing', 'finishing'], ['attacking_heading_accuracy', 'headingaccuracy'], ['attacking_short_passing', 'shortpassing'], ['attacking_volleys', 'volleys'], ['skill_dribbling', 'dribbling'], ['skill_curve', 'curve'], ['skill_fk_accuracy', 'freekickaccuracy'], ['skill_long_passing', 'longpassing'], ['skill_ball_control', 'ballcontrol'], ['movement_acceleration', 'acceleration'], ['movement_sprint_speed', 'sprintspeed'], ['movement_agility', 'agility'], ['movement_reactions', 'reactions'], ['movement_balance', 'balance'], ['power_shot_power', 'shotpower'], ['power_jumping', 'jumping'], ['power_stamina', 'stamina'], ['power_strength', 'strength'], ['power_long_shots', 'longshots'], ['mentality_aggression', 'aggression'], ['mentality_interceptions', 'interceptions'], ['mentality_positioning', 'positioning'], ['mentality_vision', 'vision'], ['mentality_penalties', 'penalties'], ['defending_awareness', 'marking'], ['defending_standing_tackle', 'standingtackle'], ['defending_sliding_tackle', 'slidingtackle'], ['goalkeeping_diving', 'gkdiving'], ['goalkeeping_handling', 'gkhandling'], ['goalkeeping_kicking', 'gkkicking'], ['goalkeeping_positioning', 'gkpositioning'], ['goalkeeping_reflexes', 'gkreflexes'], ['skill_moves', 'skillmoves'], ['weak_foot', 'weakfootabilitytypecode'], ['height_cm', 'height'], ['weight_kg', 'weight']];
+const NAT_ALIAS = new Map([['north macedonia', 'fyr macedonia'], ['turkiye', 'turkey'], ['ivory coast', 'cote d ivoire'], ['south korea', 'korea republic'], ['north korea', 'korea dpr'], ['czechia', 'czech republic'], ['dr congo', 'congo dr'], ['cabo verde', 'cape verde islands']]);
+const toInt = (s, d) => { const v = Math.round(parseFloat(String(s).trim())); return isNaN(v) ? d : v; };
+const clampF = (f, v) => Math.max(f.low, Math.min(f.max(), v));
+function parseCsvDate(s) {
+  s = (s || '').trim().split(' ')[0]; if (!s) return null;
+  const p = s.split(/[/\-]/).map(Number); if (p.length !== 3 || p.some(isNaN)) return null;
+  return s.split(/[/\-]/)[0].length === 4 ? TL.dateToDays(p[0], p[1], p[2]) : TL.dateToDays(p[2], p[0], p[1]);
+}
+const isFc = (c) => c.col('player_id') >= 0 && c.col('overall_rating') >= 0;
+
+/**
+ * Import CSV format FC.
+ * Aturan klub: klub di CSV adalah acuan. Pemain lama yang ada di CSV dipindah ke klub CSV; bila klub tujuan tidak ada /
+ * kosong / penuh / pemain wanita (DB tidak punya tim wanita) -> free agent (TIDAK dibiarkan di klub lama).
+ * Tim yang sama sekali tidak ada di CSV dibiarkan utuh (tidak dikosongkan).
+ */
+async function importFc(L, bytes, o, apply) {
+  await tick(1, 'Membaca CSV…');
+  const csv = TL.Csv.parse(bytes); if (!isFc(csv)) throw new DbError('Kolom CSV bukan format FC (butuh player_id & overall_rating).');
+  L.ensure(); const P = L.t('players'); let pix = L.pindex();
+  const rep = { m: new Map(), errors: [] }, put = (k, v) => rep.m.set(k, v);
+  const rows = csv.rows, g = (r, c) => csv.get(r, c); put('baris_csv', rows.length);
+  const isWomen = (r) => /women/i.test(g(r, 'gender'));   // pemain wanita TIDAK diimport sama sekali
+  const csvIds = new Set(); for (const r of rows) { if (isWomen(r)) continue; const id = toInt(g(r, 'player_id'), -1); if (id > 0) csvIds.add(id); }
+  const order = rows.map((_, i) => i).sort((a, b) => (toInt(g(rows[b], 'overall_rating'), 0) - toInt(g(rows[a], 'overall_rating'), 0)) || (a - b));
+  const clubCache = new Map(), unmatched = new Map(), natCache = new Map(), unmatchedNat = new Set();
+  const resolveClub = (name) => {
+    name = fixText(name).trim(); if (!name) return -1; if (clubCache.has(name)) return clubCache.get(name);
+    const t = matchName(L.teamNorm, normClub(name), 0.9), res = t === undefined ? -1 : t;
+    if (res < 0) unmatched.set(name, (unmatched.get(name) || 0) + 1); clubCache.set(name, res); return res;
+  };
+  // ---- 1) baris yang diproses + klub tujuan
+  await tick(6, 'Mencocokkan klub & negara…');
+  const todo = []; let skipped = 0, women = 0, oc = 0;
+  for (const oi of order) {
+    if (++oc % 200 === 0 && due()) await tick(6 + 8 * oc / order.length, 'Mencocokkan klub & negara ' + oc + '/' + order.length);
+    const r = rows[oi]; if (isWomen(r)) { women++; continue; }
+    const pid = toInt(g(r, 'player_id'), -1), ovr = toInt(g(r, 'overall_rating'), 0), ex = pix.has(pid);
+    if (pid <= 0 || ovr < (o.minOverall || 0) || (ex && !o.update && !o.sync) || (!ex && !o.add)) { skipped++; continue; }
+    todo.push({ oi, r, pid, ovr, ex, isW: false, team: resolveClub(g(r, 'club')) });
+  }
+  await tick(15, 'Menyusun skuad tiap klub (maks ' + o.maxSquad + ')…');
+  if (apply && o.add) L.getLook();   // donor penampilan diambil dari DB sebelum diubah
+  // ---- 2) susun skuad per klub (maks skuad; sisanya free agent)
+  const assign = new Map(), cnt = new Map(), mapped = new Set(); let clubFull = 0;
+  for (const it of todo) {
+    if (it.team < 0) { assign.set(it.pid, -1); continue; }
+    mapped.add(it.team); const c = cnt.get(it.team) || 0;
+    if (c < o.maxSquad) { assign.set(it.pid, it.team); cnt.set(it.team, c + 1); } else { assign.set(it.pid, -1); clubFull++; }
+  }
+  // urutan proses: pemain lama, lalu pemain baru yang masuk klub, terakhir free agent (slot nama terbatas -> prioritas yang masuk tim)
+  const rank = (it) => it.ex ? 0 : (assign.get(it.pid) >= 0 ? 1 : 2); todo.sort((a, b) => rank(a) - rank(b));
+  const womenIds = new Set();
+  // ---- 3) rencana hapus pemain yang tidak ada di CSV
+  let toDelete = new Set(), keptMin = 0, protectedN = 0, freedEst = 0, freedSet = new Set();
+  if (o.deleteMissing) {
+    if (![...pix.keys()].some(p => csvIds.has(p))) throw new DbError('Tidak ada player_id CSV yang cocok dengan database; penghapusan dibatalkan (CSV salah?).');
+    const candByTeam = new Map();
+    for (const pid of pix.keys()) {
+      if (csvIds.has(pid)) continue; const cl = L.clubOf(pid);
+      if (cl >= 0 && !mapped.has(cl)) { protectedN++; continue; }   // tim tanpa data CSV: dibiarkan utuh
+      toDelete.add(pid); if (cl >= 0) { if (!candByTeam.has(cl)) candByTeam.set(cl, []); candByTeam.get(cl).push(pid); }
+    }
+    const delta = new Map(); const dd = (t, v) => delta.set(t, (delta.get(t) || 0) + v);
+    for (const it of todo) {
+      const tgt = assign.get(it.pid), cur = it.ex ? L.clubOf(it.pid) : -1;
+      if (!it.ex) { if (tgt >= 0) dd(tgt, 1); }
+      else if (o.sync) { if (tgt >= 0 && tgt !== cur) dd(tgt, 1); if (cur >= 0 && cur !== tgt) dd(cur, -1); }
+    }
+    for (const t of mapped) {
+      const cands = candByTeam.get(t) || [], fin = L.squadSize(t) + (delta.get(t) || 0) - cands.length;
+      if (fin < o.minSquad && cands.length) {
+        const need = o.minSquad - fin; cands.sort((a, b) => P.getInt(pix.get(b), 'overallrating') - P.getInt(pix.get(a), 'overallrating'));
+        for (let k = 0; k < need && k < cands.length; k++) { toDelete.delete(cands[k]); keptMin++; }
+      }
+    }
+    put('hapus_pemain_tidak_ada_di_csv', toDelete.size); put('dipertahankan_agar_skuad_min', keptMin); put('dilindungi_(tim_tanpa_data_csv)', protectedN);
+    if (!apply) { freedSet = L.namesFreedBy(toDelete); freedEst = freedSet.size; }
+    else { await tick(22, 'Menghapus ' + toDelete.size + ' pemain yang tidak ada di CSV (beserta data terkait)…'); L.bulk = true; const st = L.deletePlayers(toDelete, true); put('dihapus', st.players); put('slot_nama_dibebaskan', st.namesFreed); put('baris_tabel_lain_ikut_dihapus', JSON.stringify(st.cascade)); pix = L.pindex(); }
+  }
+  // ---- 4) loop utama
+  await tick(32, apply ? 'Memperbarui pemain…' : 'Menghitung pratinjau…');
+  L.bulk = apply; L.nameOverflow = 0; let capLeft = L.nameCapacity() + freedEst;
+  const pending = new Set(), af = ATTR.map(a => P.fmap.get(a[1])), today = TL.todayDays();
+  let updated = 0, added = 0, moved = 0, toFree = 0, noName = 0, noClub = 0;
+  let li = 0;
+  for (const it of todo) {
+    if (++li % 40 === 0 && due()) await tick(32 + 48 * li / todo.length, (apply ? 'Memperbarui pemain ' : 'Menghitung pratinjau ') + li + '/' + todo.length + ' (diupdate ' + updated + ', baru ' + added + ', pindah ' + moved + ')');
+    try {
+      const { r, pid, ovr } = it, vals = {};
+      ATTR.forEach((a, k) => { const sv = g(r, a[0]); if (af[k] && sv.trim() !== '') vals[a[1]] = clampF(af[k], toInt(sv, 0)); });
+      const posS = g(r, 'position').trim().toUpperCase();
+      if (TL.POS.has(posS)) {
+        vals.preferredposition1 = TL.POS.get(posS);
+        const alts = g(r, 'alternate_positions').trim().toUpperCase().split(/\s+/).filter(a => TL.POS.has(a)).slice(0, 3);
+        for (let k = 0; k < 3; k++) vals['preferredposition' + (k + 2)] = k < alts.length ? TL.POS.get(alts[k]) : -1;
+      }
+      const foot = g(r, 'preferred_foot').trim().toLowerCase(); if (foot === 'left' || foot === 'right') vals.preferredfoot = foot === 'left' ? 2 : 1;
+      const bd = parseCsvDate(g(r, 'birthdate')); if (bd !== null) vals.birthdate = bd;
+      const natS = fixText(g(r, 'nationality')).trim();
+      if (!natCache.has(natS)) { let k = norm(natS); if (NAT_ALIAS.has(k)) k = NAT_ALIAS.get(k); const n = matchName(L.nationNorm, k, 0.85); natCache.set(natS, n); if (n === undefined) unmatchedNat.add(natS); }
+      if (natCache.get(natS) !== undefined) vals.nationality = natCache.get(natS);
+      const first = fixText(g(r, 'first_name')).trim(), last = fixText(g(r, 'last_name')).trim(), common = fixText(g(r, 'common_name')).trim();
+      const tgt = assign.get(pid) === undefined ? -1 : assign.get(pid);
+      if (it.ex) {
+        if (o.update) {
+          const row = pix.get(pid);
+          if (apply) {
+            const bdv = vals.birthdate !== undefined ? vals.birthdate : P.getInt(row, 'birthdate');
+            vals.potential = TL.calcPotential(ovr, (today - bdv) / 365.25);
+            for (const [k, v] of Object.entries(vals)) P.setInt(row, k, v);
+            if (o.updateNames) [first, last, common, common || last].forEach((s, k) => { if (s) { const id = L.nameId(s); if (id > 0) P.setInt(row, NAME_FIELDS[k], id); } });
+          }
+          updated++;
+        }
+        if (o.sync) {
+          const cur = L.clubOf(pid);
+          if (tgt >= 0 && tgt !== cur) { if (apply) L.transfer(pid, tgt, -1, -1, true, true); moved++; }
+          else if (tgt < 0 && cur >= 0) { if (apply) L.unlinkClub(pid); toFree++; }
+        }
+      } else {
+        let need = 0; const mine = new Set();
+        for (const s of [first, last, common]) { if (!s) continue; const sn = L.sanitizeName(s); if (sn && (!L.nameKnown(sn) || freedSet.has(L.nameRev.get(sn))) && !pending.has(sn) && !mine.has(sn)) { mine.add(sn); need++; } }
+        if (need > capLeft) { noName++; continue; }
+        capLeft -= need; for (const s of mine) pending.add(s);
+        vals.potential = TL.calcPotential(ovr, vals.birthdate !== undefined ? (today - vals.birthdate) / 365.25 : 30); vals.playerjointeamdate = today;
+        if (tgt < 0) noClub++;
+        if (apply) L.addPlayer(vals, first, last, common, common || last, tgt, o.template > 0 ? o.template : -1, pid);
+        added++;
+      }
+    } catch (e) { if (rep.errors.length < 30) rep.errors.push('baris ' + (it.oi + 2) + ': ' + e.message); skipped++; }
+  }
+  // ---- 5) rapikan
+  if (apply) {
+    await tick(81, 'Menghapus link klub pemain yang jadi free agent…'); L.flushDel();
+    await tick(84, 'Mengisi tim yang kekurangan pemain…'); const topped = L.topUpSmall(o.minSquad, womenIds); await tick(85, 'Melengkapi zona posisi yang kekurangan pemain…'); const zonefill = L.fillZones(o.maxSquad);
+    await tick(86, 'Mengisi ulang tim nasional…'); const nat = L.refillNational(); L.bulk = false;
+    const lu = await L.rebuildAllLineups(87, 97);
+    await tick(95, 'Merapikan penampilan pemain baru yang kembar dalam satu tim…'); const dd = L.dedupeLooks(); put('penampilan_kembar_dalam_tim_diperbaiki', dd.fixed); put('penampilan_kembar_dalam_tim_tersisa', dd.left);
+    await tick(97, 'Memperbaiki peran tim (kapten/penendang)…'); const roles = L.repairRoles();
+    if (L.look) put('penampilan_pemain_baru_unik', (L.look.made - L.look.dups) + ' dari ' + L.look.made);
+    put('tim_diisi_free_agent_(kekurangan_pemain)', topped); put('pemain_direkrut_untuk_melengkapi_zona', zonefill); put('tim_nasional_diisi_ulang_(pemain)', nat); put('tim_lineup_diatur_ulang', lu); put('peran_tim_diperbaiki', roles);
+  }
+  L.bulk = false;
+  put('dilewati', skipped); put('pemain_diupdate', updated); put('pemain_baru', added); put('pemain_dipindah_klub', moved);
+  put('pemain_jadi_free_agent_(klub_tak_ada/penuh)', toFree); put('pemain_baru_tanpa_klub', noClub); put('pemain_wanita_dilewati_(tidak_diimport)', women);
+  put('klub_penuh_(>' + o.maxSquad + ')', clubFull); put('tidak_muat_slot_nama', noName);
+  if (!apply && o.deleteMissing) put('estimasi_slot_nama_dibebaskan', freedEst);
+  const um = [...unmatched].sort((a, b) => b[1] - a[1]); put('klub_csv_tidak_ada_di_db', um.length + (um.length ? '  contoh: ' + um.slice(0, 10).map(x => x[0] + ' (' + x[1] + ')').join(', ') : ''));
+  put('negara_tidak_cocok', [...unmatchedNat].join(', ') || '-');
+  if (apply) { await tick(98, 'Validasi integritas…'); const iss = L.validate(); put('validasi', iss.length ? iss.length + ' catatan: ' + iss.join(' | ') : 'OK, tidak ada masalah integritas'); L.log.push('Import FC: ' + updated + ' update, ' + added + ' baru, ' + moved + ' pindah, ' + toFree + ' free agent, ' + (rep.m.get('dihapus') || 0) + ' dihapus'); }
+  await tick(100, 'Selesai');
+  return rep;
+}
+const reportText = (rep) => [...rep.m].map(([k, v]) => k + ': ' + v).join('\n') + (rep.errors.length ? '\nerror (' + rep.errors.length + '):\n  ' + rep.errors.join('\n  ') : '');
+
+// ---- CSV tabel biasa (nama kolom = nama field; nilai mentah seperti hasil export)
+function importTable(L, table, bytes, mode, keyName, apply) {
+  const csv = TL.Csv.parse(bytes), T = L.t(table), fm = new Map(T.fields.map(f => [f.name.toLowerCase(), f]));
+  const use = [], unknown = []; csv.cols.forEach((c, i) => { if (fm.has(c.toLowerCase())) use.push(i); else unknown.push(c); });
+  if (!use.length) throw new DbError('Tidak ada kolom CSV yang cocok dengan field tabel ' + table);
+  const kf = keyName && keyName.trim() ? T.f(keyName.trim()) : T.keyField(), kcol = csv.col(kf.name), index = new Map();
+  if (kcol >= 0) for (let i = 0; i < T.n(); i++) index.set(T.getRaw(i, kf), i);
+  const rep = { m: new Map(), errors: [] }; rep.m.set('baris_csv', csv.rows.length); rep.m.set('kolom_dipakai', use.length); rep.m.set('kolom_tak_dikenal', unknown.join(', ') || '-');
+  let upd = 0, add = 0, n = 0;
+  for (const r of csv.rows) {
+    n++;
+    try {
+      const kv = kcol >= 0 && kcol < r.length ? r[kcol].trim() : '', hit = kv ? index.get(kv) : undefined, setAll = (i) => { for (const ci of use) { const f = fm.get(csv.cols[ci].toLowerCase()); if (ci < r.length && (r[ci].trim() !== '' || f.kind() === 'str')) T.setText(i, f, r[ci]); } };
+      if (hit !== undefined && (mode === 'update' || mode === 'upsert')) { if (apply) setAll(hit); upd++; }
+      else if (hit === undefined && (mode === 'append' || mode === 'upsert')) { if (apply) { const i = T.addRow(); setAll(i); if (kv) index.set(kv, i); } add++; }
+    } catch (e) { if (rep.errors.length < 30) rep.errors.push('baris ' + (n + 1) + ': ' + e.message); }
+  }
+  rep.m.set('diupdate', upd); rep.m.set('ditambah', add); if (apply) { L.invalidate(); L.ensure(); }
+  return rep;
+}
+
+// ---- export
+const cellRaw = (t, i, f) => t.getRaw(i, f);
+function exportTable(L, name) {
+  const T = L.t(name), w = new TL.CsvWriter(); w.row(T.fields.map(f => f.name));
+  for (let i = 0; i < T.n(); i++) w.row(T.fields.map(f => cellRaw(T, i, f))); return w.bytes();
+}
+async function exportAll(db, sourceName) {
+  const ts = db.order.slice().sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0);
+  const files = [], man = new TL.CsvWriter(), sch = new TL.CsvWriter();
+  man.row(['table', 'shortname', 'rows', 'fields', 'status', 'note']); sch.row(['table', 'field', 'shortname', 'kind', 'storage', 'bits', 'min', 'max', 'bit_offset']);
+  let total = 0, nok = 0, nro = 0, npart = 0;
+  let ti = 0;
+  for (const t of ts) {
+    if (++ti % 3 === 0 && due()) await tick(100 * ti / ts.length, 'Mengekspor tabel ' + ti + '/' + ts.length + ' (' + t.name + ')');
+    let status = 'ok', note = '';
+    try { t.load(); } catch (e) { t.loadPartial(); }
+    if (t.partial) { status = 'strings_unreadable'; note = 'kolom string tidak bisa didecode (rusak di sumber); kolom lain lengkap'; npart++; }
+    else if (t.readonly) { status = 'readonly'; note = 'string terbaca tapi belum bisa ditulis ulang identik; jangan diubah'; nro++; } else nok++;
+    const w = new TL.CsvWriter(); w.row(t.fields.map(f => f.name)); const n = t.n();
+    for (let i = 0; i < n; i++) w.row(t.fields.map(f => cellRaw(t, i, f)));
+    files.push({ name: t.name + '.csv', data: w.bytes() }); total += n;
+    man.row([t.name, t.sn, n, t.fields.length, status, note]);
+    for (const f of t.fields) { const k = f.kind(), isn = k === 'int' || k === 'date'; sch.row([t.name, f.name, f.sn, k, f.ftype === 13 ? 'compressed_string' : f.ftype === 0 ? 'fixed_string' : f.ftype === 4 ? 'float32' : 'int', f.depth, isn ? f.low : '', isn ? f.max() : '', f.offset]); }
+  }
+  files.push({ name: '_manifest.csv', data: man.bytes() }, { name: '_schema.csv', data: sch.bytes() });
+  const readme = 'Format: nerutlabs-DBCSV-1\r\nSumber: ' + sourceName + '\r\nTabel: ' + ts.length + '   Baris total: ' + total + '\r\n\r\n- Satu CSV per tabel database; kolom = field tabel sesuai urutan di database.\r\n- Nilai ditulis apa adanya (angka mentah). Field DATE = hari sejak 1582-10-14. String = teks UTF-8.\r\n- _schema.csv: tipe, lebar bit, min/max. _manifest.csv: jumlah baris dan status tiap tabel.\r\n- Status readonly / strings_unreadable: jangan diubah lewat import.\r\n';
+  files.push({ name: 'README.txt', data: new TextEncoder().encode(readme) });
+  await tick(99, 'Membuat ZIP…');
+  return { zip: TL.makeZip(files), summary: 'Tabel: ' + ts.length + ' (ok ' + nok + ', readonly ' + nro + ', string rusak ' + npart + ')  Baris total: ' + total };
+}
+Object.assign(TL, { importFc, importTable, exportTable, exportAll, reportText, isFc });
+
+/* ---------------- UI (gaya Asset Editor: bilah atas + toolbar + tampilan + panel samping) ---------------- */
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const S = { db: null, L: null, name: '', dirty: false, view: 'file', csv: null, csvName: '', undo: null,
+  pf: { q: '', sort: 'overall', omin: '', team: -1, free: false, off: 0 }, tf: { q: '', league: -1 }, tr: { pid: null, pname: '', team: null },
+  tb: { name: null, q: '', off: 0, sort: '', desc: 0, cols: {} }, fc: { update: true, add: true, names: false, sync: true, del: true, omin: '', minSquad: 16, tpl: '' }, csvTable: '', csvMode: 'upsert', sel: null };
+const FK = { teamid: 'team', rivalteam: 'team', leagueid: 'league', futleagueid: 'league', prevleagueid: 'league', nationality: 'nation', nationid: 'nation', countryid: 'nation', preferredposition1: 'pos', preferredposition2: 'pos', preferredposition3: 'pos', preferredposition4: 'pos', position: 'pos' };
+const lk = (k, v) => { if (!S.L) return ''; const L = S.L; v = parseInt(v, 10); return k === 'team' ? (L.teamName.get(v) || '') : k === 'league' ? (L.leagueName.get(v) || '') : k === 'nation' ? (L.nationName.get(v) || '') : TL.posName(v); };
+function toast(m, err) { const t = $('#toast'); t.textContent = m; t.className = err ? 'err' : ''; t.style.display = 'block'; clearTimeout(toast.t); toast.t = setTimeout(() => t.style.display = 'none', err ? 7000 : 3200); }
+function guard(fn) { try { return fn(); } catch (e) { console.error(e); toast(e.message || String(e), 1); } }
+const fmtSec = (ms) => { const s = Math.round(ms / 1000); return s < 60 ? s + ' dtk' : Math.floor(s / 60) + ' mnt ' + (s % 60) + ' dtk'; };
+function download(name, bytes, mime) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([bytes], { type: mime || 'application/octet-stream' })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000); }
+
+/* ---- progress ---- */
+async function task(title, fn) {
+  const o = document.createElement('div'); o.className = 'ov';
+  o.innerHTML = '<div class="md"><b>' + esc(title) + '</b><div class="bar"><i id="pbar"></i></div><div class="split"><b id="ppct">0%</b><small id="ptime"></small></div><small id="pmsg">Memulai…</small><p class="mut">Jangan tutup atau tinggalkan halaman ini sampai selesai.</p></div>';
+  document.body.appendChild(o); const t0 = Date.now(); let a = 0, b = 100;
+  const show = (p, m) => { const v = Math.max(0, Math.min(100, Math.round(a + (b - a) * p / 100))); o.querySelector('#pbar').style.width = v + '%'; o.querySelector('#ppct').textContent = v + '%'; o.querySelector('#pmsg').textContent = m || ''; o.querySelector('#ptime').textContent = fmtSec(Date.now() - t0); };
+  TL.PR.cb = show; await new Promise(r => setTimeout(r, 30));
+  try { return await fn({ range: (x, y) => { a = x; b = y; }, show }); }
+  catch (e) { console.error(e); toast(e.message || String(e), 1); throw e; }
+  finally { TL.PR.cb = null; o.remove(); }
+}
+const busy = (msg, fn, done) => task(msg, async () => fn()).then(r => done && done(r), () => { });
+
+/* ---- dialog kecil (pemilih) ---- */
+function modal(html) { const o = document.createElement('div'); o.className = 'ov'; o.innerHTML = '<div class="md">' + html + '</div>'; o.addEventListener('click', e => { if (e.target === o) o.remove(); }); document.body.appendChild(o); o.close = () => o.remove(); return o; }
+const mhead = (t) => `<div class="mh"><b>${esc(t)}</b><button onclick="this.closest('.ov').remove()">Tutup</button></div>`;
+function info(title, text) { return modal(mhead(title) + '<pre>' + esc(text) + '</pre>'); }
+function searchPick(title, items, cb) {
+  const o = modal(mhead(title) + '<input type="text" id="sp" placeholder="Cari…" style="width:100%"><div class="pl" id="spl"></div>');
+  const fill = () => { const q = TL.norm(o.querySelector('#sp').value); o.querySelector('#spl').innerHTML = items.filter(([, n]) => !q || TL.norm(n).includes(q)).slice(0, 80).map(([id, n]) => `<div data-i="${id}">${esc(n)}</div>`).join(''); o.querySelectorAll('#spl [data-i]').forEach(e => e.onclick = () => { o.close(); cb(+e.dataset.i); }); };
+  o.querySelector('#sp').oninput = fill; fill(); o.querySelector('#sp').focus();
+}
+const pickTeam = (all, cb) => { const it = [...S.L.teamName].sort((a, b) => a[1].localeCompare(b[1])); if (all) it.unshift([-1, '(Semua)']); searchPick('Pilih klub / tim', it, cb); };
+function pickPlayer(cb) {
+  const o = modal(mhead('Pilih pemain') + '<input type="text" id="sp" placeholder="Cari nama / ID…" style="width:100%"><div class="pl" id="spl"></div>');
+  o.querySelector('#sp').oninput = () => { const q = o.querySelector('#sp').value; if (q.length < 2) { o.querySelector('#spl').innerHTML = ''; return; } const r = S.L.listPlayers({ q, limit: 14 }); o.querySelector('#spl').innerHTML = r.rows.map(x => `<div data-i="${x.id}" data-n="${esc(x.name)}"><b class="ovr">${x.ovr}</b> ${esc(x.name)} <small>${x.pos} · ${esc(x.club)}</small></div>`).join(''); o.querySelectorAll('#spl [data-i]').forEach(e => e.onclick = () => { o.close(); cb(+e.dataset.i, e.dataset.n); }); };
+  o.querySelector('#sp').focus();
+}
+
+/* ---- kerangka: toolbar, catatan, tampilan, panel samping ---- */
+const setTool = (html) => { $('#ctool').innerHTML = html; };
+const setNote = (t) => { $('#note').textContent = t; };
+const setView = (html) => { $('#view').innerHTML = html; };
+function drawer(title, html, bind, back) {
+  const p = $('#panel'); $('#dtitle').textContent = title; $('#dback').hidden = !back; $('#dback').onclick = back || null; $('#dbody').innerHTML = html;
+  p.classList.add('open'); $('#scrim').hidden = false; $('#dbody').scrollTop = 0; if (bind) bind($('#dbody'));
+}
+function closeDrawer() { $('#panel').classList.remove('open'); $('#scrim').hidden = true; S.sel = null; document.querySelectorAll('tr.sel').forEach(r => r.classList.remove('sel')); }
+const sec = (t, body, closed) => `<div class="sec${closed ? ' closed' : ''}"><div class="sh">${esc(t)}</div><div class="sb">${body}</div></div>`;
+document.addEventListener('click', e => { const h = e.target.closest('.sh'); if (h) h.parentElement.classList.toggle('closed'); });
+function head() {
+  $('#chip').textContent = S.db ? S.name + (S.dirty ? '  ●' : '') : 'Belum ada file'; $('#chip').className = 'chip' + (S.dirty ? ' dirty' : '');
+  $('#saveBtn').disabled = !S.db; document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.v === S.view));
+}
+function markDirty() { S.dirty = true; head(); }
+const TABS = [['file', 'File'], ['players', 'Pemain'], ['teams', 'Tim'], ['transfer', 'Transfer'], ['tables', 'Tabel'], ['csv', 'CSV']];
+$('#tabs').innerHTML = TABS.map(t => `<button data-v="${t[0]}" onclick="go('${t[0]}')">${t[1]}</button>`).join('');
+function go(v) {
+  S.view = v; head(); closeDrawer(); $('#dempty').textContent = 'Pilih satu baris di tampilan untuk melihat / mengeditnya di panel ini.';
+  guard(() => { if (v !== 'file' && !S.db) { setTool('<button class="p" onclick="go(\'file\')">Buka file…</button>'); setNote('Belum ada database yang dibuka.'); setView('<div class="vc"><div class="card"><b>Buka file .db terlebih dahulu</b><p class="mut">Pilih file <b>.db</b> bersama <b>*-meta.xml</b>-nya di tab File.</p></div></div>'); return; } V[v](); });
+}
+window.addEventListener('beforeunload', e => { if (S.dirty) { e.preventDefault(); e.returnValue = ''; } });
+$('#bSide').onclick = () => $('#appc').classList.toggle('left');
+$('#bTheme').onclick = () => { const r = document.documentElement, t = r.dataset.theme === 'light' ? 'dark' : 'light'; r.dataset.theme = t; try { localStorage.setItem('nerutlabs_theme', t); } catch (e) { } };
+try { const t = localStorage.getItem('nerutlabs_theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { }
+$('#dclose').onclick = closeDrawer; $('#scrim').onclick = closeDrawer; $('#saveBtn').onclick = () => saveDb();
+$('#fdb').onchange = () => openFiles();
+
+function inputFor(f, val, id) {
+  const rng = f.kind() === 'int' ? ` min="${f.low}" max="${f.max()}"` : '';
+  const hint = FK[f.name] ? `<small class="hint" id="h_${id}">${esc(lk(FK[f.name], val))}</small>` : '';
+  const ev = FK[f.name] ? ` oninput="document.getElementById('h_${id}').textContent=lk('${FK[f.name]}',this.value)"` : '';
+  return `<div class="fi"><label>${esc(f.name)}${f.kind() === 'int' ? ' <small>[' + f.low + '..' + f.max() + ']</small>' : ''}</label><input id="${id}" data-f="${esc(f.name)}" data-o="${esc(val)}" type="${f.kind() === 'int' ? 'number' : 'text'}" step="${f.kind() === 'real' ? 'any' : 1}"${rng} value="${esc(val)}"${ev}>${hint}</div>`;
+}
+const collect = (root) => { const v = {}; root.querySelectorAll('input[data-f]').forEach(i => { if (i.value !== i.dataset.o) v[i.dataset.f] = i.value; }); return v; };
+const V = {};
+
+/* ================= FILE ================= */
+V.file = () => {
+  const db = S.db, L = S.L;
+  setTool(`<button class="p" onclick="$('#fdb').click()">Buka file…</button>${db ? `<button class="p" onclick="saveDb()">Simpan ⬇ .db</button><button onclick="runValidate()">Validasi</button><button onclick="relineup()">Lineup semua tim</button><button onclick="exportAllZip()">Export ZIP</button>${S.undo ? '<button onclick="undoLast()">↩ Urungkan</button>' : ''}<button onclick="revertOriginal()">Batalkan semua</button>` : ''}`);
+  setNote(db ? S.name + ' · ' + db.order.length + ' tabel · ' + L.t('players').n() + ' pemain · slot nama tersisa ' + L.nameCapacity() + (db.metaLoaded ? '' : ' · ⚠ tanpa meta.xml') : 'Pilih file .db bersama *-meta.xml (pilih 2 file sekaligus).');
+  setView(`<div class="vc"><div class="card"><h3>Database</h3>${db ? `<div class="kv"><span>File</span><b>${esc(S.name)}</b><span>Tabel</span><b>${db.order.length}</b><span>Pemain</span><b>${L.t('players').n()}</b><span>Tim</span><b>${L.t('teams').n()}</b><span>Slot nama tersisa</span><b>${L.nameCapacity()}</b><span>Status</span><b>${S.dirty ? '● ada perubahan belum disimpan' : 'tidak ada perubahan'}</b></div>` : '<p class="mut">Belum ada file dibuka.</p>'}</div>
+  <div class="card"><h3>Cara kerja</h3><ol class="mut"><li>Buka <b>.db</b> + <b>meta.xml</b> (satu kali pilih dua file).</li><li>Tab <b>CSV</b>: pilih CSV pemain → <b>Pratinjau</b> → <b>Terapkan</b>.</li><li>Tab File: <b>Simpan ⬇ .db</b>, lalu ganti file di game (simpan cadangan aslinya).</li></ol><p class="mut">Semua proses di perangkatmu; tidak ada yang diunggah. Pemain wanita tidak diimport. Lineup: overall tertinggi per zona posisi jadi starter.</p></div>
+  <div class="card"><h3>Riwayat sesi</h3>${L && L.log.length ? L.log.slice(-30).reverse().map(x => '<div>• ' + esc(x) + '</div>').join('') : '<span class="mut">Belum ada.</span>'}</div></div>`);
+};
+async function openFiles() {
+  const fs = [...$('#fdb').files], dbf = fs.find(f => !f.name.toLowerCase().endsWith('.xml')), mf = fs.find(f => f.name.toLowerCase().endsWith('.xml'));
+  if (!dbf) return toast('Pilih file .db (dan meta.xml)', 1);
+  try {
+    await task('Membuka database', async () => {
+      await tick(2, 'Membaca file ' + dbf.name + '…'); const d = new Uint8Array(await dbf.arrayBuffer());
+      await tick(10, mf ? 'Membaca ' + mf.name + '…' : 'Tanpa meta.xml'); const xml = mf ? await mf.text() : null;
+      await tick(16, 'Membaca struktur tabel…'); const db = new TL.FifaDb(d, xml);
+      await tick(22, 'Struktur ' + db.order.length + ' tabel terbaca'); const L = await TL.Ctx.create(db);
+      Object.assign(S, { db, L, name: dbf.name, dirty: false, orig: d, metaText: xml, undo: null }); S.tr = { pid: null, pname: '', team: null }; S.tb.name = null;
+      if (!db.metaLoaded) toast('Peringatan: meta.xml tidak dipilih; nama field berupa kode.', 1);
+    }); $('#fdb').value = ''; go('file');
+  } catch (e) { $('#fdb').value = ''; }
+}
+async function reloadFrom(bytes, label) { const db = new TL.FifaDb(bytes, S.metaText), L = await TL.Ctx.create(db); S.db = db; S.L = L; S.tb.name = null; S.tr = { pid: null, pname: '', team: null }; toast(label); }
+function revertOriginal() { if (!confirm('Batalkan SEMUA perubahan dan muat ulang file asli yang dibuka?')) return; task('Memuat ulang file asli', async () => { await reloadFrom(S.orig, 'Dikembalikan ke file asli'); S.dirty = false; S.undo = null; }).then(() => go('file'), () => { }); }
+function undoLast() { if (!S.undo || !confirm('Urungkan: ' + S.undo.label + '?')) return; const u = S.undo; task('Mengurungkan perubahan', async () => { await reloadFrom(u.bytes, 'Dikembalikan: ' + u.label); S.dirty = u.dirty; S.undo = null; }).then(() => go('file'), () => { }); }
+/* NerutLabs parent Save Gate bridge: only the two download actions require a sponsor click. */
+(function(){
+  var PARENT_ORIGIN='https://nerutlabs.blogspot.com';
+  var pendingAction=null, requestSeq=0;
+  function askNerutSaveGate(action){
+    if(window.parent===window){ return false; }
+    pendingAction=action;
+    var requestId='db-editor-'+action+'-'+(++requestSeq)+'-'+Date.now();
+    window.parent.postMessage({type:'TUREN_SAVE_REQUEST',requestId:requestId,action:action},PARENT_ORIGIN);
+    toast(action==='export-zip'?'Lanjutkan melalui tombol sponsor untuk Export ZIP.':'Lanjutkan melalui tombol sponsor untuk menyimpan database.');
+    return true;
+  }
+  window.addEventListener('message',function(event){
+    if(event.origin!==PARENT_ORIGIN || event.source!==window.parent) return;
+    var d=event.data;
+    if(!d || typeof d!=='object' || d.type!=='TUREN_SAVE_UNLOCKED' || !pendingAction) return;
+    var action=pendingAction; pendingAction=null;
+    if(action==='save-db') saveDb(true);
+    else if(action==='export-zip') exportAllZip(true);
+    else if(action==='export-one-csv') exportOne(true);
+  });
+  window.__nerutAskSaveGate=askNerutSaveGate;
+})();
+
+function saveDb(unlocked) {
+  if (!unlocked && window.__nerutAskSaveGate && window.__nerutAskSaveGate('save-db')) return;
+  task('Menyimpan database', async () => {
+    const bytes = await S.db.serializeAsync(0, 90); await tick(92, 'Memverifikasi CRC semua tabel…'); const bad = TL.FifaDb.verify(bytes);
+    if (bad.length) throw new Error('Verifikasi gagal, file tidak dibuat: ' + bad.join(', ')); await tick(100, 'Selesai'); return bytes;
+  }).then(b => { download(S.name, b); S.dirty = false; head(); toast('File diunduh (' + (b.length / 1024 | 0) + ' KB, CRC terverifikasi). Ganti file asli dengan file ini; simpan cadangan aslinya.'); }, () => { });
+}
+function runValidate() { task('Memvalidasi integritas', async () => { await tick(10, 'Memeriksa susunan inti, skuad, referensi nama…'); const r = S.L.validate(); await tick(100, ''); return r; }).then(l => info('Validasi', l.length ? l.join('\n') : 'OK - tidak ada masalah integritas terdeteksi.'), () => { }); }
+function relineup() { task('Mengatur ulang lineup semua tim', async () => { const L = S.L, c = await L.rebuildAllLineups(0, 95); await tick(96, 'Memperbaiki peran tim…'); const r = L.repairRoles(); await tick(100, 'Selesai'); return [c, r]; }).then(([c, r]) => { markDirty(); toast('Lineup diatur ulang untuk ' + c + ' tim; peran tim diperbaiki: ' + r); }, () => { }); }
+function exportAllZip(unlocked) {
+  if (!unlocked && window.__nerutAskSaveGate && window.__nerutAskSaveGate('export-zip')) return; task('Mengekspor semua tabel', async () => TL.exportAll(S.db, S.name)).then(r => { download(S.name.replace(/\.[^.]+$/, '') + '_csv.zip', r.zip, 'application/zip'); toast(r.summary); }, () => { }); }
+
+/* ================= PEMAIN ================= */
+V.players = () => {
+  const p = S.pf;
+  setTool(`<input type="text" id="pq" placeholder="Cari nama / ID" value="${esc(p.q)}"><select id="ps"><option value="overall">Rating ↓</option><option value="potential">Potensi ↓</option><option value="name">Nama A-Z</option><option value="id">ID</option></select><input type="number" id="po" placeholder="Min" value="${esc(p.omin)}"><button id="pteam">Klub: ${p.team >= 0 ? esc(S.L.teamName.get(p.team)) : 'Semua'}</button><label><input type="checkbox" id="pfree" ${p.free ? 'checked' : ''}> Free agent</label><button class="p" onclick="pApply()">Cari</button><button onclick="addPlayerDrawer()">+ Pemain</button>`);
+  $('#ps').value = p.sort; $('#pteam').onclick = () => pickTeam(true, id => { p.team = id; pApply(); }); $('#pq').onkeydown = e => { if (e.key === 'Enter') pApply(); };
+  setView('<div class="vc" id="pl"></div>'); plist();
+};
+function pApply() { const p = S.pf; p.q = $('#pq').value; p.sort = $('#ps').value; p.omin = $('#po').value; p.free = $('#pfree').checked; p.off = 0; V.players(); }
+function plist() {
+  const p = S.pf, r = S.L.listPlayers({ q: p.q, sort: p.sort, omin: parseInt(p.omin) || 0, team: p.team, free: p.free, offset: p.off, limit: 40, desc: p.sort === 'overall' || p.sort === 'potential' });
+  setNote(r.total + ' pemain' + (r.total ? ' · ' + (p.off + 1) + '–' + Math.min(p.off + 40, r.total) : ''));
+  $('#pl').innerHTML = `<table class="t"><thead><tr><th>OVR</th><th>Nama</th><th>Pos</th><th>Negara</th><th>Klub</th><th>ID</th></tr></thead><tbody>${r.rows.map(x => `<tr data-i="${x.id}" class="${S.sel === x.id ? 'sel' : ''}"><td><b class="ovr">${x.ovr}</b></td><td>${esc(x.name)}</td><td>${x.pos}</td><td>${esc(x.nation)}</td><td>${esc(x.club)}</td><td>${x.id}</td></tr>`).join('')}</tbody></table>
+  <div class="pager"><button ${p.off ? '' : 'disabled'} onclick="S.pf.off-=40;plist()">◀</button><span>${r.total ? p.off + 1 : 0}–${Math.min(p.off + 40, r.total)} / ${r.total}</span><button ${p.off + 40 < r.total ? '' : 'disabled'} onclick="S.pf.off+=40;plist()">▶</button></div>`;
+  document.querySelectorAll('#pl tbody tr').forEach(tr => tr.onclick = () => { document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); tr.classList.add('sel'); playerDrawer(+tr.dataset.i); });
+}
+const MAIN_F = ['overallrating', 'potential', 'preferredposition1', 'preferredposition2', 'preferredposition3', 'preferredposition4', 'nationality', 'preferredfoot', 'skillmoves', 'weakfootabilitytypecode', 'height', 'weight', 'birthdate', 'contractvaliduntil', 'internationalrep'];
+function playerDrawer(pid, back) {
+  guard(() => {
+    S.sel = pid; const L = S.L, P = L.t('players'), row = L.playerRow(pid), vals = L.playerFields(pid), nm = L.playerNames(row), club = L.clubOf(pid);
+    const main = MAIN_F.filter(k => P.fmap.has(k)), attrs = P.fields.filter(f => f.kind() === 'int' && f.depth === 7 && f.low === 1 && !main.includes(f.name)).map(f => f.name);
+    const other = P.fields.map(f => f.name).filter(k => !main.includes(k) && !attrs.includes(k) && !TL.NAME_FIELDS.includes(k) && k !== 'playerid');
+    const fld = (k) => inputFor(P.f(k), vals.get(k), 'pf_' + k), grid = (a) => '<div class="fg">' + a.map(fld).join('') + '</div>';
+    const html = `<div class="r"><b>${esc(L.display(nm))}</b><span class="mut">#${pid} · ${club >= 0 ? esc(L.teamName.get(club)) : 'free agent'}</span></div>
+    ${sec('Nama', `<div class="fg"><div class="fi"><label>Nama depan</label><input id="n_first" value="${esc(nm[0])}"></div><div class="fi"><label>Nama belakang</label><input id="n_last" value="${esc(nm[1])}"></div><div class="fi"><label>Nama umum</label><input id="n_common" value="${esc(nm[2])}"></div><div class="fi"><label>Nama jersey</label><input id="n_jersey" value="${esc(nm[3])}"></div></div>`)}
+    ${sec('Klub & transfer', `<div class="r"><button id="dTeam">Tim tujuan…</button><span class="mut" id="dTeamN">belum dipilih</span></div><div class="fg"><div class="fi"><label>No. punggung</label><input id="dJ" type="number"></div><div class="fi"><label>Kontrak s/d (tahun)</label><input id="dC" type="number" placeholder="2030"></div></div><div class="r"><label><input type="checkbox" id="dF"> Abaikan batas skuad (maks ${TL.MAX_SQUAD})</label></div><div class="r"><button class="p" id="dGo">Transfer</button><button id="dFree">Jadikan free agent</button></div>`)}
+    ${sec('Utama', grid(main))}${sec('Atribut', grid(attrs))}${sec('Field teknis / tampilan', grid(other), true)}
+    <div class="r"><button class="p" id="dSave">Simpan</button><button id="dDel" class="danger">Hapus pemain</button></div>`;
+    drawer('Pemain #' + pid, html, (d) => {
+      let dest = null;
+      d.querySelector('#dTeam').onclick = () => pickTeam(false, id => { dest = id; d.querySelector('#dTeamN').textContent = L.teamName.get(id) + ' (skuad ' + L.squadSize(id) + ')'; });
+      d.querySelector('#dGo').onclick = () => guard(() => { if (!dest) throw new Error('Pilih tim tujuan dulu'); const j = d.querySelector('#dJ').value, c = d.querySelector('#dC').value, r = L.transfer(pid, dest, j ? +j : -1, c ? +c : -1, d.querySelector('#dF').checked, false); L.log.push(r.name + ': ' + r.from + ' → ' + r.to + ' (no.' + r.jersey + ')'); markDirty(); toast(r.name + ': ' + r.from + ' → ' + r.to); playerDrawer(pid, back); if (S.view === 'players') plist(); });
+      d.querySelector('#dFree').onclick = () => guard(() => { if (L.unlinkClub(pid)) { L.log.push(L.display(nm) + ' → free agent'); markDirty(); toast('Jadi free agent'); } else toast('Pemain sudah free agent', 1); playerDrawer(pid, back); if (S.view === 'players') plist(); });
+      d.querySelector('#dSave').onclick = () => guard(() => { const names = {}; ['first', 'last', 'common', 'jersey'].forEach((k, i) => { const v = d.querySelector('#n_' + k).value; if (v !== nm[i]) names[k] = v; }); L.savePlayer(pid, collect(d), names); markDirty(); toast('Pemain disimpan'); playerDrawer(pid, back); if (S.view === 'players') plist(); });
+      d.querySelector('#dDel').onclick = () => guard(() => { if (!confirm('Hapus pemain ini beserta link timnya?')) return; busy('Menghapus…', () => L.deletePlayers(new Set([pid]), true), () => { markDirty(); closeDrawer(); if (S.view === 'players') plist(); }); });
+    }, back);
+  });
+}
+function addPlayerDrawer() {
+  const L = S.L, nat = [...L.nationName].sort((a, b) => a[1].localeCompare(b[1])).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join(''), pos = TL.POS_REV.map((v, k) => `<option value="${k}" ${v === 'ST' ? 'selected' : ''}>${v}</option>`).join('');
+  const teams = [...L.teamName].sort((a, b) => a[1].localeCompare(b[1])).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
+  drawer('Pemain baru', sec('Identitas', `<div class="fg"><div class="fi"><label>Nama depan</label><input id="a_f"></div><div class="fi"><label>Nama belakang</label><input id="a_l"></div><div class="fi"><label>Nama umum</label><input id="a_c"></div><div class="fi"><label>Tgl lahir</label><input id="a_b" value="2000-01-01"></div><div class="fi"><label>Negara</label><select id="a_n">${nat}</select></div><div class="fi"><label>Posisi</label><select id="a_p">${pos}</select></div></div>`) + sec('Rating & fisik', `<div class="fg"><div class="fi"><label>Overall</label><input id="a_o" type="number" value="60"></div><div class="fi"><label>Potensi</label><input id="a_pt" type="number" value="65"></div><div class="fi"><label>Tinggi (cm)</label><input id="a_h" type="number" value="178"></div><div class="fi"><label>Berat (kg)</label><input id="a_w" type="number" value="72"></div></div>`) + sec('Klub & penampilan', `<div class="fi"><label>Klub</label><select id="a_t"><option value="">(free agent)</option>${teams}</select></div><div class="fi"><label>Salin penampilan dari ID pemain (kosong = unik otomatis)</label><input id="a_tpl" type="number"></div>`) + '<div class="r"><button class="p" id="a_ok">Tambahkan</button></div>', (d) => {
+    d.querySelector('#a_ok').onclick = () => guard(() => { const g = i => d.querySelector('#' + i).value; const v = { overallrating: +g('a_o'), potential: +g('a_pt'), nationality: +g('a_n'), preferredposition1: +g('a_p'), birthdate: TL.parseDate(g('a_b')), height: +g('a_h'), weight: +g('a_w') }; const cm = g('a_c').trim(), ls = g('a_l').trim(); const id = L.addPlayer(v, g('a_f'), ls, cm, cm || ls, g('a_t') ? +g('a_t') : -1, g('a_tpl') ? +g('a_tpl') : -1, 0); markDirty(); toast('Ditambahkan, ID ' + id); plist(); playerDrawer(id); });
+  });
+}
+
+/* ================= TIM ================= */
+V.teams = () => {
+  const t = S.tf;
+  setTool(`<input type="text" id="tq" placeholder="Cari tim" value="${esc(t.q)}"><button id="tlg">Liga: ${t.league >= 0 ? esc(S.L.leagueName.get(t.league)) : 'Semua'}</button><button class="p" onclick="S.tf.q=$('#tq').value;tlist()">Cari</button>`);
+  $('#tlg').onclick = () => searchPick('Pilih liga', [[-1, '(Semua)'], ...[...S.L.leagueName].sort((a, b) => a[1].localeCompare(b[1]))], id => { S.tf.q = $('#tq').value; S.tf.league = id; V.teams(); });
+  $('#tq').onkeydown = e => { if (e.key === 'Enter') { S.tf.q = $('#tq').value; tlist(); } }; setView('<div class="vc" id="tl"></div>'); tlist();
+};
+function tlist() {
+  const r = S.L.listTeams(S.tf.q, S.tf.league); setNote(r.length + ' tim' + (r.length > 300 ? ' (300 pertama)' : ''));
+  $('#tl').innerHTML = `<table class="t"><thead><tr><th>Tim</th><th>Liga</th><th>Pemain</th><th>ID</th></tr></thead><tbody>${r.slice(0, 300).map(x => `<tr data-i="${x.id}"><td>${esc(x.name)}</td><td>${esc(x.league)}</td><td>${x.players}</td><td>${x.id}</td></tr>`).join('')}</tbody></table>`;
+  document.querySelectorAll('#tl tbody tr').forEach(tr => tr.onclick = () => { document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); tr.classList.add('sel'); teamDrawer(+tr.dataset.i); });
+}
+function teamDrawer(tid) {
+  guard(() => {
+    const L = S.L, T = L.t('teams'); let ti = -1; for (let i = 0; i < T.n(); i++) if (T.getInt(i, 'teamid') === tid) { ti = i; break; }
+    const sq = L.squad(tid), F = T.fields.filter(f => f.name !== 'teamid');
+    const html = `<div class="r"><b>${esc(T.getStr(ti, 'teamname'))}</b><span class="mut">#${tid} · ${sq.length} pemain</span></div>
+    ${sec('Skuad & lineup', `<table class="t sm"><tbody>${sq.map(p => `<tr data-p="${p.pid}" class="${p.slot < 28 ? 'xi' : ''}"><td><b class="ovr">${p.ovr}</b></td><td>${esc(p.name)}</td><td>${p.pos}</td><td>#${p.jersey}</td></tr>`).join('')}</tbody></table><div class="r"><button id="tLine">Atur ulang lineup tim ini</button></div>`)}
+    ${sec('Data tim', '<div class="fg">' + F.map(f => inputFor(f, T.getText(ti, f), 'tf_' + f.name)).join('') + '</div>', true)}
+    <div class="r"><button class="p" id="tSave">Simpan data tim</button></div>`;
+    drawer(T.getStr(ti, 'teamname'), html, (d) => {
+      d.querySelectorAll('[data-p]').forEach(e => e.onclick = () => playerDrawer(+e.dataset.p, () => teamDrawer(tid)));
+      d.querySelector('#tLine').onclick = () => guard(() => { L.buildLineup(tid); markDirty(); teamDrawer(tid); toast('Lineup tim diatur ulang'); });
+      d.querySelector('#tSave').onclick = () => guard(() => { for (const [k, v] of Object.entries(collect(d))) T.setText(ti, T.f(k), v); L.invalidate(); L.ensure(); markDirty(); toast('Tim disimpan'); tlist(); });
+    });
+  });
+}
+
+/* ================= TRANSFER ================= */
+V.transfer = () => {
+  const L = S.L, t = S.tr;
+  setTool(`<button class="p" id="trgo">Transfer</button><button id="trfa">Jadikan free agent</button>`); setNote('Lineup tim asal dan tujuan otomatis diatur ulang (overall tertinggi per zona jadi starter).');
+  setView(`<div class="vc"><div class="card"><h3>Transfer pemain</h3><div class="fi"><label>1. Pemain</label><button id="trp" style="width:100%;text-align:left">${t.pid ? esc(t.pname) + ' (#' + t.pid + ', klub: ' + (L.clubOf(t.pid) >= 0 ? esc(L.teamName.get(L.clubOf(t.pid))) : 'free agent') + ')' : 'Pilih pemain…'}</button></div>
+  <div class="fi"><label>2. Tim tujuan</label><button id="trt" style="width:100%;text-align:left">${t.team ? esc(L.teamName.get(t.team)) + ' (skuad ' + L.squadSize(t.team) + ')' : 'Pilih tim…'}</button></div>
+  <div class="fg"><div class="fi"><label>Nomor punggung (opsional)</label><input id="trj" type="number"></div><div class="fi"><label>Kontrak s/d tahun (opsional)</label><input id="trc" type="number" placeholder="2030"></div></div>
+  <div class="r"><label><input type="checkbox" id="trf"> Abaikan batas skuad (maks ${TL.MAX_SQUAD})</label></div></div>
+  <div class="card"><h3>Riwayat sesi</h3>${L.log.length ? L.log.slice(-40).reverse().map(x => '<div>• ' + esc(x) + '</div>').join('') : '<span class="mut">Belum ada.</span>'}</div></div>`);
+  $('#trp').onclick = () => pickPlayer((id, n) => { t.pid = id; t.pname = n; V.transfer(); }); $('#trt').onclick = () => pickTeam(false, id => { t.team = id; V.transfer(); });
+  $('#trgo').onclick = () => guard(() => { if (!t.pid || !t.team) throw new Error('Pilih pemain dan tim tujuan'); const j = $('#trj').value, c = $('#trc').value; const r = L.transfer(t.pid, t.team, j ? +j : -1, c ? +c : -1, $('#trf').checked, false); L.log.push(r.name + ': ' + r.from + ' → ' + r.to + ' (no.' + r.jersey + ')'); markDirty(); toast(r.name + ': ' + r.from + ' → ' + r.to); V.transfer(); });
+  $('#trfa').onclick = () => guard(() => { if (!t.pid) throw new Error('Pilih pemain'); if (L.unlinkClub(t.pid)) { L.log.push(t.pname + ' → free agent'); markDirty(); toast('Jadi free agent'); } else toast('Pemain sudah free agent', 1); V.transfer(); });
+};
+
+/* ================= TABEL ================= */
+V.tables = () => {
+  const tb = S.tb;
+  if (!tb.name) {
+    setTool('<input type="text" id="tbq" placeholder="Filter nama tabel">'); setNote('Negara = nations · Liga = leagues · Stadion = stadiums · tabel bertanda ⚠ read-only.');
+    setView('<div class="vc"><table class="t"><thead><tr><th>Tabel</th><th>Field</th><th>Baris</th></tr></thead><tbody id="tbl"></tbody></table></div>');
+    const fill = () => { const q = $('#tbq').value.toLowerCase(); $('#tbl').innerHTML = S.db.order.slice().sort((a, b) => a.name.localeCompare(b.name)).filter(t => t.name.toLowerCase().includes(q)).map(t => `<tr data-n="${esc(t.name)}"><td>${esc(t.name)} ${t.readonly || t.error ? '⚠' : ''}</td><td>${t.fields.length}</td><td>${t.n()}</td></tr>`).join(''); document.querySelectorAll('#tbl tr').forEach(e => e.onclick = () => guard(() => { S.db.t(e.dataset.n); S.tb = { name: e.dataset.n, q: '', off: 0, sort: '', desc: 0, cols: S.tb.cols }; V.tables(); })); };
+    $('#tbq').oninput = fill; fill(); return;
+  }
+  const T = S.L.t(tb.name); if (!tb.cols[tb.name]) tb.cols[tb.name] = T.fields.slice(0, 8).map(f => f.name);
+  setTool(`<button onclick="S.tb.name=null;V.tables()">◀ Tabel</button><b>${esc(tb.name)}</b><input type="text" id="gq" placeholder="Cari (teks / ID)" value="${esc(tb.q)}"><button class="p" onclick="S.tb.q=$('#gq').value.trim();S.tb.off=0;tgrid()">Cari</button><button onclick="colsDrawer()">Kolom…</button>${T.readonly ? '' : '<button onclick="gAdd()">+ Baris</button>'}`);
+  $('#gq').onkeydown = e => { if (e.key === 'Enter') { S.tb.q = $('#gq').value.trim(); S.tb.off = 0; tgrid(); } }; setView('<div class="vc" id="tg"></div>'); tgrid();
+};
+function tgrid() {
+  const T = S.L.t(S.tb.name), tb = S.tb, cols = tb.cols[tb.name].filter(c => T.fmap.has(c)).map(c => T.f(c));
+  const sf = T.fields.filter(f => f.kind() === 'str'), q = tb.q.toLowerCase(), isNum = /^-?\d+$/.test(tb.q), kf = T.keyField(); const idx = [];
+  for (let i = 0; i < T.n(); i++) { if (tb.q) { let hit = isNum && T.getInt(i, kf) === parseInt(tb.q); if (!hit) for (const f of sf) if (T.getStr(i, f).toLowerCase().includes(q)) { hit = true; break; } if (!hit) continue; } idx.push(i); }
+  if (tb.sort && T.fmap.has(tb.sort)) { const f = T.f(tb.sort), str = f.kind() === 'str', val = i => str ? T.getStr(i, f).toLowerCase() : f.kind() === 'real' ? T.getReal(i, f) : T.getInt(i, f); idx.sort((a, b) => { const x = val(a), y = val(b), c = x < y ? -1 : x > y ? 1 : 0; return tb.desc ? -c : c; }); }
+  setNote(tb.name + (T.readonly ? ' (read-only)' : '') + ' · ' + idx.length + ' baris');
+  $('#tg').innerHTML = `<table class="t"><thead><tr>${cols.map(f => `<th onclick="gSort('${f.name}')">${esc(f.name)}${tb.sort === f.name ? (tb.desc ? ' ▼' : ' ▲') : ''}</th>`).join('')}</tr></thead><tbody>${idx.slice(tb.off, tb.off + 40).map(i => `<tr data-i="${i}">${cols.map(f => `<td>${esc(T.getText(i, f))}</td>`).join('')}</tr>`).join('')}</tbody></table>
+  <div class="pager"><button ${tb.off ? '' : 'disabled'} onclick="S.tb.off-=40;tgrid()">◀</button><span>${idx.length ? tb.off + 1 : 0}–${Math.min(tb.off + 40, idx.length)} / ${idx.length}</span><button ${tb.off + 40 < idx.length ? '' : 'disabled'} onclick="S.tb.off+=40;tgrid()">▶</button></div>`;
+  document.querySelectorAll('#tg tbody tr').forEach(tr => tr.onclick = () => { document.querySelectorAll('tr.sel').forEach(x => x.classList.remove('sel')); tr.classList.add('sel'); rowDrawer(T, +tr.dataset.i); });
+}
+function colsDrawer() { const T = S.L.t(S.tb.name); drawer('Kolom ditampilkan', sec('Kolom', '<div class="fg">' + T.fields.map(f => `<label class="ck"><input type="checkbox" data-c="${esc(f.name)}" ${S.tb.cols[S.tb.name].includes(f.name) ? 'checked' : ''}> ${esc(f.name)}</label>`).join('') + '</div>') + '<div class="r"><button class="p" id="cApply">Terapkan</button></div>', d => { d.querySelector('#cApply').onclick = () => { const c = [...d.querySelectorAll('[data-c]')].filter(i => i.checked).map(i => i.dataset.c); S.tb.cols[S.tb.name] = c.length ? c : [T.fields[0].name]; closeDrawer(); tgrid(); }; }); }
+function gSort(c) { if (S.tb.sort === c) S.tb.desc = S.tb.desc ? 0 : 1; else { S.tb.sort = c; S.tb.desc = 0; } tgrid(); }
+function gAdd() { guard(() => { const T = S.L.t(S.tb.name), i = T.addRow(); markDirty(); tgrid(); rowDrawer(T, i); }); }
+function rowDrawer(T, ri) {
+  const after = () => { S.L.invalidate(); S.L.ensure(); markDirty(); closeDrawer(); tgrid(); };
+  drawer(T.name + ' #' + ri, sec('Field', '<div class="fg">' + T.fields.map(f => inputFor(f, T.getText(ri, f), 'rf_' + f.name)).join('') + '</div>') + (T.readonly ? '<p class="mut">Read-only</p>' : '<div class="r"><button class="p" id="rs">Simpan</button><button id="rc">Duplikat</button><button id="rd" class="danger">Hapus</button></div>'), d => {
+    if (T.readonly) return;
+    d.querySelector('#rs').onclick = () => guard(() => { for (const [k, v] of Object.entries(collect(d))) T.setText(ri, T.f(k), v); after(); toast('Tersimpan'); });
+    d.querySelector('#rc').onclick = () => guard(() => { T.copyRow(ri); after(); toast('Diduplikasi (ubah ID bila perlu)'); });
+    d.querySelector('#rd').onclick = () => guard(() => { if (!confirm('Hapus baris ini?')) return; T.deleteRows([ri]); after(); });
+  });
+}
+
+/* ================= CSV ================= */
+V.csv = () => {
+  const c = S.csv, fc = c && TL.isFc(c), tables = S.db.order.filter(t => !t.readonly && !t.error).map(t => t.name).sort();
+  setTool(`<input type="file" id="cf" accept=".csv,.txt,text/csv" hidden><button class="p" onclick="$('#cf').click()">Pilih CSV…</button><button onclick="csvRun(false)" ${c ? '' : 'disabled'}>Pratinjau</button><button class="p" onclick="csvRun(true)" ${c ? '' : 'disabled'}>Terapkan</button><button onclick="csvOptions()" ${c ? '' : 'disabled'}>⚙ Opsi</button><span class="sep"></span><button onclick="exportAllZip()">Export ZIP semua tabel</button><select id="et">${tables.map(t => `<option>${esc(t)}</option>`).join('')}</select><button onclick="exportOne()">CSV tabel</button>`);
+  setNote(c ? S.csvName + ' · ' + c.rows.length + ' baris · ' + c.cols.length + ' kolom · ' + (fc ? 'format pemain FC' : 'tabel biasa') : 'Pilih file CSV untuk diimport.');
+  setView(`<div class="vc"><div class="card"><h3>Import CSV</h3>${c ? `<p>${esc(S.csvName)} — <b>${fc ? 'format pemain FC' : 'tabel biasa'}</b></p>${fc ? `<ul class="mut"><li><b>Pemain wanita tidak diimport.</b></li><li>Klub CSV jadi acuan: pemain dipindah ke klub CSV; klub tak ada / kosong / penuh → free agent.</li><li>Tim di liga yang tidak ada di CSV dibiarkan utuh. Skuad maks ${TL.MAX_SQUAD}.</li><li>Pemain baru mendapat penampilan unik; lineup per zona posisi.</li></ul>` : ''}<p class="mut">Atur opsi di panel ⚙ Opsi, lalu Pratinjau → Terapkan.</p>` : '<p class="mut">Belum ada CSV dipilih. Tekan <b>Pilih CSV…</b></p>'}</div><div id="crep"></div></div>`);
+  $('#cf').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; try { await task('Membaca CSV', async () => { await tick(5, 'Membaca ' + f.name + '…'); const b = new Uint8Array(await f.arrayBuffer()); await tick(50, 'Mengurai baris & kolom…'); S.csv = TL.Csv.parse(b); S.csvBytes = b; S.csvName = f.name; await tick(100, S.csv.rows.length + ' baris'); }); V.csv(); csvOptions(); } catch (x) { } };
+  if (c && window.innerWidth > 900) csvOptions();
+};
+function csvOptions() {
+  const c = S.csv; if (!c) return; const fc = TL.isFc(c), o = S.fc, tables = S.db.order.filter(t => !t.readonly && !t.error).map(t => t.name).sort();
+  const cb = (id, label, on) => `<label class="ck"><input type="checkbox" id="${id}" ${on ? 'checked' : ''}> ${label}</label>`;
+  drawer('Opsi import', fc ? sec('Pemain', cb('o_u', 'Update pemain yang sudah ada (atribut, posisi, kaki, tgl lahir)', o.update) + cb('o_a', 'Tambah pemain baru', o.add) + cb('o_n', 'Ikut perbarui nama pemain lama', o.names)) + sec('Klub', cb('o_s', 'Samakan klub dengan CSV (pindah ke klub CSV; klub tak ada / penuh → free agent)', o.sync) + cb('o_d', '🗑 HAPUS pemain lama yang tidak ada di CSV (pensiun)', o.del)) + sec('Batas & penampilan', `<div class="fg"><div class="fi"><label>Rating minimum</label><input id="o_m" type="number" value="${esc(o.omin)}"></div><div class="fi"><label>Skuad minimum per klub</label><input id="o_q" type="number" value="${o.minSquad}"></div></div><div class="fi"><label>Salin penampilan pemain baru dari ID (kosong = tiap pemain baru dibuat unik)</label><input id="o_t" type="number" value="${esc(o.tpl)}"></div>`)
+    : sec('Tabel tujuan', `<div class="fi"><label>Tabel</label><select id="o_tb">${tables.map(t => `<option ${t === S.csvTable ? 'selected' : ''}>${esc(t)}</option>`).join('')}</select></div><div class="fi"><label>Mode</label><select id="o_md"><option value="upsert">Update bila ID ada, tambah bila baru</option><option value="update">Hanya update</option><option value="append">Hanya tambah</option></select></div><div class="fi"><label>Kolom kunci (opsional)</label><input id="o_k" placeholder="otomatis"></div>`));
+}
+function exportOne(unlocked) {
+  if (!unlocked && window.__nerutAskSaveGate && window.__nerutAskSaveGate('export-one-csv')) return; guard(() => { const n = $('#et').value; busy('Mengekspor ' + n, () => TL.exportTable(S.L, n), b => download(n + '.csv', b, 'text/csv')); }); }
+async function csvRun(apply) {
+  const c = S.csv, fc = TL.isFc(c); let run, label;
+  if (!$('#panel').querySelector('#o_u') && !$('#panel').querySelector('#o_tb')) csvOptions();
+  try {
+    if (fc) {
+      const g = (i) => $('#' + i).checked; Object.assign(S.fc, { update: g('o_u'), add: g('o_a'), names: g('o_n'), sync: g('o_s'), del: g('o_d'), omin: $('#o_m').value, minSquad: parseInt($('#o_q').value) || 0, tpl: $('#o_t').value });
+      const o = { update: S.fc.update, add: S.fc.add, updateNames: S.fc.names, sync: S.fc.sync, deleteMissing: S.fc.del, minOverall: parseInt(S.fc.omin) || 0, minSquad: S.fc.minSquad, maxSquad: TL.MAX_SQUAD, template: parseInt(S.fc.tpl) || -1 };
+      if (apply && !confirm((o.deleteMissing ? 'PERHATIAN: pemain yang ID-nya tidak ada di CSV akan DIHAPUS dari database (di memori; file baru berubah setelah kamu mengunduh hasilnya).\n\n' : '') + 'Terapkan import? Titik pemulihan dibuat dulu supaya bisa diurungkan. Proses bisa memakan waktu beberapa saat.')) return;
+      label = 'import CSV pemain (' + S.csvName + ')'; run = () => TL.importFc(S.L, S.csvBytes, o, apply);
+    } else {
+      S.csvTable = $('#o_tb').value; const mode = $('#o_md').value, key = $('#o_k').value; if (apply && !confirm('Terapkan import ke tabel ' + S.csvTable + '?')) return;
+      label = 'import CSV ke tabel ' + S.csvTable; run = () => TL.importTable(S.L, S.csvTable, S.csvBytes, mode, key, apply);
+    }
+  } catch (e) { return toast(e.message, 1); }
+  const dirtyBefore = S.dirty; let snap = null;
+  try {
+    const rep = await task(apply ? 'Menerapkan perubahan database' : 'Menghitung pratinjau', async (ctl) => {
+      if (apply) { ctl.range(0, 14); await tick(0, 'Membuat titik pemulihan (agar bisa diurungkan)…'); snap = await S.db.serializeAsync(0, 100); }
+      ctl.range(apply ? 14 : 0, apply ? 96 : 100); const r = await run();
+      if (apply) { ctl.range(96, 100); await tick(10, 'Menyusun struktur database…'); await tick(100, 'Selesai'); } return r;
+    });
+    if (apply) { S.undo = { bytes: snap, label: 'sebelum ' + label, dirty: dirtyBefore }; markDirty(); }
+    $('#crep').innerHTML = `<div class="card"><h3>${apply ? 'Hasil (diterapkan)' : 'Pratinjau (belum mengubah apa pun)'}</h3><pre>${esc(TL.reportText(rep))}</pre>${apply ? '<p class="mut">Tab File → <b>Simpan ⬇ .db</b> untuk menyimpan hasilnya. Tombol <b>Urungkan</b> ada di tab File.</p>' : ''}</div>`;
+  } catch (e) {
+    if (apply && snap) { try { await task('Mengembalikan database', async () => { await reloadFrom(snap, 'Terjadi error; database dikembalikan ke kondisi sebelum import'); }); S.dirty = dirtyBefore; head(); } catch (x) { } }
+  }
+}
+head(); go('file');
+
+</script></body></html>
