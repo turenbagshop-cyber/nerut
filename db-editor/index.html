@@ -52,6 +52,56 @@ table.t.sm td{padding:3px 6px}table.t tr.xi td{background:rgba(61,155,255,.08)}.
  .drawer{position:fixed;top:calc(var(--top) + env(safe-area-inset-top,0px));bottom:0;right:0;z-index:30;width:min(90vw,360px);transition:transform .2s;box-shadow:0 0 30px #000a;transform:translateX(105%)}
  .drawer:not(.open)>*{display:revert}.drawer:not(.open)>.dempty{display:none}.app.left .drawer{right:auto;left:0;border-right:1px solid var(--line);transform:translateX(-105%)}.drawer.open,.app.left .drawer.open{transform:none}
  .scrim{display:block!important;position:fixed;inset:calc(var(--top) + env(safe-area-inset-top,0px)) 0 0 0;z-index:29;background:rgba(0,0,0,.35)}.scrim[hidden]{display:none!important}.vc{padding:6px}}
+
+/* ===== Tema gaya FC ===== */
+:root:not([data-theme="light"]){--bg:#0b1626;--bg2:#12233a;--bg3:#18304d;--bg4:#21406a;--line:#2a4a72;--acc:#2fd0c0;--acc2:#12907f;--fg:#eaf2ff;--fg2:#9fb6d4;--fg3:#6f87a8}
+:root:not([data-theme="light"]) body{background:radial-gradient(1100px 560px at 75% -10%,#1a5c8a66,transparent),linear-gradient(160deg,#060e1a,#0d2037 55%,#0a3338)}
+:root:not([data-theme="light"]) .view,:root:not([data-theme="light"]) #body{background:transparent}
+.top{background:#0a1626ee}.tabs button.on{background:var(--acc2)}.card,.fc{border-radius:14px}
+.fc{background:#17304fdd;border:1px solid #ffffff14;padding:12px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:6px;min-width:0}
+.fc small{color:var(--fg2)}.fc b.big{font-size:22px;letter-spacing:.5px}.fc .lab{font-weight:800;letter-spacing:1px;font-size:14px}
+.fc.club{background:linear-gradient(#ffffff26,#ffffff0d);border-color:#fff4}.fc.club .row{display:flex;align-items:center;gap:6px;width:100%;justify-content:space-between}
+.fc.club button{font-size:20px;padding:6px 10px}.stars{color:#e8c46a;letter-spacing:2px;font-size:18px}
+.tile{align-items:flex-start;text-align:left;min-height:96px}.tile.hi{background:linear-gradient(160deg,#17304f,#2a6bb5)}.tile.md{background:linear-gradient(160deg,#17304f,#c9792b)}.tile.lo{background:linear-gradient(160deg,#17304f,#c24b3d)}
+.dp{background:#12233ae6;border:1px solid #ffffff14;border-radius:14px;padding:12px}.dp .hd{display:flex;gap:10px;align-items:center}.dp .big{font-size:34px;font-weight:800;margin-left:auto}
+.g b.h{color:#35c07a}.g b.m{color:#f0b23a}.g b.l{color:#ee5a5a}
+
+.note:empty{display:none}
+.hmc{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.sel{display:flex;align-items:center;gap:6px;border-bottom:1px solid #ffffff2a;padding-bottom:5px}.sel b{flex:1;text-align:center;font-size:17px;cursor:pointer;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sel button{padding:6px 14px;font-size:16px}
+.hrow{display:grid;grid-template-columns:1fr 1.4fr;gap:8px}.tiles3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tiles3 .tile{min-height:78px;padding:10px}.tiles3 .lab{font-size:12px}
+.cta{padding:13px;font-size:16px;font-weight:700;border-radius:12px;position:sticky;bottom:0}
+.vc.lv{overflow:hidden;padding:4px;display:flex}.lu{flex:1;min-height:0;min-width:0;display:flex;flex-direction:column;gap:4px}
+.pitch{position:relative;flex:1;min-height:0;border-radius:12px;overflow:hidden;border:2px solid #ffffff40;background:repeating-linear-gradient(#1d7a4b 0 10%,#238855 10% 20%)}
+.pitch:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px solid #ffffff55}.pitch:after{content:"";position:absolute;left:50%;top:50%;height:26%;aspect-ratio:1;border:2px solid #ffffff55;border-radius:50%;transform:translate(-50%,-50%)}
+.pc{position:absolute;width:52px;transform:translate(-50%,-50%);text-align:center;cursor:pointer;font-size:9px;line-height:1.1;z-index:1}
+.pc svg{border-radius:50%;border:2px solid #fff6;display:block;margin:0 auto;width:34px;height:34px}.pc .ovr{position:absolute;left:0;top:-3px;z-index:2;min-width:20px;font-size:10px;padding:0 3px}
+.pc span{display:block;margin-top:1px;background:#000a;border-radius:5px;padding:0 2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pc i{position:absolute;right:0;top:20px;font-style:normal;font-size:8px;font-weight:800;background:#ffd75e;color:#000;border-radius:4px;padding:0 2px}
+.pc.oop svg,.ch.oop{border-color:var(--warn)}.pc.sel svg{border-color:var(--sel);box-shadow:0 0 0 3px #ffb02e99}.pc.sel span{background:var(--sel);color:#000}
+.hint2{position:absolute;left:4px;right:4px;top:4px;z-index:5;background:#000c;border:1px solid var(--sel);border-radius:8px;padding:4px 8px;font-size:11px;text-align:center}
+.strip{flex:none;background:#12233ae6;border:1px solid #ffffff14;border-radius:10px;padding:4px}.strip h4{margin:0 0 3px;font-size:10px;color:var(--fg2);letter-spacing:.5px}
+.cg{display:grid;grid-template-columns:repeat(6,1fr);gap:3px}.cg.rs{grid-template-columns:repeat(8,1fr);max-height:74px;overflow-y:auto}
+.ch{display:flex;flex-direction:column;align-items:center;background:#ffffff12;border:1.5px solid transparent;border-radius:6px;padding:2px 1px;font-size:9px;line-height:1.15;cursor:pointer;min-width:0}.ch .ovr{min-width:20px;font-size:10px;padding:0 3px}.ch span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ch i{font-style:normal;color:#ffd75e;font-weight:700}.ch.sel{border-color:var(--sel);background:#ffb02e33}
+.dp{background:#12233ae6;border:1px solid #ffffff14;border-radius:14px;padding:12px}.hd{display:flex;gap:10px;align-items:center}.hd .big{font-size:36px;font-weight:800;margin-left:auto}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin:8px 0}.rw{display:flex;justify-content:space-between;border-bottom:1px solid #ffffff14;padding:5px 0}.rw b.h{color:#35c07a}.rw b.m{color:#f0b23a}.rw b.l{color:#ee5a5a}
+.sheet button{display:block;width:100%;text-align:left;padding:13px 12px;margin:5px 0;font-size:15px;border-radius:10px}
+@media(min-width:900px){.lu{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto 1fr;align-content:start}.pitch{grid-row:1/4}.cg{grid-template-columns:repeat(4,1fr)}.cg.rs{grid-template-columns:repeat(6,1fr);max-height:none}.pc{width:64px}.pc svg{width:44px;height:44px}.pc i{top:28px}}
+.fg3{grid-template-columns:repeat(3,1fr)}.fg3 .fi label{font-size:10px}.ag{margin:6px 0}.agh{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff1f;padding:2px 0;margin-bottom:2px}.agv{font-weight:800;font-size:16px;min-width:30px;text-align:center;border-radius:6px;padding:0 6px}.agv.h{color:#35c07a}.agv.m{color:#f0b23a}.agv.l{color:#ee5a5a}.sv{position:sticky;bottom:-14px;background:var(--bg2);padding:8px 0 2px;margin-top:6px}
+.pk{position:absolute;width:58px;transform:translate(-50%,-50%);cursor:pointer;z-index:1}.pk.sel .fcd{outline:2px solid var(--sel);box-shadow:0 0 0 4px #ffb02e88}.pk.oop .fcd{box-shadow:0 0 0 2px var(--warn)}
+.fcd{position:relative;border-radius:7px 7px 14px 14px/7px 7px 18px 18px;padding:2px 2px 3px;color:#2a1a0c;box-shadow:0 2px 5px #0009;overflow:hidden;line-height:1.1}
+.fcd.t0{background:linear-gradient(160deg,#eebd8c,#a8703a)}.fcd.t1{background:linear-gradient(160deg,#f1f3f7,#9aa5b3)}.fcd.t2{background:linear-gradient(160deg,#f8e48f,#c39a3c)}.fcd.t3{background:linear-gradient(160deg,#3b82ff,#8b5cf6);color:#fff}
+.fo{position:absolute;left:4px;top:3px;line-height:1;z-index:1}.fo b{display:block;font-size:13px}.fo i{font-style:normal;font-size:7px;font-weight:800}
+.ff{text-align:right;height:35px}.ff svg{display:inline-block}.fn{font-size:8px;font-weight:800;text-align:center;border-top:1px solid #0003;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fs{display:flex;justify-content:space-between;font-size:6.5px;font-weight:700;padding:0 1px;text-align:center}.fb{display:flex;justify-content:center;align-items:center;gap:3px;margin-top:1px}.fb svg{display:block}
+.fcd.big{width:150px;padding:6px 6px 8px}.big .fo{left:10px;top:8px}.big .fo b{font-size:30px}.big .fo i{font-size:13px}.big .ff{height:88px}.big .fn{font-size:14px;padding:3px 0}.big .fs{font-size:13px;margin-top:3px}.big .fs em{display:block;font-style:normal;font-size:8px;opacity:.7}.big .fb{margin-top:5px;gap:8px}
+.rb{position:absolute;right:-2px;top:-3px;z-index:3;background:#fff;color:#000;border-radius:8px;font:800 8px/1 sans-serif;text-decoration:none;padding:2px 3px;border:1px solid #0006}
+.ch{position:relative;border-bottom:3px solid transparent}.ch.t0{border-bottom-color:#c98f58}.ch.t1{border-bottom-color:#b9c2cd}.ch.t2{border-bottom-color:#e4c561}.ch.t3{border-bottom-color:#8b5cf6}
+.rh{display:flex;align-items:center;gap:4px;flex-wrap:nowrap}.rh input{width:72px;padding:1px 4px;font-size:11px;min-width:0;flex:none}.rh select{padding:1px;font-size:11px}.rh button{padding:1px 6px;font-size:11px}
+.shd{display:flex;gap:10px;align-items:flex-start}.shd .sheet{flex:1;min-width:0}.shd .sheet button{padding:8px 10px;margin:3px 0;font-size:14px}
+.cmpc{display:flex;gap:8px;justify-content:center;margin-bottom:8px}.cmpc .fcd.big{width:calc(50% - 4px)}.cr{display:grid;grid-template-columns:1fr auto 1fr;text-align:center;border-bottom:1px solid #ffffff14;padding:4px 0}.cr span{color:var(--fg2);padding:0 14px}.cr b.h{color:#35c07a}
+.pk{transform:translate(-50%,-50%) scale(var(--sc,1))}.pk .fcs{display:block;width:58px;height:auto}.fcs{overflow:visible}.fcs.big{width:170px}
+.pk.sel .fcs{filter:drop-shadow(0 0 3px #ffb02e) drop-shadow(0 0 5px #ffb02e)}.pk.oop .fcs{filter:drop-shadow(0 0 3px var(--warn))}
+.shd .fcs.big{width:150px;flex:none}.cmpc .fcs.big{width:calc(50% - 4px)}
 </style></head><body>
 <div id="app">
 <div class="top"><div class="brand"><i></i><span>nerutlabs DB Editor</span></div><span class="sep"></span><div class="tabs" id="tabs"></div><span class="grow"></span><span class="chip" id="chip">Belum ada file</span>
@@ -1551,7 +1601,7 @@ function head() {
   $('#saveBtn').disabled = !S.db; document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.v === S.view));
 }
 function markDirty() { S.dirty = true; head(); }
-const TABS = [['file', 'File'], ['players', 'Pemain'], ['teams', 'Tim'], ['transfer', 'Transfer'], ['tables', 'Tabel'], ['csv', 'CSV']];
+const TABS = [['file', 'File'], ['home', 'Klub'], ['lineup', 'Lineup'], ['players', 'Pemain'], ['teams', 'Tim'], ['transfer', 'Transfer'], ['tables', 'Tabel'], ['csv', 'CSV']];
 $('#tabs').innerHTML = TABS.map(t => `<button data-v="${t[0]}" onclick="go('${t[0]}')">${t[1]}</button>`).join('');
 function go(v) {
   S.view = v; head(); closeDrawer(); $('#dempty').textContent = 'Pilih satu baris di tampilan untuk melihat / mengeditnya di panel ini.';
@@ -1595,7 +1645,7 @@ async function openFiles() {
       if (!mf) toast('meta.xml tidak dipilih: memakai meta bawaan editor.');
       if (db.repaired) { L.log.push('Direktori tabel DB basi: dibangun ulang otomatis (akan ditulis bersih saat disimpan)'); toast('Direktori tabel DB mod tidak cocok; sudah diperbaiki otomatis. Saat disimpan, file ditulis ulang bersih.'); }
       if (L.nameLocked) L.log.push('Tabel nama punya blok kedua (' + L.nameBlock2 + ' baris): ' + (L.hasEditedNames() ? 'nama baru disimpan lewat editedplayernames' : 'nama baru dimatikan'));
-    }); $('#fdb').value = ''; go('file');
+    }); $('#fdb').value = ''; go('home');
   } catch (e) { $('#fdb').value = ''; }
 }
 async function reloadFrom(bytes, label) { const db = new TL.FifaDb(bytes, S.metaText), L = await TL.Ctx.create(db); S.db = db; S.L = L; S.tb.name = null; S.tr = { pid: null, pname: '', team: null }; toast(label); }
@@ -1650,6 +1700,224 @@ V.players = () => {
   setView('<div class="vc" id="pl"></div>'); plist();
 };
 function pApply() { const p = S.pf; p.q = $('#pq').value; p.sort = $('#ps').value; p.omin = $('#po').value; p.free = $('#pfree').checked; p.off = 0; V.players(); }
+
+/* ===== UI gaya FC: Klub (pilih negara/liga/tim) + editor Lineup ===== */
+const hue = s => { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; };
+const crest = (n, id, z = 110) => { const h = hue(n + id), i = String(n || '?').replace(/\b(fc|sc|cf|ac|as|club|de|the|1\.)\b/gi, '').trim().split(/\s+/).map(w => w[0]).join('').slice(0, 3).toUpperCase() || '?';
+  return `<svg width="${z}" height="${z}" viewBox="0 0 100 100"><path d="M10 8h80v44c0 26-24 38-40 44C34 90 10 78 10 52z" fill="hsl(${h} 70% 40%)" stroke="#fff" stroke-width="4"/><path d="M10 8h80v22H10z" fill="hsl(${(h + 40) % 360} 75% 55%)"/><text x="50" y="68" text-anchor="middle" font-size="${i.length > 2 ? 26 : 32}" font-weight="800" fill="#fff" font-family="sans-serif">${esc(i)}</text></svg>`; };
+const kit = (id, z = 120) => { const h = hue('k' + id), h2 = (h + 180) % 360; return `<svg width="${z}" height="${z}" viewBox="0 0 100 100"><path d="M30 8 8 22l8 18 12-6v56h44V34l12 6 8-18L70 8c-4 8-12 10-20 10S34 16 30 8z" fill="hsl(${h} 65% 38%)" stroke="#0006" stroke-width="2"/><rect x="38" y="20" width="9" height="70" fill="hsl(${h2} 60% 30%)" opacity=".75"/><rect x="53" y="20" width="9" height="70" fill="hsl(${h2} 60% 30%)" opacity=".75"/><path d="M42 8c2 7 14 7 16 0" fill="none" stroke="#fff9" stroke-width="3"/></svg>`; };
+const face = (pid, z = 46) => { const h = hue('p' + pid), sk = ['#f1c9a5', '#d9a273', '#a8734a', '#6e4a2f'][Math.abs(pid) % 4]; return `<svg width="${z}" height="${z}" viewBox="0 0 60 60"><circle cx="30" cy="30" r="30" fill="hsl(${h} 35% 30%)"/><path d="M8 60c2-14 12-18 22-18s20 4 22 18z" fill="hsl(${h} 60% 45%)"/><circle cx="30" cy="25" r="11" fill="${sk}"/><path d="M19 22c2-9 20-11 22 0-6-4-16-4-22 0z" fill="#2a1d14"/></svg>`; };
+const zone = c => c === 0 ? 0 : c <= 8 ? 1 : c <= 19 ? 2 : 3;
+const lvl = v => v >= 75 ? ['VERY HIGH', 'hi'] : v >= 68 ? ['HIGH', 'hi'] : v >= 60 ? ['MEDIUM', 'md'] : ['LOW', 'lo'];
+const money = v => v == null ? '—' : '$' + (v / 1e6).toFixed(2) + 'M';
+const tRow = tid => { const T = S.L.t('teams'); for (let i = 0; i < T.n(); i++) if (T.getInt(i, 'teamid') === tid) return i; return -1; };
+const XY = { 0: [50, 91], 1: [50, 81], 2: [90, 68], 3: [84, 73], 4: [66, 74], 5: [50, 74], 6: [34, 74], 7: [16, 73], 8: [10, 68], 9: [66, 63], 10: [50, 63], 11: [34, 63], 12: [90, 47], 13: [66, 48], 14: [50, 48], 15: [34, 48], 16: [10, 47], 17: [72, 32], 18: [50, 32], 19: [28, 32], 20: [68, 16], 21: [50, 16], 22: [32, 16], 23: [88, 22], 24: [64, 12], 25: [50, 12], 26: [36, 12], 27: [12, 22] };
+const formStr = codes => { const n = [0, 0, 0, 0]; codes.forEach(c => n[zone(c)]++); return n[1] + '-' + n[2] + '-' + n[3]; };
+const swipe = (el, fn) => { let x0 = null; el.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true }); el.addEventListener('touchend', e => { if (x0 == null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null; if (Math.abs(dx) > 45) fn(dx < 0 ? 1 : -1); }); };
+const cyc = (a, i, d) => a[(i + d + a.length) % a.length];
+
+/* ---------- Klub ---------- */
+S.hm = S.hm || { c: null, lg: null, tid: null };
+V.home = () => {
+  const L = S.L, h = S.hm, LT = L.t('leagues'), cOf = new Map();
+  for (let i = 0; i < LT.n(); i++) cOf.set(LT.getInt(i, 'leagueid'), LT.getInt(i, 'countryid'));
+  const lname = id => L.leagueName.get(id) || 'Tanpa liga';
+  const cn = id => L.nationName.get(cOf.get(id)) || (L.leagueName.has(id) ? lname(id).split(' ')[0] : 'Internasional');
+  const all = L.listTeams('', -1).filter(x => x.players > 0), cm = new Map();
+  for (const t of all) { const c = cn(t.leagueId); if (!cm.has(c)) cm.set(c, new Map()); const m = cm.get(c); if (!m.has(t.leagueId)) m.set(t.leagueId, []); m.get(t.leagueId).push(t); }
+  const short = (lg, c) => { const s = lname(lg); return s.toLowerCase().startsWith(c.toLowerCase()) ? (s.slice(c.length).trim() || s) : s; };
+  setTool('<button id="hLg">Cari tim…</button><button id="hDet">Data tim</button>'); setNote('');
+  setView('<div class="vc"><div class="hmc" id="hm"></div></div>');
+  const draw = () => guard(() => {
+    if (h.tid != null) { const t = all.find(x => x.id === h.tid); if (t) { h.c = cn(t.leagueId); h.lg = t.leagueId; } }
+    const C = [...cm.keys()].sort(); if (!C.length) return; if (!cm.has(h.c)) { h.c = C[0]; h.lg = null; h.tid = null; }
+    const lv = id => { const m = /\((\d+)\)\s*$/.exec(lname(id)); return m ? +m[1] : 1; }, LG = [...cm.get(h.c).keys()].sort((a, b) => lv(a) - lv(b) || lname(a).localeCompare(lname(b))); if (!cm.get(h.c).has(h.lg)) { h.lg = LG[0]; h.tid = null; }
+    const teams = cm.get(h.c).get(h.lg).slice().sort((a, b) => a.name.localeCompare(b.name)); if (!teams.some(t => t.id === h.tid)) h.tid = teams[0].id;
+    const ix = teams.findIndex(t => t.id === h.tid), cur = teams[ix], T = L.t('teams'), ti = tRow(h.tid), g = k => T.fmap.has(k) && ti >= 0 ? T.getInt(ti, k) : null;
+    const sq = L.squad(h.tid), xi = sq.filter(p => p.slot < 28), avg = z => { const a = xi.filter(p => zone(p.slot) === z); return a.length ? Math.round(a.reduce((s, p) => s + p.ovr, 0) / a.length) : 0; };
+    const ovr = xi.length ? Math.round(xi.reduce((s, p) => s + p.ovr, 0) / xi.length) : 0, att = avg(3), mid = avg(2), def = avg(1), ns = Math.max(1, Math.min(5, Math.round(ovr / 20)));
+    const best = sq.slice().sort((a, b) => b.ovr - a.ovr)[0];
+    const tile = (t, v) => { const [l, c] = lvl(v); return `<div class="fc tile ${c}"><span>${t}</span><b class="lab">${l}<br>${v}</b></div>`; };
+    const sel = (id, txt) => `<div class="sel" id="${id}"><button data-d="-1">◀</button><b>${esc(txt)}</b><button data-d="1">▶</button></div>`;
+    $('#hm').innerHTML = `${sel('sC', h.c)}
+    <div class="fc club" id="cCard"><div class="row"><button data-d="-1">◀</button>${crest(cur.name, cur.id, 104)}<button data-d="1">▶</button></div><b class="big">${esc(cur.name)}</b><div class="stars">${'★'.repeat(ns)}${'☆'.repeat(5 - ns)}</div><small>${ix + 1} / ${teams.length} · ID ${cur.id} · ${sq.length} pemain</small></div>
+    ${sel('sL', short(h.lg, h.c))}
+    <div class="hrow"><div class="fc"><small>HOME KIT</small>${kit(cur.id, 90)}</div><div class="fc"><b class="big">OVR ${ovr}</b><small>XI ${formStr(xi.map(p => p.slot))}</small><small>Worth ${money(g('clubworth'))}</small><small>Budget ${money(g('transferbudget'))}</small><small>${best ? '★ ' + esc(best.name) + ' (' + best.ovr + ')' : ''}</small></div></div>
+    <div class="tiles3">${tile('Serangan', att)}${tile('Tengah', mid)}${tile('Bertahan', def)}</div>
+    <button class="p cta" id="hGo">Atur Lineup ▶</button>`;
+    const st = (key, d) => { if (key === 'c') { h.c = cyc(C, C.indexOf(h.c), d); h.lg = null; h.tid = null; } else if (key === 'l') { h.lg = cyc(LG, LG.indexOf(h.lg), d); h.tid = null; } else h.tid = cyc(teams, ix, d).id; draw(); };
+    const wire = (id, key) => { const el = $(id); el.querySelectorAll('button[data-d]').forEach(b => b.onclick = () => st(key, +b.dataset.d)); swipe(el, d => st(key, d)); };
+    wire('#sC', 'c'); wire('#sL', 'l'); wire('#cCard', 't');
+    $('#sC b').onclick = () => searchPick('Pilih negara', C.map(c => [c, c]), c => { h.c = c; h.lg = null; h.tid = null; draw(); });
+    $('#sL b').onclick = () => searchPick('Pilih liga', LG.map(l => [l, short(l, h.c)]), l => { h.lg = l; h.tid = null; draw(); });
+    $('#hGo').onclick = () => { S.lu.tid = h.tid; go('lineup'); };
+  });
+  $('#hLg').onclick = () => pickTeam(false, id => { h.tid = id; draw(); });
+  $('#hDet').onclick = () => h.tid != null && teamDrawer(h.tid);
+  draw();
+};
+
+/* ---------- Lineup ---------- */
+S.lu = S.lu || { tid: null, a: null };
+function luRow(pid) { const L = S.L, TPL = L.t('teamplayerlinks'); L.ensure(); for (const j of (L.trows.get(S.lu.tid) || [])) if (TPL.getInt(j, 'playerid') === pid) return j; return undefined; }
+function luSwap(a, b) { guard(() => { luSnap(); const TPL = S.L.t('teamplayerlinks'), ja = luRow(a), jb = luRow(b); if (ja === undefined || jb === undefined) throw new Error('Pemain tidak ada di tim ini'); const pa = TPL.getInt(ja, 'position'), pb = TPL.getInt(jb, 'position'); TPL.setInt(ja, 'position', pb); TPL.setInt(jb, 'position', pa); markDirty(); toast('Posisi ditukar'); }); }
+const FORMS = { '4-4-2': [0, 3, 4, 6, 7, 12, 13, 15, 16, 24, 26], '4-3-3': [0, 3, 4, 6, 7, 13, 14, 15, 23, 25, 27], '4-2-3-1': [0, 3, 4, 6, 7, 9, 11, 17, 18, 19, 25], '4-1-4-1': [0, 3, 4, 6, 7, 10, 12, 13, 15, 16, 25], '4-5-1': [0, 3, 4, 6, 7, 12, 13, 14, 15, 16, 25], '4-3-2-1': [0, 3, 4, 6, 7, 13, 14, 15, 17, 19, 25], '4-1-2-1-2': [0, 3, 4, 6, 7, 10, 13, 15, 18, 24, 26], '3-5-2': [0, 4, 5, 6, 2, 8, 13, 14, 15, 24, 26], '3-4-3': [0, 4, 5, 6, 12, 13, 15, 16, 23, 25, 27], '5-3-2': [0, 2, 4, 5, 6, 8, 13, 14, 15, 24, 26], '5-4-1': [0, 2, 4, 5, 6, 8, 12, 13, 15, 16, 25] };
+function luApplyForm(slots) {
+  guard(() => {
+    const L = S.L, u = S.lu, P = L.t('players'), TPL = L.t('teamplayerlinks'), left = L.squad(u.tid).map(p => { const pr = L.playerRow(p.pid); return { p, pf: [1, 2, 3, 4].map(q => P.getInt(pr, 'preferredposition' + q)) }; });
+    if (left.length < 11) throw new Error('Pemain kurang dari 11'); luSnap();
+    const chosen = new Map();
+    for (const s of slots.slice().sort((a, b) => zone(a) - zone(b))) {
+      let bi = -1, bs = -1e9;
+      left.forEach((x, k) => { const p0 = x.pf[0] === 99 ? 14 : x.pf[0], z0 = zone(p0), zs = zone(s); let sc = x.p.ovr + (x.pf.includes(s) ? 25 : 0) + (z0 === zs ? 15 : -60) + (x.p.slot < 28 ? 3 : 0) - Math.abs(p0 - s) * 0.3; if ((zs === 0) !== (z0 === 0)) sc -= 500; if (sc > bs) { bs = sc; bi = k; } });
+      chosen.set(left.splice(bi, 1)[0].p.pid, s);
+    }
+    for (const [pid, s] of chosen) TPL.setInt(luRow(pid), 'position', s);
+    const rest = left.filter(x => x.p.slot <= 28).sort((a, b) => b.p.ovr - a.p.ovr), gk = rest.find(x => zone(x.pf[0]) === 0);
+    if (gk) { rest.splice(rest.indexOf(gk), 1); rest.unshift(gk); }
+    rest.forEach((x, i) => TPL.setInt(luRow(x.p.pid), 'position', i < 12 ? 28 : 29));
+    markDirty(); luDraw(); toast('Formasi ' + formStr(slots) + ' diterapkan');
+  });
+}
+function luFillSel() {
+  const s = $('#uFs'); if (!s) return; const L = S.L, u = S.lu, cur = formStr(L.squad(u.tid).filter(p => p.slot < 28).map(p => p.slot));
+  const seen = new Set(), db = []; L.formSlots(u.tid).forEach((f, i) => { const k = f.join(); if (!seen.has(k)) { seen.add(k); db.push(`<option value="d${i}">${formStr(f)} (DB)</option>`); } });
+  s.innerHTML = `<option value="">Formasi: ${cur}</option><optgroup label="Formasi umum">${Object.keys(FORMS).map(k => `<option value="f${k}">${k}</option>`).join('')}</optgroup>${db.length ? '<optgroup label="Formasi di database tim">' + db.join('') + '</optgroup>' : ''}`;
+  s.onchange = () => { const v = s.value; s.value = ''; if (!v) return; luApplyForm(v[0] === 'f' ? FORMS[v.slice(1)] : L.formSlots(u.tid)[+v.slice(1)]); };
+}
+
+const GR = [['PAC', ['acceleration', 'sprintspeed']], ['SHO', ['finishing', 'shotpower', 'longshots', 'positioning', 'volleys', 'penalties']], ['PAS', ['shortpassing', 'vision', 'crossing', 'longpassing', 'curve', 'freekickaccuracy']], ['DRI', ['ballcontrol', 'dribbling', 'agility', 'balance', 'reactions']], ['DEF', ['interceptions', 'headingaccuracy', 'marking', 'standingtackle', 'slidingtackle']], ['PHY', ['strength', 'stamina', 'aggression', 'jumping']]];
+const ROLEF = [['captainid', 'Kapten', 'C'], ['penaltytakerid', 'Penalti', 'P'], ['freekicktakerid', 'Tendangan bebas', 'F'], ['leftfreekicktakerid', 'Tendangan bebas kiri', 'F'], ['rightfreekicktakerid', 'Tendangan bebas kanan', 'F'], ['leftcornerkicktakerid', 'Corner kiri', 'K'], ['rightcornerkicktakerid', 'Corner kanan', 'K'], ['longkicktakerid', 'Tendangan jauh', 'L']];
+const st6 = row => { const P = S.L.t('players'); return GR.map(([t, ks]) => { const a = ks.filter(k => P.fmap.has(k)).map(k => P.getInt(row, k)).filter(x => x > 0); return a.length ? Math.round(a.reduce((s, x) => s + x, 0) / a.length) : 0; }); };
+const tier = o => o >= 85 ? 3 : o >= 75 ? 2 : o >= 65 ? 1 : 0;
+const flag = (id, w = 14) => { const h = hue('n' + id); return `<svg width="${w}" height="${(w * .68).toFixed(1)}" viewBox="0 0 3 2"><rect width="3" height="2" fill="hsl(${h} 60% 45%)"/><rect y=".67" width="3" height=".66" fill="#fff"/><rect y="1.33" width="3" height=".67" fill="hsl(${(h + 120) % 360} 60% 45%)"/></svg>`; };
+const flagIn = id => { const h = hue('n' + id); return `<rect width="24" height="16" rx="2" fill="hsl(${h} 60% 45%)"/><rect y="5.3" width="24" height="5.4" fill="#fff"/><rect y="10.7" width="24" height="5.3" fill="hsl(${(h + 120) % 360} 60% 45%)"/>`; };
+const badgeIn = (n, id, sh) => { const h = hue(n + id), i = String(n || '?').replace(/\b(fc|sc|cf|ac|as|club|de|the|1\.)\b/gi, '').trim().split(/\s+/).map(w => w[0]).join('').slice(0, 3).toUpperCase() || '?'; return sh ? `<path d="M10 8h80v44c0 26-24 38-40 44C34 90 10 78 10 52z" fill="hsl(${h} 70% 40%)" stroke="#fff" stroke-width="5"/><path d="M10 8h80v22H10z" fill="hsl(${(h + 40) % 360} 75% 55%)"/><text x="50" y="68" text-anchor="middle" font-size="${i.length > 2 ? 26 : 32}" font-weight="800" fill="#fff" font-family="sans-serif">${esc(i)}</text>` : `<circle cx="50" cy="50" r="46" fill="hsl(${h} 55% 28%)" stroke="#fff" stroke-width="6"/><text x="50" y="64" text-anchor="middle" font-size="40" font-weight="800" fill="#fff" font-family="sans-serif">${esc(i.slice(0, 2))}</text>`; };
+const faceIn = pid => { const h = hue('p' + pid), sk = ['#f1c9a5', '#d9a273', '#a8734a', '#6e4a2f'][Math.abs(pid) % 4]; return `<path d="M5 60c2-17 13-21 25-21s23 4 25 21z" fill="hsl(${h} 55% 38%)"/><circle cx="30" cy="25" r="12.5" fill="${sk}"/><path d="M17 22c2-11 24-13 26 0-7-4-19-4-26 0z" fill="#2a1d14"/>`; };
+const CT = [['#f0c294', '#a8703a'], ['#f4f6f9', '#98a4b3'], ['#fbe9a0', '#c79a34'], ['#5a95ff', '#8b5cf6']];
+function fcard(pid, name, ovr, pos, big) {
+  const L = S.L, P = L.t('players'), row = L.playerRow(pid), s = st6(row), nat = P.getInt(row, 'nationality'), tid = S.lu.tid, tn = L.teamName.get(tid) || '', lg = L.teamLeagueOf ? L.teamLeagueOf(tid) : -1, ln = L.leagueName.get(lg) || '', t = tier(ovr), dk = t === 3 ? '#fff' : '#3a2a10';
+  const a2 = P.getInt(row, 'preferredposition2'), alt = a2 >= 0 && a2 < 28 && posName(a2) !== pos ? posName(a2) : '', foot = P.fmap.has('preferredfoot') && P.getInt(row, 'preferredfoot') === 2 ? 'L' : 'R';
+  const sw = k => { const f = P.fmap.get(k); if (!f) return 0; const v = P.getInt(row, k); return f.low === 0 && f.max() <= 4 ? v + 1 : v; };
+  const nm = name.length > 12 && name.includes(' ') ? name.split(' ').slice(-1)[0] : name, shown = nm.length > 13 ? nm.slice(0, 12) + '…' : nm, nfs = big ? (shown.length > 11 ? 16 : shown.length > 8 ? 20 : 24) : (shown.length > 9 ? 22 : 27);
+  const pill = (y, tx) => `<rect x="168" y="${y}" width="38" height="20" rx="10" fill="#0002" stroke="${dk}" stroke-width="1.6"/><text x="187" y="${y + 14}" text-anchor="middle" font-size="11" font-weight="800" fill="${dk}">${tx}</text>`;
+  const cols = [38, 67, 96, 125, 154, 183], lgi = ln.replace(/^\S+\s/, '').split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase() || ln.slice(0, 2);
+  return `<svg class="fcs${big ? ' big' : ''}" viewBox="0 0 220 290" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fg${t}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${CT[t][0]}"/><stop offset="1" stop-color="${CT[t][1]}"/></linearGradient><pattern id="fpt" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><rect width="5" height="14" fill="#fff" opacity=".16"/></pattern><clipPath id="fcl"><path d="M26 6H194L208 30V228Q208 246 192 256L110 286L28 256Q12 246 12 228V30Z"/></clipPath></defs>
+  <path d="M26 6H194L208 30V228Q208 246 192 256L110 286L28 256Q12 246 12 228V30Z" fill="url(#fg${t})" stroke="${dk}" stroke-opacity=".35" stroke-width="2"/><path d="M26 6H194L208 30V228Q208 246 192 256L110 286L28 256Q12 246 12 228V30Z" fill="url(#fpt)"/>
+  <g clip-path="url(#fcl)"><svg x="48" y="16" width="150" height="150" viewBox="0 0 60 60">${faceIn(pid)}</svg></g>
+  <text x="28" y="${big ? 66 : 70}" font-size="${big ? 46 : 56}" font-weight="800" fill="${dk}" font-family="sans-serif">${ovr}</text><text x="30" y="${big ? 92 : 98}" font-size="${big ? 21 : 26}" font-weight="700" fill="${dk}" font-family="sans-serif">${esc(pos)}</text>
+  <g font-family="sans-serif">${big ? (alt ? pill(30, alt) : '') + pill(138, foot) + pill(162, sw('skillmoves') + '·' + sw('weakfootabilitytypecode')) : ''}
+  <text x="110" y="${big ? 197 : 198}" text-anchor="middle" font-size="${nfs}" font-weight="800" fill="${dk}">${esc(shown)}</text>
+  ${s.map((x, i) => (big ? `<text x="${cols[i]}" y="214" text-anchor="middle" font-size="9" font-weight="700" fill="${dk}" opacity=".8">${GR[i][0]}</text>` : '') + `<text x="${cols[i]}" y="${big ? 232 : 224}" text-anchor="middle" font-size="${big ? 16 : 20}" font-weight="800" fill="${dk}">${x || '–'}</text>`).join('')}</g>
+  <g transform="translate(60 ${big ? 244 : 238})"><g transform="translate(0 2)">${flagIn(nat)}</g><svg x="31" y="-1" width="22" height="22" viewBox="0 0 100 100">${badgeIn(ln || '?', lg, false)}</svg><svg x="58" y="-1" width="22" height="22" viewBox="0 0 100 100">${badgeIn(tn, tid, true)}</svg></g></svg>`;
+}
+const _lgi = 0;
+function luPlace(xi) {
+  const pitch = $('#lu .pitch'); if (!pitch || !xi.length) return; const W = pitch.clientWidth, H = pitch.clientHeight, cnt = {}, items = xi.map(p => { const [x, y] = XY[p.slot] || [50, 50], n = cnt[p.slot] = (cnt[p.slot] || 0) + 1; return { p, x: x + (n - 1) * 12, y }; });
+  const ys = [...new Set(items.map(i => i.y))].sort((a, b) => a - b), bands = []; ys.forEach(y => { const b = bands[bands.length - 1]; if (b && y - b.start <= 5) b.ys.push(y); else bands.push({ start: y, ys: [y] }); });
+  const nb = bands.length, top = 13, bot = 87, step = nb > 1 ? (bot - top) / (nb - 1) : 0; let sc = 1.15;
+  if (nb > 1) sc = Math.min(sc, step / 100 * H / 84);
+  bands.forEach(b => { const r = items.filter(i => b.ys.includes(i.y)).map(i => i.x).sort((a, c) => a - c); for (let k = 1; k < r.length; k++) sc = Math.min(sc, (r[k] - r[k - 1]) / 100 * W / 64); });
+  const els = []; for (const i of items) { const el = pitch.querySelector(`.pk[data-p="${i.p.pid}"]`); if (el) { el.style.left = i.x + '%'; el.style.top = (nb > 1 ? top + bands.findIndex(b => b.ys.includes(i.y)) * step : 50) + '%'; els.push(el); } }
+  const apply = v => els.forEach(e => e.style.setProperty('--sc', v.toFixed(3)));
+  const clash = () => { const r = els.map(e => e.getBoundingClientRect()); for (let a = 0; a < r.length; a++) for (let b = a + 1; b < r.length; b++) { const A = r[a], B = r[b]; if (A.left < B.right + 3 && B.left < A.right + 3 && A.top < B.bottom + 3 && B.top < A.bottom + 3) return true; } return false; };
+  sc = Math.max(.35, sc); apply(sc); for (let k = 0; k < 30 && sc > .35 && clash(); k++) { sc *= .94; apply(sc); }
+}
+if (!window._luRs) { window._luRs = 1; window.addEventListener('resize', () => { if (S.view === 'lineup' && S.db) luDraw(); }); }
+
+function luSnap() { const L = S.L, u = S.lu, TPL = L.t('teamplayerlinks'), T = L.t('teams'), ti = tRow(u.tid); L.ensure(); (u.h = u.h || []).push({ tid: u.tid, pos: (L.trows.get(u.tid) || []).map(j => [j, TPL.getInt(j, 'position')]), roles: ROLEF.filter(r => T.fmap.has(r[0]) && ti >= 0).map(r => [r[0], T.getInt(ti, r[0])]) }); if (u.h.length > 30) u.h.shift(); }
+function luUndo() { const L = S.L, u = S.lu, s = (u.h || []).pop(); if (!s) return; guard(() => { const TPL = L.t('teamplayerlinks'), T = L.t('teams'), ti = tRow(s.tid); s.pos.forEach(([j, v]) => TPL.setInt(j, 'position', v)); s.roles.forEach(([k, v]) => T.setInt(ti, k, v)); markDirty(); u.a = null; luDraw(); toast('Perubahan dibatalkan'); }); }
+V.lineup = () => {
+  const L = S.L, u = S.lu; if (u.tid == null || !L.teamName.has(u.tid)) u.tid = (S.hm && S.hm.tid) || [...L.teamName.keys()][0]; u.a = null; if (u.ht !== u.tid) { u.h = []; u.ht = u.tid; } u.f = u.f || { q: '', z: -1, s: 'ovr' };
+  setTool('<button class="p" id="uT"></button><select id="uFs" title="Pilih formasi"></select><button id="uAuto">Auto-susun</button><button id="uU" title="Batalkan">↩</button><button id="uS">Bagikan</button><button id="uD">Data tim</button>'); setNote('');
+  setView('<div class="vc lv"><div class="lu" id="lu"></div></div>');
+  $('#uT').onclick = () => pickTeam(false, id => { u.tid = id; u.ht = id; u.h = []; u.a = null; luDraw(); });
+  $('#uD').onclick = () => teamDrawer(u.tid); $('#uU').onclick = luUndo; $('#uS').onclick = luShare;
+  $('#uAuto').onclick = () => guard(() => { if (!confirm('Susun ulang lineup tim ini otomatis (OVR tertinggi per zona)?')) return; luSnap(); S.L.buildLineup(u.tid); markDirty(); u.a = null; luDraw(); toast('Lineup disusun otomatis'); });
+  luDraw();
+};
+function luDraw() {
+  guard(() => {
+    const L = S.L, u = S.lu, P = L.t('players'), sq = L.squad(u.tid), T = L.t('teams'), ti = tRow(u.tid), rl = new Map(), f = u.f; $('#uT').textContent = '⚽ ' + L.teamName.get(u.tid); $('#uU').disabled = !(u.h || []).length;
+    for (const [k, , ch] of ROLEF) if (ch === 'C' || ch === 'P') if (T.fmap.has(k) && ti >= 0) { const id = T.getInt(ti, k); if (!rl.has(id)) rl.set(id, new Set()); rl.get(id).add(ch); }
+    const xi = sq.filter(p => p.slot < 28), sub = sq.filter(p => p.slot === 28), res = sq.filter(p => p.slot > 28), used = {};
+    const prefs = p => { const pr = L.playerRow(p.pid); return [1, 2, 3, 4].map(q => P.getInt(pr, 'preferredposition' + q)); };
+    const cls = p => (u.a === p.pid ? ' sel' : '') + (p.slot < 28 && !prefs(p).includes(p.slot) ? ' oop' : '');
+    const pk = (p, st) => `<div class="pk${cls(p)}" data-p="${p.pid}">${fcard(p.pid, p.name, p.ovr, posName(p.slot))}${rl.has(p.pid) ? `<u class="rb">${[...rl.get(p.pid)].join('')}</u>` : ''}</div>`;
+    const ch = p => `<div class="ch t${tier(p.ovr)}${cls(p)}" data-p="${p.pid}"><b class="ovr">${p.ovr}</b><span>${esc(p.name)}</span><i>${posName(prefs(p)[0])}</i>${rl.has(p.pid) ? `<u class="rb">${[...rl.get(p.pid)].join('')}</u>` : ''}</div>`;
+    const an = u.a != null ? sq.find(p => p.pid === u.a) : null;
+    $('#lu').innerHTML = `<div class="pitch">${an ? `<div class="hint2">Pilih pemain untuk ditukar dengan <b>${esc(an.name)}</b> · ketuk lagi untuk batal</div>` : ''}${xi.map(p => pk(p)).join('')}</div>
+      <div class="strip"><h4>CADANGAN (${sub.length}) · FORMASI ${formStr(xi.map(p => p.slot))}</h4><div class="cg">${sub.map(ch).join('') || '<small>Kosong</small>'}</div></div>
+      <div class="strip"><h4 class="rh">PEMAIN LAIN (<span id="rN"></span>)<input id="rQ" placeholder="cari…" value="${esc(f.q)}"><select id="rZ">${[['-1', 'Semua'], ['0', 'GK'], ['1', 'DEF'], ['2', 'MID'], ['3', 'ATT']].map(([v, t]) => `<option value="${v}" ${+v === f.z ? 'selected' : ''}>${t}</option>`).join('')}</select><button id="rS">${f.s === 'ovr' ? 'OVR ↓' : 'A–Z'}</button></h4><div class="cg rs" id="rG"></div></div>`;
+    const tap = el => el.onclick = () => { const p = +el.dataset.p; if (u.a == null) luSheet(p); else if (u.a === p) { u.a = null; luDraw(); } else { luSwap(u.a, p); u.a = null; luDraw(); } };
+    const fill = () => { let r = res.filter(p => (!f.q || p.name.toLowerCase().includes(f.q.toLowerCase())) && (f.z < 0 || zone(prefs(p)[0] === 99 ? 14 : prefs(p)[0]) === f.z)); if (f.s === 'name') r = r.slice().sort((a, b) => a.name.localeCompare(b.name)); $('#rG').innerHTML = r.map(ch).join('') || '<small>Tidak ada</small>'; $('#rN').textContent = r.length + '/' + res.length; $('#rG').querySelectorAll('[data-p]').forEach(tap); };
+    $('#rQ').oninput = e => { f.q = e.target.value; fill(); }; $('#rZ').onchange = e => { f.z = +e.target.value; fill(); }; $('#rS').onclick = e => { f.s = f.s === 'ovr' ? 'name' : 'ovr'; e.target.textContent = f.s === 'ovr' ? 'OVR ↓' : 'A–Z'; fill(); };
+    luPlace(xi); luFillSel(); document.querySelectorAll('#lu .pk,#lu .cg:not(.rs) [data-p]').forEach(tap); fill();
+  });
+}
+function luSheet(pid) {
+  const L = S.L, u = S.lu, P = L.t('players'), row = L.playerRow(pid), nm = L.display(L.playerNames(row)), ov = P.getInt(row, 'overallrating'), p = L.squad(u.tid).find(x => x.pid === pid), ps = p && p.slot < 28 ? posName(p.slot) : posName(P.getInt(row, 'preferredposition1'));
+  const o = modal(`<div class="shd">${fcard(pid, nm, ov, ps, true)}<div class="sheet"><button id="sSw">🔁 Ganti posisi / tukar</button><button id="sTr">🔄 Transfer…</button><button id="sIn">ℹ️ Informasi &amp; edit</button><button id="sRo">🎖 Peran khusus…</button><button id="sCp">⚖️ Bandingkan…</button><button id="sFa" class="danger">🚫 Free agent</button><button id="sX">Tutup</button></div></div>`);
+  o.style.alignItems = 'flex-end'; const q = s => o.querySelector(s);
+  q('#sX').onclick = () => o.close(); q('#sSw').onclick = () => { o.close(); u.a = pid; luDraw(); }; q('#sIn').onclick = () => { o.close(); luInfo(pid); };
+  q('#sRo').onclick = () => { o.close(); luRoles(pid); }; q('#sCp').onclick = () => { o.close(); luCompare(pid); };
+  q('#sTr').onclick = () => { o.close(); pickTeam(false, id => guard(() => { if (id === u.tid) throw new Error('Pilih tim lain'); const r = L.transfer(pid, id, -1, -1, false, false); L.log.push(r.name + ': ' + r.from + ' → ' + r.to + ' (no.' + r.jersey + ')'); u.h = []; markDirty(); toast(r.name + ': ' + r.from + ' → ' + r.to); luDraw(); })); };
+  q('#sFa').onclick = () => { o.close(); guard(() => { if (!confirm('Jadikan ' + nm + ' free agent?')) return; if (L.unlinkClub(pid)) { L.log.push(nm + ' → free agent'); u.h = []; markDirty(); toast('Jadi free agent'); } luDraw(); }); };
+}
+function luRoles(pid) {
+  const L = S.L, u = S.lu, T = L.t('teams'), ti = tRow(u.tid), R = ROLEF.filter(r => T.fmap.has(r[0]) && ti >= 0);
+  if (!R.length) return toast('Tabel tim tidak punya kolom peran (kapten/penendang)', 1);
+  const o = modal(`${mhead('Peran khusus')}<div class="sheet">${R.map(r => `<button data-k="${r[0]}">${r[1]}${T.getInt(ti, r[0]) === pid ? ' ✓' : ''}</button>`).join('')}</div>`);
+  o.querySelectorAll('[data-k]').forEach(b => b.onclick = () => guard(() => { luSnap(); T.setInt(ti, b.dataset.k, pid); markDirty(); o.close(); luDraw(); toast('Peran diatur'); }));
+}
+function luCompare(a) {
+  const L = S.L, u = S.lu, P = L.t('players'), items = L.squad(u.tid).filter(p => p.pid !== a).map(p => [p.pid, p.name + ' (' + p.ovr + ')']);
+  searchPick('Bandingkan dengan…', items, b => guard(() => {
+    const ra = L.playerRow(a), rb = L.playerRow(b), na = L.display(L.playerNames(ra)), nb = L.display(L.playerNames(rb)), sa = st6(ra), sb = st6(rb), g = (r, k) => P.fmap.has(k) ? P.getInt(r, k) : 0;
+    const rows = [['OVR', g(ra, 'overallrating'), g(rb, 'overallrating')], ['POT', g(ra, 'potential'), g(rb, 'potential')], ...GR.map((x, i) => [x[0], sa[i], sb[i]]), ['Tinggi', g(ra, 'height'), g(rb, 'height')], ['Berat', g(ra, 'weight'), g(rb, 'weight')]];
+    modal(`${mhead('Bandingkan')}<div class="cmpc">${fcard(a, na, g(ra, 'overallrating'), posName(g(ra, 'preferredposition1')), true)}${fcard(b, nb, g(rb, 'overallrating'), posName(g(rb, 'preferredposition1')), true)}</div>${rows.map(([t, x, y]) => `<div class="cr"><b class="${x > y ? 'h' : ''}">${x}</b><span>${t}</span><b class="${y > x ? 'h' : ''}">${y}</b></div>`).join('')}`);
+  }));
+}
+function luShare() {
+  const L = S.L, u = S.lu, name = L.teamName.get(u.tid), sq = L.squad(u.tid), xi = sq.filter(p => p.slot < 28), sub = sq.filter(p => p.slot === 28), fm = formStr(xi.map(p => p.slot));
+  const txt = name + ' — ' + fm + '\n\nStarting XI\n' + xi.map(p => posName(p.slot).padEnd(4) + ' ' + p.name + ' (' + p.ovr + ')').join('\n') + '\n\nCadangan\n' + sub.map(p => p.name + ' (' + p.ovr + ')').join('\n');
+  const o = modal(`${mhead('Bagikan lineup')}<pre>${esc(txt)}</pre><div class="r"><button class="p" id="shT">Salin teks</button><button id="shI">Unduh gambar PNG</button></div>`);
+  o.querySelector('#shT').onclick = () => { const done = () => toast('Teks disalin'); if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, () => toast('Gagal menyalin', 1)); else { const t = document.createElement('textarea'); t.value = txt; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); done(); } };
+  o.querySelector('#shI').onclick = () => {
+    const W = 520, H = 560, cols = ['#c98f58', '#b9c2cd', '#e4c561', '#6a6bf7'], used = {};
+    const cards = xi.map(p => { const [x, y] = XY[p.slot] || [50, 50], n = used[p.slot] = (used[p.slot] || 0) + 1, cx = (x + (n - 1) * 12) / 100 * W, cy = y / 100 * H; return `<g transform="translate(${cx - 29},${cy - 36})"><rect width="58" height="72" rx="8" fill="${cols[tier(p.ovr)]}" stroke="#0007"/><text x="6" y="17" font-size="15" font-weight="800" fill="${tier(p.ovr) === 3 ? '#fff' : '#2a1a0c'}">${p.ovr}</text><text x="6" y="28" font-size="9" font-weight="700" fill="${tier(p.ovr) === 3 ? '#fff' : '#2a1a0c'}">${posName(p.slot)}</text><circle cx="39" cy="26" r="15" fill="#fff5"/><text x="29" y="64" text-anchor="middle" font-size="9" font-weight="800" fill="${tier(p.ovr) === 3 ? '#fff' : '#2a1a0c'}">${esc(p.name.length > 12 ? p.name.slice(0, 11) + '…' : p.name)}</text></g>`; }).join('');
+    const bench = sub.map((p, i) => `<text x="12" y="${H + 40 + i * 16}" font-size="12" fill="#fff">${posName(p.slot === 28 ? 14 : p.slot)} </text>`).join('');
+    const bt = sub.map((p, i) => `<text x="${12 + (i % 2) * 260}" y="${H + 44 + Math.floor(i / 2) * 18}" font-size="13" fill="#fff">${p.ovr} ${esc(p.name)}</text>`).join('');
+    const H2 = H + 60 + Math.ceil(sub.length / 2) * 18, svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H2}" viewBox="0 0 ${W} ${H2}"><rect width="${W}" height="${H2}" fill="#0d2037"/><rect width="${W}" height="${H}" fill="#1f7d4d"/><line x1="0" y1="${H / 2}" x2="${W}" y2="${H / 2}" stroke="#fff6" stroke-width="2"/><circle cx="${W / 2}" cy="${H / 2}" r="50" fill="none" stroke="#fff6" stroke-width="2"/><text x="10" y="20" font-size="15" font-weight="800" fill="#fff">${esc(name)} · ${fm}</text>${cards}<text x="12" y="${H + 24}" font-size="12" font-weight="700" fill="#9fb6d4">CADANGAN</text>${bt}</svg>`;
+    const img = new Image(); img.onload = () => { const c = document.createElement('canvas'); c.width = W * 2; c.height = H2 * 2; c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); c.toBlob(b => b.arrayBuffer().then(ab => download('lineup_' + name.replace(/\W+/g, '_') + '.png', new Uint8Array(ab), 'image/png'))); }; img.onerror = () => toast('Gagal membuat gambar', 1); img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  };
+}
+function luInfo(pid) {
+  const L = S.L, P = L.t('players'), v = L.playerFields(pid), row = L.playerRow(pid), nm = L.playerNames(row), n = k => parseInt(v.get(k), 10) || 0;
+  const G = [['Pace', ['acceleration', 'sprintspeed']], ['Shooting', ['finishing', 'shotpower', 'longshots', 'positioning', 'volleys', 'penalties']], ['Passing', ['shortpassing', 'vision', 'crossing', 'longpassing', 'curve', 'freekickaccuracy']], ['Dribbling', ['ballcontrol', 'dribbling', 'agility', 'balance', 'reactions']], ['Defending', ['interceptions', 'headingaccuracy', 'marking', 'standingtackle', 'slidingtackle']], ['Physical', ['strength', 'stamina', 'aggression', 'jumping']]];
+  const MAINK = MAIN_F.filter(k => P.fmap.has(k)), inG = new Set(G.flatMap(g => g[1]));
+  const attrs = P.fields.filter(f => f.kind() === 'int' && f.depth === 7 && f.low === 1 && !MAINK.includes(f.name)).map(f => f.name), rest = attrs.filter(k => !inG.has(k));
+  const fld = k => inputFor(P.f(k), v.get(k), 'pf_' + k), pos = [...new Set([1, 2, 3, 4].map(q => n('preferredposition' + q)).filter(x => x >= 0 && x < 28))];
+  const j = luRow(pid), jn = j !== undefined ? L.t('teamplayerlinks').getInt(j, 'jerseynumber') : '';
+  const grp = G.map(([t, ks]) => { ks = ks.filter(k => P.fmap.has(k)); return ks.length ? `<div class="ag" data-ks="${ks.join(',')}"><div class="agh"><b>${t}</b><span class="agv"></span></div><div class="fg fg3">${ks.map(fld).join('')}</div></div>` : ''; }).join('');
+  const o = modal(`${mhead('Informasi pemain')}<div class="hd">${face(pid, 60)}<div><b style="font-size:17px">${esc(L.display(nm))}</b><br><small>${esc(L.nationName.get(n('nationality')) || '')} · ${pos.map(posName).join(' / ')} · #${pid}</small></div><span class="big" id="iOvr">${n('overallrating')}</span></div>
+  <div id="iBody">${sec('Nama', `<div class="fg"><div class="fi"><label>Nama depan</label><input id="n_first" value="${esc(nm[0])}"></div><div class="fi"><label>Nama belakang</label><input id="n_last" value="${esc(nm[1])}"></div><div class="fi"><label>Nama umum</label><input id="n_common" value="${esc(nm[2])}"></div><div class="fi"><label>Nama jersey</label><input id="n_jersey" value="${esc(nm[3])}"></div></div>`)}
+  ${sec('Data utama', `<div class="fg">${MAINK.map(fld).join('')}<div class="fi"><label>No. punggung (di tim)</label><input type="number" id="iJ" min="0" max="99" value="${jn}"></div></div>`)}
+  ${sec('Atribut (rata-rata kelompok tampil live)', grp)}${rest.length ? sec('Atribut lain (kiper, dll.)', `<div class="fg fg3">${rest.map(fld).join('')}</div>`, true) : ''}</div>
+  <div class="sv"><button class="p" id="iSave" style="width:100%;padding:10px">Simpan perubahan</button></div>`);
+  o.querySelector('.md').style.maxWidth = '540px';
+  o.querySelectorAll('.sec>.sh').forEach(h => h.onclick = () => h.parentNode.classList.toggle('closed'));
+  const cl = x => x >= 75 ? 'h' : x >= 55 ? 'm' : 'l', gv = k => { const e = o.querySelector('#pf_' + k); return e ? parseInt(e.value, 10) || 0 : 0; };
+  const upd = () => { o.querySelectorAll('.ag').forEach(g => { const a = g.dataset.ks.split(',').map(gv).filter(x => x > 0), m = a.length ? Math.round(a.reduce((s, x) => s + x, 0) / a.length) : 0, e = g.querySelector('.agv'); e.textContent = m || '–'; e.className = 'agv ' + cl(m); }); o.querySelector('#iOvr').textContent = gv('overallrating'); };
+  o.addEventListener('input', upd); upd();
+  o.querySelector('#iSave').onclick = () => guardCap(() => {
+    const names = {}; ['first', 'last', 'common', 'jersey'].forEach((k, i) => { const x = o.querySelector('#n_' + k).value; if (x !== nm[i]) names[k] = x; });
+    L.savePlayer(pid, collect(o.querySelector('#iBody')), names);
+    const jv = parseInt(o.querySelector('#iJ').value, 10); if (j !== undefined && jv >= 0 && jv <= 99 && jv !== jn) L.t('teamplayerlinks').setInt(j, 'jerseynumber', jv);
+    markDirty(); toast('Pemain disimpan'); o.close(); luDraw(); luInfo(pid);
+  });
+}
+
 function plist() {
   const p = S.pf, r = S.L.listPlayers({ q: p.q, sort: p.sort, omin: parseInt(p.omin) || 0, team: p.team, free: p.free, offset: p.off, limit: 40, desc: p.sort === 'overall' || p.sort === 'potential' });
   setNote(r.total + ' pemain' + (r.total ? ' · ' + (p.off + 1) + '–' + Math.min(p.off + 40, r.total) : ''));
